@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Typography</title>
+  </head>
+  <body>
+    <div class="container">
+<h1>Reboot.css</h1>
+<p>There is a special portion at the beginning of the Bootstrap styles that's referred to as Reboot.css. Its job is to normalize styles so that they look similar in different devices and browsers.</p>
+<p>Unlike most other normalizing CSS templates, it's a bit opinionated. For example Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire platform, and within individual components. It's going to make it easier for you to manage your layouts because you can do things across the entire layout, or simply within a specific component a lot easier.</p>
+
+<h1>Margins</h1>
+<p>Bootstrap adds margin only at the bottom of elements.</p>
+<p>This means the margin-top property is avoided as much as possible and that you will have to add a little bit of spacing at the top of things if that's what you're looking for. But it does make things easier to update because you know that all of the margins are going to be placed at the bottom of elements.</p>
+
+<h1>border-box</h1>
+<p>Box sizing makes it easier to calculate the width of elements. By default, it's turned to border-box, which means that when you specify the width of an element, say a div being 200 pixels wide, it takes into account the built-in padding.</p>
+<p>So if you specify that an element like a div is 200 pixels wide, and then you specify 10 pixel padding, the box is still going to be 200 pixels wide. It's not going to add the extra padding, which is what normal browsers would do.</p>
+
+<h1>Native font stacks</h1>
+<p>This means that the default font in Bootstrap is not set to something like Helvetica. But it tries to use whatever the current platform defines as the default sans-serif font. So for example on current Macs, that would be San Francisco. And that's going to yield a smaller CSS file. And again it makes things look great on different devices, because those fonts have specifically been designed for the device that they're in.</p>
+
+
+
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
