@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>The Bootstrap Grid</title>
+  </head>
+  <body>
+    <div class="container">
+<h1>The Bootstrap Grid</h1>
+<h3>The Grid</h3>
+<p>Bootstrap uses a 12-column grid system that has breakpoints for the following size devices:</p>
+<p>It uses Flexbox to create complex layouts with minimal code.</p>
+<ul>
+  <li>extra small (< 576px)</li>
+  <li>small (576px)</li>
+  <li>medium (768px)</li>
+  <li>large (992px)</li>
+  <li>extra large (1200px)</li>
+</ul>
+<p>The grid is extremely flexible. You can create multiple layouts for different breakpoints, reset, offset, nest, and even customize the order of the columns at different breakpoints.</p>
+
+<h3>Containers</h3>
+<p>Containers can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints.</p>
+<p>Responsive fixed width that snap to certain breakpoints, or completely fluid containers which take up 100% of the width of the view port, which is the browser window or the width of your device. Inside containers, you can also place content in rows and columns.</p>
+<p><strong>Example></strong></p>
+<pre>&lt;div class="container"&gt;
+  code...
+&lt;/div&gt;</pre>
+
+<p>Grid elements have a 15px padding on all sides to work with all backgrounds and elements. You can remove this 15px padding by using <strong>no-gutters</strong> as a class. For example:</p>
+<pre>&lt;div class="row no-gutters"&gt;</pre>
+
+
+<h4>2 types of containers</h4>
+<p><strong>Regular containers</strong> - center content and snap to certain grid points.</p>
+<p><strong>Fluid containers</strong> - full width of the viewport, which means the width of the device or the browser window.</p>
+
+<h3>Rows and Columns</h3>
+<p>These can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints.</p>
+<h4>Rows</h4>
+<p>Create a row in order to prepare the content that is going to be placed into columns.</p>
+<p><strong>Example how to add a row</strong></p>
+<pre>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+  code...
+
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>It doesn't need to be a &lt;div&gt;, any tag will work.</p>
+
+
+
+<h4>Columns</h4>
+<p>Add the column inside the row. Add a number of columns that add up to 12.</p>
+<p>If you don't specify a number value, Bootstrap divides by 12 to align the columns.</p>
+<p><strong>Example</strong></p>
+<pre>&lt;section class="container"&gt;
+  &lt;div class="row"&gt;
+  &lt;article class="col"&gt;
+  code for column 1
+  &lt;/article&gt;
+
+  &lt;article class="col"&gt;
+  code for column 2
+  &lt;/article&gt;
+
+  &lt;article class="col"&gt;
+  code for column 3
+  &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+<p>It doesn't need to be a &lt;div&gt;, any tag will work.</p>
+
+<h2>How to specify the size of the column</h2>
+<p>When you create a column, you can assign it two values:</p>
+<ul>
+  <li>The breakpoint at which it should become responsive</li>
+  <li>How many of 12 column spaces should it occupy</li>
+</ul>
+
+<p>Syntax</p>
+<p>&lt;div class="col-sm-4"&gt;</p>
+<p>Since this breakpoint is 'sm', the column will take up the whole width of the browser until it reaches the 'sm' breakpoint (which is 576px or higher).</p>
+
+
+<h3>Offset columns</h3>
+<p>This is a way to center columns in a larger space. For example, create a 3 column row.</p>
+<pre>&lt;section class="container"&gt;
+  &lt;div class="row"&gt;
+  &lt;article class="col-sm-4"&gt;
+  code for column 1
+  &lt;/article&gt;
+  &lt;article class="col-sm-4"&gt;
+  code for column 2
+  &lt;/article&gt;
+  &lt;/section&gt;</pre>
+  <p>The problem with this code is that the 3rd column is missing. So if you view the site, a blank space is shown where the 3rd column should be.</p>
+  <p>You can use an offset to push the columns to the right, thereby centering them. For example, use an offset of 2 to center the two columns, this way everything adds up to 12.</p>
+
+  <pre>&lt;section class="container"&gt;
+    &lt;div class="row"&gt;
+    &lt;article class="col-sm-4 offset-sm-2"&gt;
+    code for column 1
+    &lt;/article&gt;
+    &lt;article class="col-sm-4"&gt;
+    code for column 2
+    &lt;/article&gt;
+    &lt;/section&gt;</pre>
+<p>NOTE: This is an older way of centering elements. In Bootstrap 4, you should use alignment instead.</p>
+
+<h3>Nesting columns</h3>
+<p>To nest columns, you simply create a new row inside an existing column. Now, this will create a new regular 12-column grid inside that existing column.</p>
+<p>It may be a good idea to use the <strong>no-gutters</strong> class (as mentioned above) with nested columns. This removes the default 15px padding.</p>
+
+<h3>Changing the column order</h3>
+<p>Even though the columns may be coded in a specific order, you can use the <strong>order</strong> class to re-arranged them.</p>
+<p>NOTE: If you do this, make sure to assign a value to all columns, otherwise the order could get messed up.</p>
+
+<pre>&lt;section class="container"&gt;
+  &lt;div class="row"&gt;
+  &lt;article class="col-sm-4 offset-sm-2 order-2"&gt;
+  code for column 1
+  &lt;/article&gt;
+  
+  &lt;article class="col-sm-4 order-1"&gt;
+  code for column 2
+  &lt;/article&gt;
+  &lt;/section&gt;</pre>
+
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
