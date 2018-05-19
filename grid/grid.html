@@ -7,13 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<link rel="stylesheet" type-"text/css" href="../style.css">
     <title>The Bootstrap Grid</title>
   </head>
   <body>
     <div class="container">
 <h1>The Bootstrap Grid</h1>
-<h3>The Grid</h3>
+<h2>The Grid</h2>
 <p>Bootstrap uses a 12-column grid system that has breakpoints for the following size devices:</p>
 <p>It uses Flexbox to create complex layouts with minimal code.</p>
 <ul>
@@ -25,7 +25,7 @@
 </ul>
 <p>The grid is extremely flexible. You can create multiple layouts for different breakpoints, reset, offset, nest, and even customize the order of the columns at different breakpoints.</p>
 
-<h3>Containers</h3>
+<h2>Containers</h2>
 <p>Containers can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints.</p>
 <p>Responsive fixed width that snap to certain breakpoints, or completely fluid containers which take up 100% of the width of the view port, which is the browser window or the width of your device. Inside containers, you can also place content in rows and columns.</p>
 <p><strong>Example></strong></p>
@@ -37,11 +37,11 @@
 <pre>&lt;div class="row no-gutters"&gt;</pre>
 
 
-<h4>2 types of containers</h4>
+<h3>2 types of containers</h3>
 <p><strong>Regular containers</strong> - center content and snap to certain grid points.</p>
 <p><strong>Fluid containers</strong> - full width of the viewport, which means the width of the device or the browser window.</p>
 
-<h3>Rows and Columns</h3>
+<h2>Rows and Columns</h2>
 <p>These can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints.</p>
 <h4>Rows</h4>
 <p>Create a row in order to prepare the content that is going to be placed into columns.</p>
@@ -56,7 +56,7 @@
 
 
 
-<h4>Columns</h4>
+<h2>Columns</h2>
 <p>Add the column inside the row. Add a number of columns that add up to 12.</p>
 <p>If you don't specify a number value, Bootstrap divides by 12 to align the columns.</p>
 <p><strong>Example</strong></p>
@@ -77,7 +77,7 @@
 &lt;/section&gt;</pre>
 <p>It doesn't need to be a &lt;div&gt;, any tag will work.</p>
 
-<h2>How to specify the size of the column</h2>
+<h3>How to specify the size of the column</h3>
 <p>When you create a column, you can assign it two values:</p>
 <ul>
   <li>The breakpoint at which it should become responsive</li>
@@ -127,14 +127,53 @@
   &lt;article class="col-sm-4 offset-sm-2 order-2"&gt;
   code for column 1
   &lt;/article&gt;
-  
+
   &lt;article class="col-sm-4 order-1"&gt;
   code for column 2
   &lt;/article&gt;
   &lt;/section&gt;</pre>
 
 
-</div>
+
+<h1>Alignment</h1>
+<h2>Vertical Alignment</h2>
+<p>Classes to align columns. Add these to the row</p>
+<ul>
+  <li>align-items-start</li>
+  <li>align-items-center</li>
+  <li>align-items-end</li>
+</ul>
+<p>You may also need to nest the column to get your specific affect.</p>
+
+
+<h2>Individual Alignment of a colum</h2>
+<p>Add these classes to the 'col', not the row.</p>
+<ul>
+<li>align-self-start</li>
+<li>align-self-center</li>
+<li>align-self-end</li>
+</ul>
+
+
+<h2>Horizontal Alignment</h2>
+<p>Add these to the row. Make sure to also use a column width.</p>
+<ul>
+<li>justify-content-start</li>
+<li>justify-content-center</li>
+<li>justify-content-end</li>
+<li>justify-content-around</li>
+<li>justify-content-between</li>
+</ul>
+
+
+
+
+
+
+
+
+
+</div><!--Close container-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
