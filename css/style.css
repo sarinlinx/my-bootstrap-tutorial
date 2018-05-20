@@ -23,7 +23,7 @@ h3 {
 
 .command {
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .img-outline {
@@ -33,6 +33,10 @@ h3 {
 
 .bg-shade {
   background-color: #EFEFEF;
+}
+
+.bg-black {
+  background-color: #000;
 }
 /*___________________________________________________
 Note boxes

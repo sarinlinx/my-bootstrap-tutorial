@@ -7,27 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type- "text/css" href="../style.css">
-    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Installing Bootstrap</title>
 </head>
 
 <body>
     <div class="container">
 
+        <div class="display-3">How to install Bootstrap</div>
+        <ul>
+            <li><a href="#cdn">Option #1 — Using a CDN</a></li>
+            <li><a href="#locally">Option #2 — Downloading the Bootstrap code locally</a></li>
+            <li><a href="#npm">Option #3 — Installing with NPM</a></li>
+        </ul>
 
 
-        <h1>Installing Bootstrap</h1>
+
+
         <h2>2 versions of Bootstrap 4</h2>
         <ul>
             <li>CSS only version - This is what you get with the CDN</li>
-            <li>The Sass version - Allows you to make more customizations and choose which parts of the framework to include.</li>
+            <li>The Sass version - Sass is a Preprocesor that allows you to write dynamic CSS which compiles down to regualr CSS. It also allows you to make more customizations and choose which parts of the framework to include. This ultimately results in
+                a reduced file size.</li>
         </ul>
 
 
         <h1>Different ways to install</h1>
 
-
+        <span id="cdn"></span>
         <h2>Option #1 — Using a CDN</h2>
         <p>The advantage of a CDN is speed. Once a user has visited a website that uses a CDN, the Bootstrap code is saved to their browser's cache. This means that the when the user visits another website using the same CDN, it won't have to download the
             code again.
@@ -77,12 +85,7 @@
 &lt;/html&gt;</pre>
 
 
-
-
-
-
-
-
+        <span id="locally"></span>
         <h2>Option #2 — Downloading the Bootstrap code locally</h2>
         <p>You would download the pre compiled Bootstrap CSS and JavaScript files to your site.</p>
         <p>If you're developing, this allows you the ability to work offline.</p>
@@ -150,23 +153,23 @@
 
         <h3>The JS folder</h3>
         <p>This folder contains several JavaScript files. You only need one of the following files:</p>
-                <ul>
-                    <li>bootstrap.js</li>
-                    <li>bootstrap.min.js</li>
-                    <li>bootstrap.bundle.js - This contains all the Bootstrap code plus an additional library called 'popper.js'.</li>
-                </ul>
-
-<h4>List of JS files</h4>
         <ul>
-          <li>bootstrap.bundle.js</li>
-<li>bootstrap.bundle.js.map</li>
-<li>bootstrap.bundle.min.js</li>
-<li>bootstrap.js</li>
-<li>bootstrap.bundle.min.js.map</li>
-<li>bootstrap.js.map</li>
-<li>bootstrap.min.js</li>
-<li>bootstrap.min.js.map</li>
-</ul>
+            <li>bootstrap.js</li>
+            <li>bootstrap.min.js</li>
+            <li>bootstrap.bundle.js - This contains all the Bootstrap code plus an additional library called 'popper.js'.</li>
+        </ul>
+
+        <h4>List of JS files</h4>
+        <ul>
+            <li>bootstrap.bundle.js</li>
+            <li>bootstrap.bundle.js.map</li>
+            <li>bootstrap.bundle.min.js</li>
+            <li>bootstrap.js</li>
+            <li>bootstrap.bundle.min.js.map</li>
+            <li>bootstrap.js.map</li>
+            <li>bootstrap.min.js</li>
+            <li>bootstrap.min.js.map</li>
+        </ul>
 
         <h2>Download jQuery</h2>
         <p>jQuery is required for Bootstrap to function. You can download it here:</p>
@@ -181,7 +184,7 @@
         </ul>
 
         <h3>Example template for locally installed Bootstrap files</h3>
-      <p>jQuery is required for Bootstrap to function. When you link the jquery and boostrap files, jQuery must come first since bootstrap depends on it.</p>
+        <p>jQuery is required for Bootstrap to function. When you link the jquery and boostrap files, jQuery must come first since bootstrap depends on it.</p>
 
         <pre class="example">&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
@@ -217,19 +220,131 @@
 
 
 
-
+        <span id="npm"></span>
         <h2>Option #3 — Installing with NPM</h2>
-        <p>First, install Node.js on your system. Then run the following.</p>
-        <pre class="example"><span class="command">npm init</span></pre>
-        <p>Click ENTER for all questions when prompted.</p>
-        <p>This creates a package.json file for your project. You can then run npm install in the future to quickly install everything on another system.</p>
-        <pre class="example"><span class="command">npm install bootstrap@4.0.0-alpha.6 --save</span></pre>
-        <p>This should download the following in a /node_modules folder:</p>
-        <ul>
-            <li>/bootstrap</li>
-            <li>/jquery</li>
-            <li>/tether (library for positioning)</li>
-        </ul>
+        <div class="row bg-shade">
+            <div class="col">
+                <ol>
+                    <li>First, install Node.js on your system.
+                        <ul>
+                            <li><a href="https://nodejs.org/en/download/">Download Node.js</a></li>
+                        </ul>
+                    </li>
+                    <li>Next, run the following.
+                        <pre class="example"><span class="command">$ npm init</span></pre></li>
+                    <li>Click ENTER for all questions when prompted.</li>
+                    <li>A package.json file is created with the following contents:
+                        <pre class="example">{
+  "name": "gamelayout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}</pre></li>
+                </ol>
+                <p>This creates a package.json file which is a configuration for your project. When you install Bootstrap, it will add a package name and version to this file.</p>
+                <p>You can use this package.json file to install everything on another system.</p>
+            </div>
+        </div>
+
+        <h3>Downloading Bootstrap using npm</h3>
+        <div class="row bg-shade">
+            <div class="col">
+                <ol>
+                    <li>View the following link for info on downloading Bootstrap via npm.
+                        <ul>
+                            <li><a href="https://getbootstrap.com/docs/4.0/getting-started/download/#npm">Download Bootstrap via npm</a></li>
+                        </ul>
+                    </li>
+                    <li>Run the following to install Bootstrap. <strong>--save</strong> saves it as a dependency in your package.json file.</p>
+                        <pre class="example"><span class="command">$ npm install bootstrap --save</span>
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bootstrap@4.1.1 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+npm WARN bootstrap@4.1.1 requires a peer of popper.js@^1.14.3 but none is installed. You must install peer dependencies yourself.
+npm WARN gamelayout@1.0.0 No description
+npm WARN gamelayout@1.0.0 No repository field.
+
++ bootstrap@4.1.1
+added 1 package in 1.531s
+</pre></li>
+                    <li>This command did the following:
+                        <ul>
+                            <li>Created a /node_modules folder:
+                                <ul>
+                                    <li>/bootstrap</li>
+                                    <li>/bootstrap/dist</li>
+                                    <li>/bootstrap/js</li>
+                                    <li>/bootstrap/LICENSE</li>
+                                    <li>/bootstrap/package.json</li>
+                                    <li>/bootstrap/README.md</li>
+                                    <li><li>/bootstrap/scss</li></li>
+                                </ul>
+                            </li>
+                            <li>Added the following to the package.json file
+                                <pre class="example">{
+  "name": "gamelayout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  <span class="standout">"dependencies": {
+    "bootstrap": "^4.1.1"</span>
+  }
+}
+</pre></li>
+                            <li>Created a package-lock.json file with the following contents
+                                <pre class="example">{
+  "name": "gamelayout",
+  "version": "1.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "bootstrap": {
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.1.1.tgz",
+      "integrity": "sha512-SpiDSOcbg4J/PjVSt4ny5eY6j74VbVSjROY4Fb/WIUXBV9cnb5luyR4KnPvNoXuGnBK1T+nJIWqRsvU3yP8Mcg=="
+    }
+  }
+}
+</pre></li>
+                        </ul>
+
+                    </li>
+                    <li>Note how in step#2, there were two dependency warnings.
+                      <pre class="example">npm WARN bootstrap@4.1.1 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+npm WARN bootstrap@4.1.1 requires a peer of popper.js@^1.14.3 but none is installed. You must install peer dependencies yourself.</pre></li>
+<li>Install these by running the following:
+  <pre class="example"><span class="command">$ npm install jquery@1.9.1 --save</span>
+<span class="command">$ npm install popper.js@^1.14.3 --save</span></pre></li>
+<li>These commands added the following to your package.json file:
+  <pre class="example">{
+  "name": "gamelayout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    <span class="standout">"jquery": "^1.9.1",
+   "popper.js": "^1.14.3"</span>
+  }
+}</pre></li>
+
+                </ol>
+            </div>
+        </div>
 
 
 
@@ -241,12 +356,10 @@
 
 
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
 </body>
 
 </html>
