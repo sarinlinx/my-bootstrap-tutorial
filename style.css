@@ -3,5 +3,70 @@ h1 {
 }
 
 h2 {
-  margin-top: 65px;
+  margin-top: 35px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.example {
+  background-color: #000;
+  color: #ffbf00;
+  padding: 5px;
+}
+
+.standout {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.command {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.img-outline {
+  box-shadow: 0px 0px 15px 0px gray;
+  margin-bottom: 10px;
+}
+
+/*___________________________________________________
+Note boxes
+___________________________________________________*/
+
+.alert-important, .alert-note, .alert-tip, .alert-warning {
+	position: relative;
+  padding: 15px;
+  border: 1px solid #DCDCDC;
+  height: auto;
+  min-height: 90px;
+  display: table;
+  margin: 15px 0 15px 0;
+  background-color: #90eeff;
+}
+
+.alert-content {
+  margin-left: 80px;
+  line-height: 22px;
+  font-size: 95%;
+  padding-left: 20px;
+  border-left: 1px solid #DCDCDC;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.alert-content ul, .alert-content ol {
+  margin-bottom: 0;
+}
+
+.alert-content li {
+  padding: 0;
+}
+
+.alert-icon {
+  display: table-cell;
+  width: 8%;
+  min-width: 75px;
+  vertical-align: middle;
 }

@@ -1,31 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type- "text/css" href="../style.css">
     <title>Bootstrap Tutorial</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Installing Bootstrap</h1>
-    <h2>Option #1 — Using a CDN</h2>
-    <p>The advantage of a CDN is speed. Once a user has visited a website that uses a CDN, the Bootstrap code is saved to their browser's cache. This means that the when the user visits another website using the same CDN, it won't have to download the code
-        again.
-    </p>
-    <p>If you're developing, you must have an internet connection to use the CDN.</p>
-    <ul>
-        <li><a href="https://getbootstrap.com/docs/4.1/getting-started/download/">Download Bootstrap</a></li>
-    </ul>
+    <div class="container">
 
-    <h3>Starter template example using CDN links</h3>
-    <p>This template can be found at:</p>
-    <ul><li><a href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Starter template</a></li></ul>
-    <pre>&lt;!doctype html&gt;
+
+
+        <h1>Installing Bootstrap</h1>
+        <h2>2 versions of Bootstrap 4</h2>
+        <ul>
+            <li>CSS only version - This is what you get with the CDN</li>
+            <li>The Sass version - Allows you to make more customizations and choose which parts of the framework to include.</li>
+        </ul>
+
+
+        <h1>Different ways to install</h1>
+
+
+        <h2>Option #1 — Using a CDN</h2>
+        <p>The advantage of a CDN is speed. Once a user has visited a website that uses a CDN, the Bootstrap code is saved to their browser's cache. This means that the when the user visits another website using the same CDN, it won't have to download the
+            code again.
+        </p>
+        <p>If you're developing, you must have an internet connection to use the CDN.</p>
+        <ul>
+            <li><a href="https://getbootstrap.com/docs/4.1/getting-started/download/">Download Bootstrap, or install CDN</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">W3Schools CDN links</a></li>
+        </ul>
+        <div class="alert alert-note">
+            <div class="alert-icon">
+                <img src="../images/note-icon.png" width="60" height="60">
+            </div>
+            <div class="alert-content">
+                <p>This imports the entire Bootstrap library which is usually unneccesary. This could result in longer load times.</p>
+            </div>
+        </div>
+
+        <h3>Starter template example using CDN links</h3>
+        <p>This template can be found at:</p>
+        <ul>
+            <li><a href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Starter template</a></li>
+        </ul>
+        <pre class="example">&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;!-- Required meta tags --&gt;
@@ -33,7 +59,7 @@
     &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
 
     &lt;!-- Bootstrap CSS --&gt;
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"&gt;
+    <span class="standout">&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"&gt;</span>
 
     &lt;title>Hello, world!&lt;/title&gt;
   &lt;/head&gt;
@@ -42,114 +68,122 @@
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
 
     &lt;!-- Optional JavaScript --&gt;
-    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+    <span class="standout">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
     &lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"&gt;&lt;/script&gt;
     &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"&gt;&lt;/script&gt;
-    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"&gt;&lt;/script&gt;
-  &lt;/div&gt;
+    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"&gt;&lt;/script&gt;</span>
+  &lt;/div&gt;&lt;!--Close container--&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-    <h2>Option #2 — Downloading the Bootstrap code locally</h2>
-    <p>You would download the pre compiled Bootstrap CSS and JavaScript files to your site.</p>
-    <p>If you're developing, this allows you the ability to work offline.</p>
-    <ul>
-        <li><a href="https://getbootstrap.com/docs/4.1/getting-started/download/">Download Bootstrap</a></li>
-    </ul>
-    <p>Click the <strong>Download</strong> button under 'Compiled CSS and JS'.</p>
-    <p>This downloads a .zip file. When you extrat, it contains a /css and /js folder.</p>
-    <h3>The CSS folder</h3>
-    <p>This folder contains several CSS files.</p>
-    <pre>bootstrap.css
-bootstrap.css.map
-bootstrap.min.css
-bootstrap.min.css.map
-bootstrap-grid.css
-bootstrap-grid.css.map
-bootstrap-grid.min.css
-bootstrap-grid.min.css.map
-bootstrap-reboot.css
-bootstrap-reboot.css.map
-bootstrap-reboot.min.css
-bootstrap-reboot.min.css.map</pre>
-    <p>You only need one of the following files:</p>
-    <ul>
-        <li>bootstrap.css</li>
-        <li>bootstrap.min.css</li>
-    </ul>
-
-    <h4>Further breakdown of the CSS files</h4>
-    <p><strong>Regular CSS files</strong></p>
-    <ul>
-        <li>bootstrap.css</li>
-        <li>bootstrap-grid.css</li>
-        <li>bootstrap-reboot.css</li>
-    </ul>
-    <p><strong>Minified versions</strong></p>
-    <ul>
-        <li>bootstrap.min.css</li>
-        <li>bootstrap-grid.min.css</li>
-        <li>bootstrap-reboot.min.css</li>
-    </ul>
-    <p><strong>Map files</strong></p>
-    <ul>
-        <li>bootstrap.css.map</li>
-        <li>bootstrap.min.css.map</li>
-        <li>bootstrap-grid.css.map</li>
-        <li>bootstrap-grid.min.css.map</li>
-        <li>bootstrap-reboot.css.map</li>
-        <li>bootstrap-reboot.min.css.map</li>
-    </ul>
-
-    <p> Those are files that are useful if you're using Bootstrap in development mode so that they could point you not to the CSS, but to the original SAS code that was used to create the CSS. </p>
-
-
-    <p><strong>Reboot files</strong></p>
-    <ul>
-        <li>bootstrap-reboot.css</li>
-        <li>bootstrap-reboot.css.map</li>
-        <li>bootstrap-reboot.min.css</li>
-        <li>bootstrap-reboot.min.css.map</li>
-    </ul>
-
-    <p>The reboot files are the special Bootstrap code that resets the CSS and browsers so that they work more consistently in different platforms.</p>
 
 
 
-    <h3>The JS folder</h3>
-    <p>This folder contains several JavaScript files.</p>
-    <pre>bootstrap.bundle.js
-bootstrap.bundle.js.map
-bootstrap.bundle.min.js
-bootstrap.bundle.min.js.map
-bootstrap.js
-bootstrap.js.map
-bootstrap.min.js
-bootstrap.min.js.map</pre>
-<p>You only need one of the following files:</p>
-<ul>
-    <li>bootstrap.js</li>
-    <li>bootstrap.min.js</li>
-    <li>bootstrap.bundle.js</li>
+
+
+
+
+        <h2>Option #2 — Downloading the Bootstrap code locally</h2>
+        <p>You would download the pre compiled Bootstrap CSS and JavaScript files to your site.</p>
+        <p>If you're developing, this allows you the ability to work offline.</p>
+        <ul>
+            <li><a href="https://getbootstrap.com/docs/4.1/getting-started/download/">Download Bootstrap</a></li>
+        </ul>
+        <img class="img-outline" src="../images/download-bootstrap.png">
+        <p>Click the <strong>Download</strong> button under 'Compiled CSS and JS'. This downloads a .zip file. When you extract, it contains a /css and /js folder.</p>
+        <h3>The CSS folder</h3>
+        <p>This folder contains several CSS files. You only need one of the following files:</p>
+        <ul>
+            <li>bootstrap.css</li>
+            <li>bootstrap.min.css</li>
+        </ul>
+
+        <h3>List of CSS files</h3>
+        <ul>
+            <li>bootstrap.css</li>
+            <li>bootstrap.css.map</li>
+            <li>bootstrap.min.css</li>
+            <li>bootstrap.min.css.map</li>
+            <li>bootstrap-grid.css</li>
+            <li>bootstrap-grid.min.css</li>
+            <li>bootstrap-grid.css.map</li>
+            <li>bootstrap-grid.min.css.map</li>
+            <li>bootstrap-reboot.css</li>
+            <li>bootstrap-reboot.css.map</li>
+            <li>bootstrap-reboot.min.css</li>
+            <li>bootstrap-reboot.min.css.map</li>
+        </ul>
+
+
+        <h4>Further breakdown of the CSS files</h4>
+        <p><strong>Regular CSS files</strong></p>
+        <ul>
+            <li>bootstrap.css</li>
+            <li>bootstrap-grid.css</li>
+            <li>bootstrap-reboot.css</li>
+        </ul>
+        <p><strong>Minified versions</strong></p>
+        <ul>
+            <li>bootstrap.min.css</li>
+            <li>bootstrap-grid.min.css</li>
+            <li>bootstrap-reboot.min.css</li>
+        </ul>
+        <p><strong>Map files</strong></p>
+        <p>These are files that are useful if you're using Bootstrap in development mode so that they could point you not to the CSS, but to the original SAS code that was used to create the CSS.</p>
+        <ul>
+            <li>bootstrap.css.map</li>
+            <li>bootstrap.min.css.map</li>
+            <li>bootstrap-grid.css.map</li>
+            <li>bootstrap-grid.min.css.map</li>
+            <li>bootstrap-reboot.css.map</li>
+            <li>bootstrap-reboot.min.css.map</li>
+        </ul>
+
+        <p><strong>Reboot files</strong></p>
+        <p>The reboot files are the special Bootstrap code that resets the CSS and browsers so that they work more consistently in different platforms.</p>
+        <ul>
+            <li>bootstrap-reboot.css</li>
+            <li>bootstrap-reboot.css.map</li>
+            <li>bootstrap-reboot.min.css</li>
+            <li>bootstrap-reboot.min.css.map</li>
+        </ul>
+
+        <h3>The JS folder</h3>
+        <p>This folder contains several JavaScript files. You only need one of the following files:</p>
+                <ul>
+                    <li>bootstrap.js</li>
+                    <li>bootstrap.min.js</li>
+                    <li>bootstrap.bundle.js - This contains all the Bootstrap code plus an additional library called 'popper.js'.</li>
+                </ul>
+
+<h4>List of JS files</h4>
+        <ul>
+          <li>bootstrap.bundle.js</li>
+<li>bootstrap.bundle.js.map</li>
+<li>bootstrap.bundle.min.js</li>
+<li>bootstrap.js</li>
+<li>bootstrap.bundle.min.js.map</li>
+<li>bootstrap.js.map</li>
+<li>bootstrap.min.js</li>
+<li>bootstrap.min.js.map</li>
 </ul>
 
+        <h2>Download jQuery</h2>
+        <p>jQuery is required for Bootstrap to function. You can download it here:</p>
+        <ul>
+            <li><a href="http://jquery.com/download/">Download jQuery</a></li>
+        </ul>
 
-    <h4>The bootstrap.bundle.js file</h4>
-<p>The contains all the Bootstrap code plus an additional library called 'popper.js'.</p>
+        <h2>Download Popper</h2>
+        <p>This is necessary if you did NOT use the bootstrap.bundle.js file. You can download it here:</p>
+        <ul>
+            <li><a href="https://popper.js.org/">Download Popper.js</a></li>
+        </ul>
 
+        <h3>Example template for locally installed Bootstrap files</h3>
+      <p>jQuery is required for Bootstrap to function. When you link the jquery and boostrap files, jQuery must come first since bootstrap depends on it.</p>
 
-<h2>Download jQuery</h2>
-<p>jQuery is required for Bootstrap to function. You can download it here:</p>
-<ul><li><a href="http://jquery.com/download/">Download jQuery</a></li></ul>
-
-<h2>Download Popper</h2>
-<p>jQuery is required for Bootstrap to function. You can download it here:</p>
-<ul><li><a href="https://popper.js.org/">Download Popper.js</a></li></ul>
-
-<h3>Example template for locally installed Bootstrap files</h3>
-
-
-<pre>&lt;!doctype html&gt;
+        <pre class="example">&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
 &lt;!-- Required meta tags --&gt;
@@ -158,7 +192,7 @@ bootstrap.min.js.map</pre>
 &lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;
 
 &lt;!-- Bootstrap CSS --&gt;
-&lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+<span class="standout">&lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;</span>
 
 &lt;title>Hello, world!&lt;/title&gt;
 &lt;/head&gt;
@@ -166,23 +200,53 @@ bootstrap.min.js.map</pre>
 &lt;body&gt;
 &lt;div class="container"&gt;
 &lt;h1&gt;Hello, world!&lt;/h1&gt;
-&lt;/div&gt;
+&lt;/div&gt;&lt;!--Close container--&gt;
 
 &lt;!-- Optional JavaScript --&gt;
-&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+<span class="standout">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
 &lt;script src="js/jquery.slim.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/popper.min.js"&gt;&lt;/script&gt;
-&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;</span>
 &lt;!-- add any custom JS script after here --&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-</div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+        <h2>Option #3 — Installing with NPM</h2>
+        <p>First, install Node.js on your system. Then run the following.</p>
+        <pre class="example"><span class="command">npm init</span></pre>
+        <p>Click ENTER for all questions when prompted.</p>
+        <p>This creates a package.json file for your project. You can then run npm install in the future to quickly install everything on another system.</p>
+        <pre class="example"><span class="command">npm install bootstrap@4.0.0-alpha.6 --save</span></pre>
+        <p>This should download the following in a /node_modules folder:</p>
+        <ul>
+            <li>/bootstrap</li>
+            <li>/jquery</li>
+            <li>/tether (library for positioning)</li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

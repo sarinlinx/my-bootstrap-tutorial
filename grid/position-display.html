@@ -1,39 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type-"text/css" href="../style.css">
-    <title>The Bootstrap Grid</title>
-  </head>
-  <body>
+    <link rel="stylesheet" type- "text/css" href="../style.css">
+    <title>Position / Display</title>
+</head>
+
+<body>
     <div class="container">
-<h1>Alignment</h1>
-<h2>Vertical Alignment</h2>
-<p>Classes to align columns. Add these to the row</p>
-<ul>
-  <li>align-items-start</li>
-  <li>align-items-center</li>
-  <li>align-items-end</li>
+        <h1>Position</h1>
+        <h2>Position classes</h2>
+        <ul>
+            <li>fixed-top - it would get removed from the flow of the document and put essentially at the top of the window or at the top of the view port.</li>
+            <li>fixed-bottom - </li>
+            <li>sticky-top - allow you to have an element stick to the top of the view port or the screen as you scroll in elements. That's a really useful effect, but it is not well-supported in a lot of browsers. So, that would be especially Internet Explorer
+                and Edge, and it's only supported in the latest versions of Chrome as well. So it's a little bit iffy in terms of support</li>
+        </ul>
+        <p>You may also need to nest the column to get your specific affect.</p>
+
+
+
+        <h1>Display</h1>
+        <h2>Display classes</h2>
+        <p>Syntax - d-(breakpoint)-(type)</p>
+        <ul>
+            <li>d-sm-none</li>
+            <li>d-sm-inline</li>
+            <li>d-sm-inline-block</li>
+            <li>d-sm-block</li>
+            <li>d-sm-table</li>
+            <li>d-sm-table-row</li>
+            <li>d-sm-table-cell</li>
+            <li>d-sm-flex</li>
+            <li>d-sm-inline-flex</li>
+        </ul>
+
+        <h2>Print Display</h2>
+        <p>Controls when something shows up if you use a paper printer.</p>
+        <p>Syntax - d-print-(type)</p>
+        <ul>
+            <li>d-print-none</li>
+            <li>d-print-inline</li>
+            <li>d-print-inline-block</li>
+            <li>d-print-block</li>
+            <li>d-print-table</li>
+            <li>d-print-table-row</li>
+            <li>d-print-table-cell</li>
+            <li>d-print-flex</li>
+            <li>d-print-inline-flex</li>
+        </ul>
+
+        <h3>Example of how to show an element ONLY when sent to your printer</h3>
+        <p>Use <strong>d-none d-print-block</strong></p>
+
+        <h1>Flex Container</h1>
+        <p>2 options when working with the Flex Container.</p>
+        <ul>
+            <li>Add additional classes to the container which modify how all internal items work</li>
+            <li>Modify individual items in the container with additional classes</li>
+        </ul>
+
+        <h2>Basic Flex Container</h2>
+        <p>Flex elements are block level. Use the keyword 'inline' to make it an inline element.</p>
+        <p>Add these classes to the container</p>
+        <p>Syntax - <strong>d-(breakpoint)-(-inline)-flex</strong></p>
+
+  <h2>Direction classes</h2>
+  <p>Syntax - <strong>flex-(breakpoint)-(row or column)-(direction)</strong></p>
+        <p>direction can be 'row' or 'column'.</p>
+        <p>The 'direction' is optional. If you use -reverse, it will reverse the order of the elements.</p>
+        <ul>
+            <li>flex-sm-row - makes the elements go side by side into rows.</li>
+            <li>flex-sm-column - makes the elements stack on top of one another</li>
 </ul>
-<p>You may also need to nest the column to get your specific affect.</p>
+
+<h2>Order</h2>
+<p>Control the order of the elements within the flexbox container.</p>
+<p>Syntax - <strong>order-(breakpoint)-(# 1 through 12)</strong></p>
+<p>Example: order-sm-8</p>
+
+<h2>Justify</h2>
+<p>Controls the spacing between items</p>
+<p>Syntax - <strong>justify-content-(breakpoint)-(alignment-option)</strong></p>
+
+      <ul>
+          <li>justify-content-sm-start - puts items to left and extra space to right</li>
+          <li>justify-content-sm-end - puts items to right and extra space on left</li>
+          <li>justify-content-sm-center - centers horizontally</li>
+          <li>justify-content-sm-around - put the space around and in between elements</li>
+          <li>justify-content-sm-between - does something similar but it makes the edge element align to the edge</li>
+        </ul>
+
+
+        <h2>Wrap</h2>
+              <p>control whether the elements wrap in relation to the space in their container</p>
+<p>Syntax - <strong>flex-(breakpoint)-(wrap or nowrap)-(direction)</strong></p>
+<p>Direction is optional</p>
+
+<ul>
+    <li>flex-sm-wrap</li>
+    <li>flex-sm-nowrap</li>
+    </ul>
+
+<h1>Individual Flex Elements</h1>
+<h2>Align Self</h2>
+<p>Just like we can control a group of elements in Flex by controlling the container, we can also control individual Flex elements. And the way that that works is by using a class called align-self</p>
+<p>Syntax - <strong>align-self-(breakpoint)-(align-option)</strong></p>
+
+<ul>
+    <li>align-self-sm-start</li>
+    <li>align-self-sm-end</li>
+    <li>align-self-sm-center</li>
+    <li>align-self-sm-baseline</li>
+    <li>align-self-sm-stretch</li>
+  </ul>
+
+
+
+  <h2>Controlling order of elements in Flexbox</h2>
+  <p>Syntax - <strong>order-(breakpoint)-(# 1 through 12)</strong></p>
+  <p>Example: order-sm-9</p>
 
 
 
 
 
+  
 
-
-
-</div><!--Close container-->
+    </div>
+    <!--Close container-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
