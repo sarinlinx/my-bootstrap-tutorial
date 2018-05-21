@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,60 +11,159 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <title>Typography</title>
-  </head>
-  <body>
+</head>
+
+<body>
+  <a href="../index.html">Back to homepage</a>
     <div class="container">
 
-  <h1>Default Settings</h1>
-<p>font-size of 16px</p>
-<p>line-height is 1.5.</p>
-<p>font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.</p>
-<p>In addition, all &lt;p&gt; elements have margin-top: 0 and margin-bottom: 1rem (16px by default).</p>
+        <h1>Default Settings</h1>
+        <p>font-size of 16px</p>
+        <p>line-height is 1.5.</p>
+        <p>font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.</p>
+        <p>In addition, all &lt;p&gt; elements have margin-top: 0 and margin-bottom: 1rem (16px by default).</p>
 
 
-<h1>Reboot.css</h1>
-<p>There is a special portion at the beginning of the Bootstrap styles that's referred to as Reboot.css. Its job is to normalize styles so that they look similar in different devices and browsers.</p>
-<p>Unlike most other normalizing CSS templates, it's a bit opinionated. For example Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire platform, and within individual components. It's going to make it easier for you to manage your layouts because you can do things across the entire layout, or simply within a specific component a lot easier.</p>
+        <h1>Reboot.css</h1>
+        <p>There is a special portion at the beginning of the Bootstrap styles that's referred to as Reboot.css. Its job is to normalize styles so that they look similar in different devices and browsers.</p>
+        <p>Unlike most other normalizing CSS templates, it's a bit opinionated. For example Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire platform, and within individual components.
+            It's going to make it easier for you to manage your layouts because you can do things across the entire layout, or simply within a specific component a lot easier.</p>
 
-<h1>Margins</h1>
-<p>Bootstrap adds margin only at the bottom of elements.</p>
-<p>This means the margin-top property is avoided as much as possible and that you will have to add a little bit of spacing at the top of things if that's what you're looking for. But it does make things easier to update because you know that all of the margins are going to be placed at the bottom of elements.</p>
+        <h1>Margins</h1>
+        <p>Bootstrap adds margin only at the bottom of elements.</p>
+        <p>This means the margin-top property is avoided as much as possible and that you will have to add a little bit of spacing at the top of things if that's what you're looking for. But it does make things easier to update because you know that all
+            of the margins are going to be placed at the bottom of elements.</p>
 
-<h1>border-box</h1>
-<p>Box sizing makes it easier to calculate the width of elements. By default, it's turned to border-box, which means that when you specify the width of an element, say a div being 200 pixels wide, it takes into account the built-in padding.</p>
-<p>So if you specify that an element like a div is 200 pixels wide, and then you specify 10 pixel padding, the box is still going to be 200 pixels wide. It's not going to add the extra padding, which is what normal browsers would do.</p>
+        <h1>border-box</h1>
+        <p>Box sizing makes it easier to calculate the width of elements. By default, it's turned to border-box, which means that when you specify the width of an element, say a div being 200 pixels wide, it takes into account the built-in padding.</p>
+        <p>So if you specify that an element like a div is 200 pixels wide, and then you specify 10 pixel padding, the box is still going to be 200 pixels wide. It's not going to add the extra padding, which is what normal browsers would do.</p>
 
-<h1>Native font stacks</h1>
-<p>This means that the default font in Bootstrap is not set to something like Helvetica. But it tries to use whatever the current platform defines as the default sans-serif font. So for example on current Macs, that would be San Francisco. And that's going to yield a smaller CSS file. And again it makes things look great on different devices, because those fonts have specifically been designed for the device that they're in.</p>
+        <h1>Native font stacks</h1>
+        <p>This means that the default font in Bootstrap is not set to something like Helvetica. But it tries to use whatever the current platform defines as the default sans-serif font. So for example on current Macs, that would be San Francisco. And that's
+            going to yield a smaller CSS file. And again it makes things look great on different devices, because those fonts have specifically been designed for the device that they're in.</p>
 
-<h1>Heading</h1>
-<p>h1 Bootstrap heading (2.5rem = 40px)</p>
-<p>h3 Bootstrap heading (1.75rem = 28px)</p>
-<p>h2 Bootstrap heading (2rem = 32px)</p>
-<p>h4 Bootstrap heading (1.5rem = 24px)</p>
-<p>h5 Bootstrap heading (1.25rem = 20px)</p>
-<p>h6 Bootstrap heading (1rem = 16px)</p>
+        <h1>Heading</h1>
+        <p>h1 Bootstrap heading (2.5rem = 40px)</p>
+        <p>h3 Bootstrap heading (1.75rem = 28px)</p>
+        <p>h2 Bootstrap heading (2rem = 32px)</p>
+        <p>h4 Bootstrap heading (1.5rem = 24px)</p>
+        <p>h5 Bootstrap heading (1.25rem = 20px)</p>
+        <p>h6 Bootstrap heading (1rem = 16px)</p>
 
-<h1>Display Headings</h1>
-<p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight)</p>
-<p>there are four classes to choose from:</p>
-<ul>
-  <li>.display-1</li>
-<li>.display-2</li>
-<li>.display-3</li>
-<li>.display-4</li>
-</ul>
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight)</p>
+        <p>there are four classes to choose from:</p>
+        <ul>
+            <li>.display-1</li>
+            <li>.display-2</li>
+            <li>.display-3</li>
+            <li>.display-4</li>
+        </ul>
 
-<h2>Element tags</h2>
-<h3>The <strong>small</strong> element tag</h3>
-<p>The HTML &lt;small&gt; element is used to create a lighter, secondary text in any heading. For example:</p>
-<pre class="example">&lt;h1&gt;h1 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h1&gt;</pre>
+        <h2>Element tags</h2>
+        <h3>The <strong>small</strong> element tag</h3>
+        <p>The HTML &lt;small&gt; element is used to create a lighter, secondary text in any heading. For example:</p>
+        <pre class="example">&lt;h1&gt;h1 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h1&gt;</pre>
 
 
-</div>
-<!--Close container-->
-<script src="../js/jquery.js"></script>
-<!-- bundle.js contains popper, but not jquery -->
-<script src="../js/bundle.js"></script>
-  </body>
+
+
+        <h2>Lists</h2>
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p><strong>list-unstyled</strong> removes bullets and align list elements to left.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>For example:</p>
+                <pre class="example">&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;content&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+        </div>
+
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p><strong>list-inline</strong> on the &lt;ul&gt; puts elements on the same line. You must also put <strong>list-inline-item</strong> on each &lt;li&gt; item.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>For example:</p>
+                <pre class="example">&lt;ul class="list-inline"&gt;
+  &lt;li class="list-inline-item"&gt;content&lt;/li&gt;
+  &lt;li class="list-inline-item"&gt;content&lt;/li&gt;
+  &lt;li class="list-inline-item"&gt;content&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+            <!--close column-->
+        </div>
+        <!--close row-->
+
+        <h2>Blockquotes</h2>
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p><strong>blockquote</strong> automaticlly styles a blockquoted section.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>For example:</p>
+                <pre class="example">&lt;blockquote class="blockquote"&gt;
+  content
+&lt;/blockquote&gt;</pre>
+            </div>
+        </div>
+
+
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p><strong>blockquote-footer</strong> adds a footer with someone's name to the blockquote.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>For example:</p>
+                <pre class="example">&lt;blockquote class="blockquote"&gt;
+  content
+  &lt;div class="blockquote-footer"&gt;
+  John <!DOCTYPE html>
+  &lt;/div&gt;
+&lt;/blockquote&gt;</pre>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p><strong>blockquote-reverse</strong> right-aligns blockquote content.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>For example:</p>
+                <pre class="example">&lt;blockquote class="blockquote blockquote-reverse"&gt;
+        content
+        &lt;/blockquote&gt;</pre>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
 </html>

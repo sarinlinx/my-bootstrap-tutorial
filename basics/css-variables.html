@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>CSS variables</title>
+</head>
+
+<body>
+  <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+        <h1>CSS variables</h1>
+      <ul><li><a href="https://getbootstrap.com/docs/4.0/getting-started/theming/#available-variables">CSS variables</a></li></ul>
+<p>allows you to store a set of property values that you can reuse within your CSS.</p>
+<p>CSS Variables are so new that browser support is an issue. They're not supported in any version of Internet Explorer, and only on very new versions of the other browsers.</p>
+<ul><li><a href="https://caniuse.com/#feat=css-variables">caniuse.com/#feat=css-variables</a></li></ul>
+
+<p><strong>var()</strong> -  To use these variables, you have to use the var function, and then use the name of the variables. All the variables start with the name that begins with two dashes</p>
+<p><strong>:root</strong> - You can also use the root selector to redefine the values for any of the variables. Now when you do this, make sure that you put your CSS rules after you load the Bootstrap CSS. You should note that using these variables doesn't change the colors or other features of existing Bootstrap classes, since those are hard coded into the CSS, but it serves as a way to create new elements based on those colors, breakpoints and fonts.</p>
+
+<h1>Color/Contextual Variables</h1>
+<pre>  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;</pre>
+
+<h1>Media Queries</h1>
+<p>make it a little bit easier to write Media Queries based on the Bootstrap grid</p>
+<pre>--breakpoint-xs
+--breakpoint-sm
+--breakpoint-md
+--breakpoint-lg
+--breakpoint-xl</pre>
+
+<h1>Font variables</h1>
+<p>Font variables that you can use when you quickly want to use Bootstrap default fonts.</p>
+<pre>--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;</pre>
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>
