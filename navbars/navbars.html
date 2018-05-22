@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Nav Bars</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+
+        <h1>Nav Bars</h1>
+        <p>You can create using an unordered list (more code required), or a div.</p>
+
+        <h2>Using an unordered list</h2>
+        <p>Create a .nav class in the unordered list.</p>
+        <p>For each item in the list add .nav-item. This must be added to the list item.</p>
+        <p>In the link, use .nav-link class.</p>
+
+        <h2>If not using an unordered list</h2>
+        <p>Add the .nav class in a &lt;nav&gt; tag.</p>
+        <p>For each item in the list add .nav-item. This must be added to the link.</p>
+        <p>In the link, use .nav-link class.</p>
+
+
+        <h2>Nav link options</h2>
+        <p>.active</p>
+        <p>.disabled - prevent people from clickin' on the link and it sort of shows as a grayed-out link.</p>
+
+
+        <h2>Nav Styles</h2>
+        <p>.nav-pills - When you use pills, you will get, in the active link, something that looks like a little button with rounded edges, </p>
+        <p>.nav-tabs - when you tabs, of course, each one of the elements looks like tabs.</p>
+
+
+        <h2>Nav Alignment</h2>
+        <p>.justify-content-center - center a nav</p>
+        <p>.justify-content-end - right align</p>
+        <p>.nav-fill - make the links fit the horizontal space, but the space of each link is going to be different depending on the content and the width of the text.</p>
+        <p>.nav-justified - force the space in between each element to be the same no matter the length of the text.</p>
+        <p>.flex-column - make your navigation more responsive. </p>
+
+
+
+        <h1>Nav Bars</h1>
+        <p>.navbar class goes on main container.</p>
+        <p>By default, navbar components stack, so you need to add a navbar-expand class to control when the navbar is going to expand.</p>
+
+        <h2>.navbar-expand</h2>
+        <p>by default, all the navigation elements will be right on top of one another, and we have to specify when you want them to go horizontal.</p>
+        <p>Syntax - navbar-expan-(breakpoint)</p>
+
+        <h1>Navbar Colors</h1>
+        <p>Use .bg-COLOR class to specify Navbar color.</p>
+        <p>Syntax - bg-(color).</p>
+        <p>example: bg-primary, bg-danger</p>
+
+        <h2>Light or Dark</h2>
+        <p>Two classes to specify if the link background will be light or dark.</p>
+        <p>navbar-light</p>
+        <p>navbar-dark</p>
+
+        <h2>navbar-nav</h2>
+        <p>inside this main navbar class, we need to use another container for a navbar-nav, and this is where your main navigation will go.</p>
+        <p>Inside this container you'll need to use .nav-item and .nav-link.</p>
+        <p>Specify one element is active using .active</p>
+        <p>Disable a link using .disabled</p>
+
+
+<h1>Navbar Brand and Text</h1>
+<p>There are other components you can add to your navigation.</p>
+<p>The .navbar-brand is used for text or logos and will get an enhanced look. usually a link or a headline and it gets a special look in Bootstrap</p>
+<p>.navbar-text - separate text added to nav</p>
+<p>Both go inside the .navbar-nav component.</p>
+
+<h1>Nav Dropdown</h1>
+<p>Add a container with a class of .dropdown. this container is used to align the dropdown to the proper item in the navigation.</p>
+<p>.dropdown-toggle is added on the link in order to get a little triangle to indicate that this element has a dropdown in it.</p>
+<h2>Dropdowns are activated in 2 ways</h2>
+<p>Using JavaScript</p>
+<p>Using a data attribute. In Bootsrap this would be data-toggle="dropdown"</p>
+
+<h2>Building the menu</h2>
+<p>.dropdown-menu creates the dropdown. Put this in a different container.</p>
+<p>Each dropdown link gets .dropdown-item class.</p>
+<p>Should also add an id & aria attributes - to make everything work well for accessibility devices.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>
