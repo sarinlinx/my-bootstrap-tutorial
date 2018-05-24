@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Forms</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+        <h1>Forms</h1>
+        <p>.form-group - It can be used with any block element like fieldsets and divs and adds a bit of spacing to the bottom of the element. It also sets the group to display block. And it's required for proper layout of some elements.</p>
+        <p>.form-text - or basic form text elements like paragraphs and text that belongs underneath input fields</p>
+        <p>.form-controls - for basic text input fields, you want to use the form control class. It's meant for inputs, select and text areas.</p>
+        <p>.form-control-label - you should use on labels belonging to form controls.</p>
+        <p>form-control-file - optional form control file, specifically for file inputs if you're going to be using those</p>
+
+
+        <h1>Checkboxes and Radio classes</h1>
+        <p>.form-check - The main container for input fields related to checkboxes and radio buttons. It's different than using the regular input field groups because it doesn't go inside the input fields themselves, but instead on a container for these
+            form elements.</p>
+        <p>.form-check-label - is specifically for the labels that belong to these type of fields, </p>
+        <p>.form-check-input - for the checkbox or radio button input field</p>
+        <p>.form-check-inline - Checkboxes and radio buttons display as block elements by default. If you want them to display side-by-side, you can use form-check-inline</p>
+
+
+
+        <h1>Size and validation styles</h1>
+        <p>.form-control-sm - a class to make the input field smaller </p>
+        <p>.form-control-lg - to make it bigger</p>
+        <p>.form-inline - You also have the ability to make form groups display as an inline element and that would mean that the label and the input field and perhaps any text after that input field will all show up in the same line.</p>
+
+        <h3>Colors</h3>
+        <p>There's a few colors that you can use for validation, now you have to use these with JavaScript</p>
+        <p>has-(color)</p>
+        <ul>
+            <li>has-success</li>
+            <li>has-warning</li>
+            <li>has-danger</li>
+        </ul>
+
+        <p>.form-control-(color)</p>
+        <ul>
+            <li>form-control--success</li>
+            <li>form-control--warning</li>
+            <li>form-control--danger</li>
+        </ul>
+
+
+
+        <h1>Multicolumn forms</h1>
+        <p>You can use .row and .col normally</p>
+        <p>You can also use form-row - which is a modified version of row, that gives you a little less room in between the columns. The traditional columns for Bootstrap are 32 pixels in between the columns, and sometimes, that's a little bit too much for
+            form elements. So, you can use this form-row, and it gives you a little bit less room in between things.</p>
+        <p>col-auto - will automatically determine the width of the column depending on the element that you are including</p>
+        <p>col-form-label - if you are going to use labels, you need to add the col-form-label class to any labels in your layout.</p>
+
+        <h1>Create input groups</h1>
+        <p>.input-group - you can use them on regular input elements or even in navigation, anywhere where you want a more integrated look to an input field.</p>
+        <p>you can also add items at the beginning or at the end of the input groups,</p>
+        <ul>
+            <li>input-group-prepend - put it at beginning</li>
+            <li>input-group-append - if you want to place the element at the end</p>
+        </ul>
+        <p>.input-group-text - if you want to add any element that you want to place in there, like a button or a checkbox or just some text, </p>
+        <p>aria-label - for screen readers</p>
+        <p>sr-only - or you can use a screen reader only class on an element if you just want to hide it from the screen</p>
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>

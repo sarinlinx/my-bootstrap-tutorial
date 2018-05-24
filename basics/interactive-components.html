@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Interactive components</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+        <h1>Tooltips</h1>
+        <ul>
+            <li><a href="https://getbootstrap.com/docs/4.0/components/tooltips">Tooltips</a></li>
+        </ul>
+        <p>you should only use tooltips on HTML elements that are focusable like links and foreign controls because of problems with usability</p>
+        <p>.data-toggle="tooltip" - In order to set these up, you add a data-toggle of tooltip to an element</p>
+        <p>title="text" - Then, then add a title attribute with some text in it. That text can optionally have some HTML</p>
+
+        <h3>Configured in 2 ways</h3>
+        <p>data attribute (easier) or JS configuration</p>
+        <p>Tooltips are not turned on by default so if you do want to use 'em, you will still need to use JavaScript, even if you're using data attributes.</p>
+        <p>Example of JS activation - You would create sort of a regular jQuery call, which is what this is, and then you target the elements in the DOM that have a data-toggle of tooltip, or you can call an individual tooltip here if you want to, and then
+            you use the tooltip method and pass along some options. </p>
+
+        <pre>$(function () {
+  $('[data-toggle="tooltip"]').tooltip({ OPTIONS })
+})</pre>
+
+        <h3>Options</h3>
+        <p>.placement-(position) - Where it will show up. The position can be top, right, bottom, left</p>
+        <p>.trigger - how tooltip is shown. By default this is when you hover, but you can change it to 'click, focus, or hover'.</p>
+        <p>.html (true or false) - You can also add simple HTML to a tooltip. Remember these will go in the title attribute, so you can put HTML, but if you do, you need to set the data-html attribute to true, because otherwise it'll literally type in the
+            text with the HTML tags</p>
+
+
+
+        <h1>Popovers</h1>
+        <ul>
+            <li><a href="https://getbootstrap.com/docs/4.0/components/popovers">Popovers</a></li>
+        </ul>
+        <p>Very similar to tooltips, with a different style.</p>
+        <p>data-toggle="popover" - add to an element</p>
+        <p>title="text" - add title attrubte with some text</p>
+        <p>data-content="content" - add additional content</p>
+
+        <h3>Activating popovers</h3>
+        <p>You must use jQuery.</p>
+        <pre>$(function () {
+  $('[data-toggle="popover"]').popover({ OPTIONS })
+})</pre>
+
+        <h3>Options</h3>
+        <p>.placement-(position) - top, right, bottom, left</p>
+        <p>trigger - (click, hover, focus)</p>
+
+
+
+        <h1>Alerts</h1>
+        <p>Alerts are messages with special contextual styles that are designed to display in great looking boxes. They're optionally dismissed and can have any sort of markup</p>
+        <p>.alert - add to a container</p>
+        <p>Contextual classes</p>
+        <ul>
+            <li>alert-primary</li>
+            <li>alert-secondary</li>
+            <li>alert-success</li>
+            <li>alert-danger</li>
+            <li>alert-warning</li>
+            <li>alert-info</li>
+            <li>alert-light</li>
+            <li>alert-dark</li>
+        </ul>
+
+        <p>.alert-heading</p>
+        <p>.alert-link</p>
+
+        <h3>Dismissible alerts</h3>
+        <p>Add this class so the user can dismiss it</p>
+        <p>.alert-dismisslbe fade show</p>
+        <p>If you do this, add a close button to the alert with this code:</p>
+        <pre>&lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+  &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+&lt;/button&gt;</pre>
+
+        <h1>Collapse accordions</h1>
+        <p>Collapse and accordions are a set of related components that allow you to show or hide HTML content. Collapse is the simplest, and lets you show or hide content on a click.</p>
+        <p>Accordions are similar but part of a bigger group. When one item shows, another hides, so accordions are essentially group of collapses</p>
+        <h3>Collapse</h3>
+        <p>To set up a collapse, you create a link or a button that activates the collapse element.</p>
+        <p>data-toggle="collapse - Add to that element</p>
+        <p>#id or data-target- to target the element,use either an ID if it's an anchor tag or link, or you can use a data-target attribute if it's a button.</p>
+        <p>.collapse - The element that's going to show or hide has the collapse class.</p>
+
+        <h3>Accordion</h3>
+        <p>Requires additional container</p>
+        <p>.show - one of the elements should be showing so you add the show class on that element,</p>
+        <p>.dropdown-menu</p>
+        <p>Common to put these in a card style</p>
+
+
+        <h1>Modals</h1>
+
+
+        <h1>Carousels</h1>
+        <p>.carousel - Create component with a class of .carousel</p>
+        <p>dat-ride="carousel" - That component must have a data attribute with the word 'carousel'.</p>
+        <p>carousel-inner - this is where your photos go</p>
+        <p>.carousel-item - ach of the photos should have a div wrapping the photos with a class of carousel-item.</p>
+
+
+        <h3>Options</h3>
+        <p>.active - The first element that you want to show up when the carousel starts should have a class of active.</p>
+        <p>CROP and SIZE your photos, otherwise the carousel will jump around</p>
+
+        <h3>Captions</h3>
+        <p>.carousel-caption - </p>
+
+        <h3>Navigation</h3>
+        <p>data-target attribute</p>
+        <p>Add 2 buttons</p>
+        <p>Onen with .carousel-control-prev and then you add an icon inside .carousel-control-prev-icon</p>
+        <p>And then also, you add a carousel-control-next with its icon as well.</p>
+
+
+        <h3>Indicators</h3>
+        <p>we have these little option of putting indicators underneath each photo so that people can jump to any photo in the slide.</p>
+        <p>.carousel-indicators</p>
+        <p>data-target</p>
+        <p>data-slide-to</p>
+
+        <h3>Setup</h3>
+        <p>data attribute or JS</p>
+
+        <h3>Data attributes</h3>
+        <p>interval : 5000</p>
+        <p>puase: hover | null </p>
+        <p>ride :false</p>
+        <p>wrap :true</p>
+
+
+
+<h1>ScrollSpy</h1>
+<p>allows you to keep track of the scroll of the page and modifies classes according to the position of your elements. </p>
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>

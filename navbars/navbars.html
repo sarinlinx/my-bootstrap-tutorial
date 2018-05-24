@@ -23,6 +23,18 @@
         <h2>Using an unordered list</h2>
         <p>Create a .nav class in the unordered list.</p>
         <p>For each item in the list add .nav-item. This must be added to the list item.</p>
+        <p>Example:</p>
+        <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
+        			&lt;ul class="navbar-nav ml-auto"&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+        			&lt;/ul&gt;
+        		&lt;/div&gt;</pre>
         <p>In the link, use .nav-link class.</p>
 
         <h2>If not using an unordered list</h2>
@@ -53,6 +65,7 @@
         <h1>Nav Bars</h1>
         <p>.navbar class goes on main container.</p>
         <p>By default, navbar components stack, so you need to add a navbar-expand class to control when the navbar is going to expand.</p>
+        <pre class="example">&lt;nav class="navbar navbar-expand-lg fixed-top"&gt;</pre>
 
         <h2>.navbar-expand</h2>
         <p>by default, all the navigation elements will be right on top of one another, and we have to specify when you want them to go horizontal.</p>
@@ -78,6 +91,8 @@
 <h1>Navbar Brand and Text</h1>
 <p>There are other components you can add to your navigation.</p>
 <p>The .navbar-brand is used for text or logos and will get an enhanced look. usually a link or a headline and it gets a special look in Bootstrap</p>
+<p>Example: This links a logo</p>
+<pre class="example">&lt;a class="navbar-brand" href="#"&gt;&lt;img src="img/logo-small.png" class="img-fluid"&gt;&lt;/a&gt;</pre>
 <p>.navbar-text - separate text added to nav</p>
 <p>Both go inside the .navbar-nav component.</p>
 
@@ -100,6 +115,7 @@
 
 <h1>Positioning nav bar elements</h1>
 <p>.fixed-top -  take an element, position it on top of the existing content at the top of the screen, and it'll stick there to the top forever</p>
+<pre class="example">&lt;nav class="navbar navbar-expand-lg fixed-top"&gt;</pre>
 <p>.fixed-bottom - </p>
 <p>.sticky-top - some make some content stick to the top of the screen as we scroll the screen</p>
 
@@ -107,20 +123,45 @@
 
 <h1>Collapsible content</h1>
 <p>Collapse when width of screen is small.</p>
-<p>.collapse</p>
+<p>.collapse - This div and all its content will be a collapsible element</p>
+<pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;</pre>
 <p>.navbar-collapse</p>
 <p>id</p>
 <p>navbar-toggler - usually with a button</p>
 <p>navbar-toggler-icon</p>
+<p>example</p>
+<pre class="example">&lt;!-- &amp;#9776 is the value for the HTML symbol for a 3 line hamburger icon --&gt;
+&lt;span class="navbar-toggler-icon"&gt;&#9776;&lt;/span&gt;</pre>
 
 
+<h3>data-target</h3>
+<p>This links the button to your navigation options</p>
+
+<p>Example:</p>
+<pre class="example">&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"&gt;
+  &lt;span class="navbar-toggler-icon"&gt;&#9776;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+
+&lt;!-- This div and all its content will be a collapsible element --&gt;
+&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
+  &lt;ul class="navbar-nav ml-auto"&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
 
 
-
-
-
-
-
+<h2>Shift nav menu to right side horizontally</h2>
+<p>Use a class of ml-auto. This means margin-left-automatic. It fills the left margin, which shifts it to the right.</p>
+<p>Example:</p>
+<pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
+      &lt;ul class="navbar-nav ml-auto"&gt;</pre>
 
 
 

@@ -303,13 +303,76 @@ code for column 3
 </div>
 
 
+<h1>Setting multiple breakpoints</h1>
+<p>You can set a different column configuration for every breakpoint.</p>
+<p>You do this by adding them all to the same element.</p>
+<p>When the page is on a large scree, all 12 numbers are spread across horizontally.</p>
+<p>On a slightly smaller screen, the numbers break into 3 columns.</p>
+<p>On a smaller screen, the number break into 2 columns.</p>
+<p>On a very small screen, the numbers are in a single column.</p>
+<p>Example</p>
+<pre class="example">&lt;div class="row"&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 1&lt;/p&gt;
+  &lt;/div&gt;
+  div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 2&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 3&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 4&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 5&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 6&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 7&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 8&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 9&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 10&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 11&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
+    &lt;p&gt;Number 12&lt;/p&gt;
+  &lt;/div&gt;</pre>
 
 
+<h1>Media Queries</h1>
+<p>Breakpoints are based on a specific screen size. In your custom CSS, you can create media queries on those breakpoints to further customize how the screen looks at different sizes.</p>
+<ul><li><a href="http://getbootstrap.com/docs/4.1/layout/overview/">Media Queries</a></li></ul>
+<p>For example, if you just wanted to change the styles on screen larger than 768px:</p>
+<p>Larger screens turn text red and font size increases.</p>
+<pre class="example">&lt;div class="container"&gt;
+  code...
+&lt;/div&gt;
 
 
+.test {
+ font-size:0.8em;
+ color:green;
+}
 
+@media (min-width: 768px) {
 
+   .test {
+    font-size:1.5em;
+    color:red;
+   }
 
+ }</pre>
 
     </div>
     <!--Close container-->
