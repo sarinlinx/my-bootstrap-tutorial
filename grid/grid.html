@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <a href="../index.html">Back to homepage</a>
-    <div class="container">
+    <a href="../index.html">Back to homepage</a>
 
 
 
+    <section id="toc" class="container">
         <div class="display-3">Table of Contents</div>
         <ul>
             <li><a href="#the-grid">The Grid overview</a></li>
@@ -31,62 +31,95 @@
                 <li><a href="#column-order">Column order</a></li>
             </ul>
         </ul>
+    </section>
 
 
+
+    <section class="container">
         <span id="the-grid"></span>
         <h1>The Grid overview</h1>
-        <div class="row bg-shade">
+        <div class="row">
             <div class="col">
                 <p>Bootstrap uses a 12-column grid system that has breakpoints for the following size devices:</p>
                 <p>you can group the columns together to create wider columns. The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
                 <p>It uses Flexbox to create complex layouts with minimal code.</p>
             </div>
         </div>
+    </section>
 
 
-        <span id="containers"></span>
+
+    <span id="containers"></span>
+    <section class="container">
         <h1>Containers</h1>
+        <div class="row">
+            <div class="col">
+                <p>Containers can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints. You can either use .container, or .container-fluid.</p>
+
+                <h2>2 types of containers</h2>
+
+                <p><strong>Regular containers</strong> - center content and snap to certain grid points.</p>
+                <p><strong>Fluid containers</strong> - full width of the viewport, which means the width of the device or the browser window.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container">
+        <h3>Default containers</h3>
         <div class="row bg-shade">
             <div class="col-sm-6">
-                <p>Containers can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints.</p>
-                <p>Responsive fixed width that snap to certain breakpoints, or completely fluid containers which take up 100% of the width of the view port, which is the browser window or the width of your device. Inside containers, you can also place content
-                    in rows and columns.</p>
+
+                <p>.container retains default padding on both sides of the page.</p>
             </div>
             <div class="col-sm-6">
                 <p><strong>Example</strong></p>
                 <pre class="example"><span class="standout">&lt;div class="container"&gt;</span>
+    code...
+    <span class="standout">&lt;/div&gt;</span></pre>
+            </div>
+
+    </section>
+
+
+
+    <section class="container-fluid">
+        <h3>Fluid containers</h3>
+        <div class="row bg-highlight">
+            <div class="col-sm-6">
+                <p>.container-fluid takes up 100% of the width of the view port, which is the browser window or the width of your device.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p><strong>Example</strong></p>
+                <pre class="example"><span class="standout">&lt;div class="container-fluid"&gt;</span>
   code...
 <span class="standout">&lt;/div&gt;</span></pre>
             </div>
         </div>
-        <div class="row bg-shade">
+    </section>
+
+
+
+    <section class="container">
+        <h1>Removing default padding</h1>
+        <div class="row bg-shade no-gutters">
             <div class="col-sm-6">
                 <p>Grid elements have a 15px padding on all sides to work with all backgrounds and elements. You can remove this 15px padding by using <strong>no-gutters</strong> as a class.</p>
             </div>
+
             <div class="col-sm-6">
                 <p><strong>Example</strong></p>
                 <pre class="example"><span class="standout">&lt;div class="row no-gutters"&gt;</span></pre>
             </div>
         </div>
-
-
-        <h2>2 types of containers</h2>
-        <div class="row bg-shade">
-            <div class="col">
-                <p><strong>Regular containers</strong> - center content and snap to certain grid points.</p>
-                <p><strong>Fluid containers</strong> - full width of the viewport, which means the width of the device or the browser window.</p>
-            </div>
-        </div>
+    </section>
 
 
 
-
-
-
-
-
-
-        <span id="rows"></span>
+    <span id="rows"></span>
+    <section class="container">
         <h1>Rows</h1>
         <div class="row bg-shade">
             <div class="col-sm-6">
@@ -105,21 +138,27 @@
 &lt;/div&gt;</pre>
             </div>
         </div>
+    </section>
 
 
 
-        <span id="columns"></span>
+    <span id="columns"></span>
+    <section class="container">
         <h1>Columns</h1>
-        <div class="row bg-shade">
-            <div class="col-sm-6">
-                <p>Add the column inside the row. Add a number of columns that add up to 12.</p>
-                <p>If you don't specify a number value, Bootstrap divides by 12 to align the columns.</p>
+        <div class="row">
+            <div class="col">
+                <p>Add the column inside the row. Add a number of columns that add up to 12. If you don't specify a number value, Bootstrap divides by 12 to align the columns.</p>
                 <p>It doesn't need to be a &lt;div&gt;, any tag will work.</p>
             </div>
+        </div>
 
+        <div class="row bg-shade">
             <div class="col-sm-6">
                 <p><strong>Example of auto-assigned widths</strong></p>
                 <p>Since this example does not use numbers, it splits the 3 columns equally.</p>
+            </div>
+
+            <div class="col-sm-6">
                 <pre class="example">&lt;section class="container"&gt;
   &lt;div class="row"&gt;
   <span class="standout">&lt;article class="col"&gt;</span>
@@ -135,11 +174,17 @@
   <span class="standout">&lt;/article&gt;</span>
   &lt;/div&gt;
 &lt;/section&gt;</pre>
+            </div>
+        </div>
 
 
-
+        <div class="row bg-shade">
+            <div class="col-sm-6">
                 <p><strong>Example of 3 columns specified</strong></p>
                 <p>Since this example uses the value of 4 for each column, it specifically creates 3 columns.</p>
+            </div>
+
+            <div class="col-sm-6">
                 <pre class="example">&lt;section class="container"&gt;
 &lt;div class="row"&gt;
 <span class="standout">&lt;div class="col-sm-4"&gt;</span>
@@ -157,14 +202,15 @@ code for column 3
 &lt;/section&gt;</pre>
             </div>
         </div>
+    </section>
 
 
 
 
-
+    <section class="container">
         <span id="breakpoints"></span>
         <h3>Breakpoints</h3>
-        <div class="row bg-shade">
+        <div class="row">
             <div class="col">
                 <p>The Bootstrap 4 grid system has five classes to identify a breakpoint.</p>
                 <ul>
@@ -192,7 +238,7 @@ code for column 3
             </div>
         </div>
 
-        <div class="row bg-shade">
+        <div class="row">
             <div class="col">
                 <h3>How to specify the size of the column</h3>
                 <p>When you create a column, you can assign it two values:</p>
@@ -200,96 +246,139 @@ code for column 3
                     <li>The breakpoint at which it should become responsive</li>
                     <li>How many of 12 column spaces should it occupy</li>
                 </ul>
-
-                <p>Syntax</p>
-                <p>&lt;div class="col-sm-4"&gt;</p>
-                <p>Since this breakpoint is 'sm', the column will take up the whole width of the browser until it reaches the 'sm' breakpoint (which is 576px or higher).</p>
             </div>
         </div>
 
+        <div class="row bg-shade">
+            <div class="col-6">
+                <p>Syntax</p>
+                <p>Since this breakpoint is 'sm', the column will take up the whole width of the browser until it reaches the 'sm' breakpoint (which is 576px or higher).</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;div class="col-sm-4"&gt;</pre>
+
+            </div>
+        </div>
+    </section>
 
 
 
 
+    <span id="column-offset"></span>
 
-
-        <span id="column-offset"></span>
+    <section class="container">
         <h2>Offset columns</h2>
 
         <div class="row bg-shade">
             <div class="col-sm-6">
                 <p>This is a way to center columns in a larger space. For example, create a 3 column row.</p>
+                <p>The problem with this code is that the 3rd column is missing. So if you view the site, a blank space is shown where the 3rd column should be.</p>
             </div>
 
             <div class="col-sm-6">
                 <pre class="example">&lt;section class="container"&gt;
   &lt;div class="row"&gt;
-  &lt;article class="col-sm-4"&gt;
-  code for column 1
-  &lt;/article&gt;
-  &lt;article class="col-sm-4"&gt;
-  code for column 2
-  &lt;/article&gt;
+    &lt;article class="col-sm-4"&gt;
+    code for column 1
+    &lt;/article&gt;
+
+    &lt;article class="col-sm-4"&gt;
+    code for column 2
+    &lt;/article&gt;
   &lt;/section&gt;</pre>
             </div>
         </div>
+
+        <div class="row bg-highlight">
+            <article class="col-sm-4">
+                code for column 1
+            </article>
+
+            <article class="col-sm-4">
+                code for column 2
+            </article>
+        </div>
+
+
         <div class="row bg-shade">
             <div class="col-sm-6">
-                <p>The problem with this code is that the 3rd column is missing. So if you view the site, a blank space is shown where the 3rd column should be.</p>
                 <p>You can use an offset to push the columns to the right, thereby centering them. For example, use an offset of 2 to center the two columns, this way everything adds up to 12.</p>
-                <div class="alert alert-note">
-                    <div class="alert-icon">
-                        <img src="../images/note-icon.png" width="60" height="60">
-                    </div>
-                    <div class="alert-content">
-                        <p>This is an older way of centering elements. In Bootstrap 4, you should use alignment instead.</p>
-                    </div>
-                </div>
+
             </div>
 
             <div class="col-sm-6">
                 <pre class="example">&lt;section class="container"&gt;
-    &lt;div class="row"&gt;
-    &lt;article class="col-sm-4 offset-sm-2"&gt;
+  &lt;div class="row"&gt;
+    &lt;article class="col-sm-4 <span class="standout">offset-sm-2</span>"&gt;
     code for column 1
     &lt;/article&gt;
-    &lt;article class="col-sm-4"&gt;
+
+    &lt;article class="col-sm-4 <span class="standout">offset-sm-2</span>"&gt;
     code for column 2
     &lt;/article&gt;
-    &lt;/section&gt;</pre>
+  &lt;/row&gt;
+&lt;/section&gt;</pre>
             </div>
         </div>
 
 
-        <h2>Nesting columns</h2>
-        <div class="row bg-shade">
-            <div class="col">
+        <div class="row bg-highlight">
+      <article class="col-sm-4 offset-sm-2">
+      code for column 1
+      </article>
 
-                <span id="column-nesting"></span>
-
-                <p>To nest columns, you simply create a new row inside an existing column. Now, this will create a new regular 12-column grid inside that existing column.</p>
-                <p>It may be a good idea to use the <strong>no-gutters</strong> class (as mentioned above) with nested columns. This removes the default 15px padding.</p>
-            </div>
-        </div>
-
+      <article class="col-sm-4 offset-sm-2">
+      code for column 2
+      </article>
+    </div>
 
 
-
-        <span id="column-order"></span>
-        <h2>Changing the column order</h2>
-        <div class="row bg-shade">
-          <div class="col-sm-6">
-        <p>Even though the columns may be coded in a specific order, you can use the <strong>order</strong> class to re-arranged them.</p>
         <div class="alert alert-note">
             <div class="alert-icon">
                 <img src="../images/note-icon.png" width="60" height="60">
             </div>
             <div class="alert-content">
-                <p>If you do this, make sure to assign a value to all columns, otherwise the order could get messed up.</p></div></div>
-      </div>
+                <p>This is an older way of centering elements. In Bootstrap 4, you should use alignment instead.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="col-sm-6">
-        <pre class="example">&lt;section class="container"&gt;
+
+
+
+
+
+    <h2>Nesting columns</h2>
+    <div class="row bg-shade">
+        <div class="col">
+
+            <span id="column-nesting"></span>
+
+            <p>To nest columns, you simply create a new row inside an existing column. Now, this will create a new regular 12-column grid inside that existing column.</p>
+            <p>It may be a good idea to use the <strong>no-gutters</strong> class (as mentioned above) with nested columns. This removes the default 15px padding.</p>
+        </div>
+    </div>
+
+
+
+
+    <span id="column-order"></span>
+    <h2>Changing the column order</h2>
+    <div class="row bg-shade">
+        <div class="col-sm-6">
+            <p>Even though the columns may be coded in a specific order, you can use the <strong>order</strong> class to re-arranged them.</p>
+            <div class="alert alert-note">
+                <div class="alert-icon">
+                    <img src="../images/note-icon.png" width="60" height="60">
+                </div>
+                <div class="alert-content">
+                    <p>If you do this, make sure to assign a value to all columns, otherwise the order could get messed up.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <pre class="example">&lt;section class="container"&gt;
   &lt;div class="row"&gt;
   &lt;article class="col-sm-4 offset-sm-2 order-2"&gt;
   code for column 1
@@ -299,19 +388,19 @@ code for column 3
   code for column 2
   &lt;/article&gt;
   &lt;/section&gt;</pre>
-</div>
-</div>
+        </div>
+    </div>
 
 
-<h1>Setting multiple breakpoints</h1>
-<p>You can set a different column configuration for every breakpoint.</p>
-<p>You do this by adding them all to the same element.</p>
-<p>When the page is on a large scree, all 12 numbers are spread across horizontally.</p>
-<p>On a slightly smaller screen, the numbers break into 3 columns.</p>
-<p>On a smaller screen, the number break into 2 columns.</p>
-<p>On a very small screen, the numbers are in a single column.</p>
-<p>Example</p>
-<pre class="example">&lt;div class="row"&gt;
+    <h1>Setting multiple breakpoints</h1>
+    <p>You can set a different column configuration for every breakpoint.</p>
+    <p>You do this by adding them all to the same element.</p>
+    <p>When the page is on a large scree, all 12 numbers are spread across horizontally.</p>
+    <p>On a slightly smaller screen, the numbers break into 3 columns.</p>
+    <p>On a smaller screen, the number break into 2 columns.</p>
+    <p>On a very small screen, the numbers are in a single column.</p>
+    <p>Example</p>
+    <pre class="example">&lt;div class="row"&gt;
   &lt;div class="col-xl-1 col-lg-6 col-md-4 col-sm-12"&gt;
     &lt;p&gt;Number 1&lt;/p&gt;
   &lt;/div&gt;
@@ -350,12 +439,14 @@ code for column 3
   &lt;/div&gt;</pre>
 
 
-<h1>Media Queries</h1>
-<p>Breakpoints are based on a specific screen size. In your custom CSS, you can create media queries on those breakpoints to further customize how the screen looks at different sizes.</p>
-<ul><li><a href="http://getbootstrap.com/docs/4.1/layout/overview/">Media Queries</a></li></ul>
-<p>For example, if you just wanted to change the styles on screen larger than 768px:</p>
-<p>Larger screens turn text red and font size increases.</p>
-<pre class="example">&lt;div class="container"&gt;
+    <h1>Media Queries</h1>
+    <p>Breakpoints are based on a specific screen size. In your custom CSS, you can create media queries on those breakpoints to further customize how the screen looks at different sizes.</p>
+    <ul>
+        <li><a href="http://getbootstrap.com/docs/4.1/layout/overview/">Media Queries</a></li>
+    </ul>
+    <p>For example, if you just wanted to change the styles on screen larger than 768px:</p>
+    <p>Larger screens turn text red and font size increases.</p>
+    <pre class="example">&lt;div class="container"&gt;
   code...
 &lt;/div&gt;
 

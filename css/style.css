@@ -1,3 +1,8 @@
+body {
+  background-color: #000;
+  color: #00c5ff;
+}
+
 h1 {
   margin-top: 50px;
 }
@@ -14,6 +19,7 @@ h3 {
   background-color: #000;
   color: #ffbf00;
   padding: 5px;
+  box-shadow: 0 0 4px 2px #1f1f1f;
 }
 
 .standout {
@@ -32,7 +38,13 @@ h3 {
 }
 
 .bg-shade {
-  background-color: #EFEFEF;
+  background-color: #2a2a2a;
+  padding: 1.5rem 0;
+}
+
+.bg-highlight {
+  background-color: #FFDFB0;
+  color: #000;
 }
 
 .bg-black {
@@ -61,6 +73,7 @@ ___________________________________________________*/
   border-left: 1px solid #DCDCDC;
   display: table-cell;
   vertical-align: middle;
+  color: #000;
 }
 
 .alert-content ul, .alert-content ol {
