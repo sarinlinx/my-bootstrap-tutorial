@@ -1,3 +1,6 @@
+/*___________________________________________________
+General Styles
+___________________________________________________*/
 body {
   background-color: #000;
   color: #00c5ff;
@@ -5,16 +8,22 @@ body {
 
 h1 {
   margin-top: 50px;
+  color: #ffbf00;
 }
 
 h2 {
   margin-top: 35px;
+  color: #00ff88;
 }
 
 h3 {
   margin-top: 30px;
+  color: #ff5f5f;
 }
 
+/*___________________________________________________
+Customizations
+___________________________________________________*/
 .example {
   background-color: #000;
   color: #ffbf00;
@@ -45,6 +54,7 @@ h3 {
 .bg-highlight {
   background-color: #FFDFB0;
   color: #000;
+  margin-bottom: 25px;
 }
 
 .bg-black {
@@ -59,6 +69,7 @@ h3 {
   box-shadow: inset 0 0 9px 5px #fff;
   background-color: #191919;
   padding: 50px;
+  margin-top: 50px;
 }
 /*___________________________________________________
 Note boxes
@@ -99,4 +110,11 @@ ___________________________________________________*/
   width: 8%;
   min-width: 75px;
   vertical-align: middle;
+}
+
+/*___________________________________________________
+Colors
+___________________________________________________*/
+.red {
+  color: red;
 }
