@@ -118,10 +118,12 @@ ___________________________________________________*/
   box-shadow: 0 0 4px 2px #1f1f1f;
 }
 
-.bg-highlight {
+.ex-highlight {
   border: 1px solid #ffbf00;
+}
+
+.bg-highlight {
   color: #fff;
-  margin-bottom: 25px;
 }
 
 /* Highlight the border in column examples more clearly */
