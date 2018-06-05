@@ -54,8 +54,8 @@
         <h1>Containers</h1>
         <div class="row">
             <div class="col">
+                <p>Containers provide a means to center and horizontally pad your site’s contents.</p>
                 <p>Containers can be used with or without the grid to align content either to the viewport, or center it around a set of breakpoints. You can either use .container, or .container-fluid.</p>
-
                 <h2>2 types of containers</h2>
 
                 <p><strong>Regular containers</strong> - center content and snap to certain grid points.</p>
@@ -79,7 +79,7 @@
     code...
     <span class="standout">&lt;/div&gt;</span></pre>
             </div>
-
+</div>
     </section>
 
 
@@ -141,11 +141,16 @@
 
 
 
+
+
     <span id="columns"></span>
     <section class="container">
         <h1>Columns</h1>
         <div class="row">
             <div class="col">
+                <p>Each column has horizontal padding (called a gutter) for controlling the space between them. </p>
+                <p>In a grid layout, content must be placed within columns and only columns may be immediate children of rows.</p>
+                <p>Column widths are set in percentages, so they’re always fluid and sized relative to their parent element.</p>
                 <p>Add the column inside the row. Add a number of columns that add up to 12. If you don't specify a number value, Bootstrap divides by 12 to align the columns.</p>
                 <p>It doesn't need to be a &lt;div&gt;, any tag will work.</p>
             </div>
@@ -206,12 +211,17 @@ code for column 3
 
 
 
+
+
+
+
     <section class="container">
         <span id="breakpoints"></span>
         <h2>Breakpoints</h2>
         <div class="row">
             <div class="col">
                 <p>The Bootstrap 4 grid system has five classes to identify a breakpoint.</p>
+                <p>pxs are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the font size.</p>
                 <ul>
                     <li><strong>.col-</strong> (auto) extra small (less than 576px)</li>
                     <li><strong>.col-sm-</strong> small (greater than or equal to 576px)</li>
@@ -219,6 +229,7 @@ code for column 3
                     <li><strong>.col-lg-</strong> large (greater than or equal to 992px)</li>
                     <li><strong>.col-xl-</strong> extra large (greater than or equal to 1200px)</li>
                 </ul>
+                <p>Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices, but not the first xs breakpoint).</p>
                 <div class="alert alert-note">
                     <div class="alert-icon">
                         <img src="../images/note-icon.png" width="60" height="60">
@@ -263,6 +274,8 @@ code for column 3
 
 
 
+
+
     <span id="column-offset"></span>
 
     <section class="container">
@@ -288,7 +301,7 @@ code for column 3
             </div>
         </div>
 
-<h3>Offset (example)</h3>
+        <h3>Offset (example)</h3>
         <div class="row bg-highlight">
             <article class="col-sm-4">
                 code for column 1
@@ -321,7 +334,7 @@ code for column 3
             </div>
         </div>
 
-<h3>Offset (example)</h3>
+        <h3>Offset (example)</h3>
         <div class="row bg-highlight">
             <article class="col-sm-4 offset-sm-2">
                 code for column 1
@@ -361,6 +374,9 @@ code for column 3
 
 
 
+
+
+
     <span id="column-order"></span>
     <section class="container">
         <h2>Changing the column order</h2>
@@ -385,7 +401,7 @@ code for column 3
             </div>
         </div>
 
-<h3>Changing colum order (example)</h3>
+        <h3>Changing colum order (example)</h3>
         <div class="row bg-highlight">
             <div class="col">
                 <pre>  <div class="row">
@@ -408,6 +424,144 @@ code for column 3
             </div>
         </div>
     </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Setting a single column width</h2>
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p>you can set the width of one column and have the sibling columns automatically resize around it. Other columns will resize no matter the width of the center column.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <pre class="example">&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+      1 of 3
+    &lt;/div&gt;
+
+    &lt;div <span class="standout">class="col-6</span>"&gt;
+      2 of 3 (wider)
+    &lt;/div&gt;
+
+    &lt;div class="col"&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;</pre>
+            </div>
+        </div>
+
+
+
+        <div class="row bg-highlight">
+            <div class="col">
+                <pre>
+              <div class="container">
+              <div class="row">
+                <div class="col">
+                  1 of 3
+                </div>
+
+                <div class="col-6">
+                  2 of 3 (wider)
+                </div>
+
+                <div class="col">
+                  3 of 3
+                </div>
+              </div>
+</pre></div>
+        </div>
+    </section>
+
+
+
+    <section class="container">
+        <h2>Variable width content</h2>
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p>Use col-{breakpoint}-auto classes to size columns based on the natural width of their content.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <pre class="example">&lt;div class="row justify-content-md-center"&gt;
+  &lt;div class="col col-lg-2"&gt;
+    1 of 3
+  &lt;/div&gt;
+
+  &lt;div <span class="standout">class="col-md-auto"</span>&gt;
+    Variable width content
+  &lt;/div&gt;
+
+  &lt;div class="col col-lg-2"&gt;
+    3 of 3
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+
+        <div class="row bg-highlight">
+            <div class="col">
+                <pre><div class="row justify-content-md-center">
+  <div class="col col-lg-2 secondary-border-highlight">
+    1 of 3
+  </div>
+
+  <div class="col-md-auto primary-border-highlight">
+    <p>2 of 3. This section will continue to enlarge horizontally depending on how much content is within it.</p>
+  </div>
+
+  <div class="col col-lg-2 secondary-border-highlight">
+    3 of 3
+  </div>
+</div></pre></div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Equal-width multi-row</h2>
+        <div class="row bg-shade">
+            <div class="col-sm-6">
+                <p>Create equal-width columns that span multiple rows by inserting a .w-100 where you want the columns to break to a new line.</p>
+                <p>This creates a single row with 4 columns, but since w-100 is used, it changes the layout to 2 columns stacked on another 2 columns.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <pre class="example">&lt;div class="row"&gt;
+  &lt;div class="col"&gt;col1&lt;/div&gt;
+  &lt;div class="col"&gt;col2&lt;/div&gt;
+  &lt;div <span class="standout">class="w-100"</span>&gt;&lt;/div&gt;
+  &lt;div class="col"&gt;col3&lt;/div&gt;
+  &lt;div class="col"&gt;col4&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+
+        <div class="row bg-highlight">
+            <div class="col">
+                <pre><div class="row">
+  <div class="col secondary-border-highlight">col1</div>
+  <div class="col secondary-border-highlight">col2</div>
+  <div class="w-100"></div>
+  <div class="col secondary-border-highlight">col3</div>
+  <div class="col secondary-border-highlight">col4</div>
+</div></pre></div>
+        </div>
+
+    </section>
+
 
 
 
@@ -520,8 +674,18 @@ code for column 3
     </section>
     <!--Close container-->
 
+    <h2>Flexbox</h2>
+    <div class="row">
+        <div class="col">
+            <p>Be aware of the limitations and bugs around flexbox, like the inability to use some HTML elements as flex containers.</p>
+            <ul>
+                <li><a href="https://github.com/philipwalton/flexbugs">Flexbugs</a></li>
+                <li><a href="https://github.com/philipwalton/flexbugs#flexbug-9">Limitations</a></li>
+            </ul>
+        </div>
+    </div>
 
-<h1>Continue with <a href="http://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">GRID</a></h1>
+    <h1>Continue with <a href="http://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">GRID</a></h1>
 
 
     <script src="../js/jquery.js"></script>

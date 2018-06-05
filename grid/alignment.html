@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,67 +10,435 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Alignment</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <a href="../index.html">Back to homepage</a>
-    <div class="container">
-<h1>Alignment</h1>
-<h2>Vertical Alignment</h2>
-<p>Classes to align columns. Add these to the row</p>
-<ul>
-  <li>align-items-start</li>
-  <li>align-items-center</li>
-  <li>align-items-end</li>
-</ul>
-<p>You may also need to nest the column to get your specific affect.</p>
-
-
-<h2>Individual Alignment of a colum</h2>
-<p>Add these classes to the 'col', not the row.</p>
-<ul>
-<li>align-self-start</li>
-<li>align-self-center</li>
-<li>align-self-end</li>
-</ul>
-
-
-<h2>Horizontal Alignment</h2>
-<p>Add these to the row. Make sure to also use a column width.</p>
-<ul>
-<li>justify-content-start</li>
-<li>justify-content-center</li>
-<li>justify-content-end</li>
-<li>justify-content-around</li>
-<li>justify-content-between</li>
-</ul>
-
-
-<h2>Vertical Alignment</h2>
-<p>Add these to the row. Make sure to also use a column width.</p>
-<p>Syntax - <strong>align-content-(breakpoint)-(align-option)</strong></p>
-<ul>
-<li>align-content-sm-start</li>
-<li>align-content-sm-end</li>
-<li>align-content-sm-center</li>
-<li>align-content-sm-between</li>
-<li>align-content-sm-around</li>
-<li>align-content-sm-stretch</li>
-</ul>
-
-<h2>Floating elements</h2>
-<p>Syntax - <strong>float-(breakpoint)-(left-right-none)</strong>
-  <ul>
-  <li>float-sm-left</li>
-<li>float-sm-right</li>
-<li>float-sm-none</li>
-</ul>
 
 
 
-</div><!--Close container-->
-<!--Close container-->
-<script src="../js/jquery.js"></script>
-<!-- bundle.js contains popper, but not jquery -->
-<script src="../js/bundle.js"></script>
-  </body>
+
+    <section class="container">
+        <span id="the-grid"></span>
+        <h1>Alignment</h1>
+        <div class="row">
+            <div class="col">
+                <p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <span id="the-grid"></span>
+        <h1>Vertical align row data</h1>
+        <p>Classes to align columns. Add these to the row</p>
+        <ul>
+            <li>align-items-start</li>
+            <li>align-items-center</li>
+            <li>align-items-end</li>
+        </ul>
+        <p>You may also need to nest the column to get your specific affect.</p>
+
+
+        <h2>Align row content to the top</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .align-items-start in the row to push the content to the top of the row.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">  &lt;div <span class="standout">class="row align-items-start"</span>&gt;
+    &lt;div class="col"&gt;
+      One of three columns
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      One of three columns
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      One of three columns
+    &lt;/div&gt;
+  &lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row bg-highlight align-items-start ex-vertical-row-alignment">
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Center row content vertically</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>use .align-items-center to vertically center content within a row.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div <span class="standout">class="row align-items-center"</span>&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row bg-highlight align-items-center ex-vertical-row-alignment">
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Align row content to the bottom of the row</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>use .align-items-end to vertically align content to the bottom of a row.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div <span class="standout">class="row align-items-end"</span>&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+  &lt;div class="col"&gt;
+    One of three columns
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row bg-highlight align-items-end ex-vertical-row-alignment">
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Verticall align column data</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Add these classes to the 'col', not the row.</p>
+
+                <ul>
+                    <li>align-self-start</li>
+                    <li>align-self-center</li>
+                    <li>align-self-end</li>
+                </ul>
+                <p>These cause the content within the column to be aligned at the top (start), center (center), or bottom (end).</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;div class="row"&gt;
+  &lt;div class="col <span class="standout">align-self-start"</span>&gt;
+        One of three columns
+      &lt;/div&gt;
+
+      &lt;div class="col <span class="standout">align-self-center"</span>&gt;
+        One of three columns
+      &lt;/div&gt;
+
+      &lt;div class="col <span class="standout">align-self-end"</span>&gt;
+        One of three columns
+      &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="row bg-highlight align-items-end ex-vertical-row-alignment">
+            <div class="col align-self-start">
+                One of three columns
+            </div>
+
+            <div class="col align-self-center">
+                One of three columns
+            </div>
+
+            <div class="col align-self-end">
+                One of three columns
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Horizontal Alignment</h1>
+        <p>Add these to the row. Make sure to also use a column width.</p>
+        <ul>
+            <li>justify-content-start</li>
+            <li>justify-content-center</li>
+            <li>justify-content-end</li>
+            <li>justify-content-around</li>
+            <li>justify-content-between</li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="container">
+        <h2>Align row content to the left</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>.justify-content-start aligns the row contents to the left.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;div class="row <span class="standout">justify-content-start"</span>&gt;
+  &lt;div class="col-4"&gt;
+    One of two columns pushed to the left
+  &lt;/div&gt;
+
+  &lt;div class="col-4"&gt;
+    One of two columns pushed to the left
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row justify-content-start bg-highlight ex-vertical-row-alignment">
+            <div class="col-4">
+                One of two columns pushed to the left
+            </div>
+            <div class="col-4">
+                One of two columns pushed to the left
+            </div>
+        </div>
+    </section>
+
+
+<section class="container">
+    <h2>Center row content</h2>
+    <div class="row">
+        <div class="col-6">
+            <p>.justify-content-center centers the row contents.</p>
+        </div>
+        <div class="col-6">
+            <pre class="example">&lt;div class="row <span class="standout">justify-content-center"</span>&gt;
+&lt;div class="col-4"&gt;
+One of two columns centered
+&lt;/div&gt;
+
+&lt;div class="col-4"&gt;
+One of two columns centered
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row justify-content-center bg-highlight ex-vertical-row-alignment">
+        <div class="col-4">
+            One of two columns centered
+        </div>
+        <div class="col-4">
+            One of two columns centered
+        </div>
+    </div>
+</section>
+
+<section class="container">
+<h2>Align row content to the right</h2>
+<div class="row">
+    <div class="col-6">
+        <p>.justify-content-end aligns the row contents to the right.</p>
+    </div>
+    <div class="col-6">
+        <pre class="example">&lt;div class="row <span class="standout">justify-content-end"</span>&gt;
+&lt;div class="col-4"&gt;
+One of two columns pushed to the right
+&lt;/div&gt;
+
+&lt;div class="col-4"&gt;
+One of two columns pushed to the right
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+</div>
+</section>
+
+<section class="container">
+<div class="row justify-content-end bg-highlight ex-vertical-row-alignment">
+    <div class="col-4">
+        One of two columns pushed to the right
+    </div>
+    <div class="col-4">
+        One of two columns pushed to the right
+    </div>
+</div>
+</section>
+
+
+
+
+
+<section class="container">
+<h2>Align row around</h2>
+<div class="row">
+    <div class="col-6">
+        <p>.justify-content-around causes items to be positioned with space before, between, and after the columns.</p>
+    </div>
+    <div class="col-6">
+        <pre class="example">&lt;div class="row <span class="standout">justify-content-around"</span>&gt;
+  &lt;div class="col-4"&gt;
+    One of two columns
+  &lt;/div&gt;
+
+  &lt;div class="col-4"&gt;
+    One of two columns
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+</div>
+</section>
+
+<section class="container">
+<div class="row justify-content-around bg-highlight ex-vertical-row-alignment">
+    <div class="col-4">
+        One of two columns
+    </div>
+    <div class="col-4">
+        One of two columns
+    </div>
+</div>
+</section>
+
+
+
+<section class="container">
+<h2>Align row content to the right</h2>
+<div class="row">
+    <div class="col-6">
+        <p>.justify-content-between causes items to be positioned with space between the columns.</p>
+    </div>
+    <div class="col-6">
+        <pre class="example">&lt;div class="row <span class="standout">justify-content-between"</span>&gt;
+  &lt;div class="col-4"&gt;
+    One of two columns
+  &lt;/div&gt;
+
+  &lt;div class="col-4"&gt;
+    One of two columns
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+</div>
+</section>
+
+<section class="container">
+<div class="row justify-content-between bg-highlight ex-vertical-row-alignment">
+    <div class="col-4">
+        One of two columns
+    </div>
+    <div class="col-4">
+        One of two columns
+    </div>
+</div>
+</section>
+
+<p>Continue <a href="http://getbootstrap.com/docs/4.1/layout/grid/" class="red">here 'no-gutters'</a></p>
+
+
+
+
+
+
+
+
+
+    <h2>Vertical Alignment</h2>
+    <p>Add these to the row. Make sure to also use a column width.</p>
+    <p>Syntax - <strong>align-content-(breakpoint)-(align-option)</strong></p>
+    <ul>
+        <li>align-content-sm-start</li>
+        <li>align-content-sm-end</li>
+        <li>align-content-sm-center</li>
+        <li>align-content-sm-between</li>
+        <li>align-content-sm-around</li>
+        <li>align-content-sm-stretch</li>
+    </ul>
+
+    <h2>Floating elements</h2>
+    <p>Syntax - <strong>float-(breakpoint)-(left-right-none)</strong>
+        <ul>
+            <li>float-sm-left</li>
+            <li>float-sm-right</li>
+            <li>float-sm-none</li>
+        </ul>
+
+
+
+        </div>
+        <!--Close container-->
+        <!--Close container-->
+        <script src="../js/jquery.js"></script>
+        <!-- bundle.js contains popper, but not jquery -->
+        <script src="../js/bundle.js"></script>
+</body>
+
 </html>

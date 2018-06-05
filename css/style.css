@@ -24,13 +24,6 @@ h3 {
 /*___________________________________________________
 Customizations
 ___________________________________________________*/
-.example {
-  background-color: #000;
-  color: #ffbf00;
-  padding: 5px;
-  box-shadow: 0 0 4px 2px #1f1f1f;
-}
-
 .standout {
   font-weight: bolder;
   font-size: 1.2rem;
@@ -51,12 +44,6 @@ ___________________________________________________*/
   padding: 1.5rem 0;
 }
 
-.bg-highlight {
-  background-color: #FFDFB0;
-  color: #000;
-  margin-bottom: 25px;
-}
-
 .bg-black {
   background-color: #000;
 }
@@ -71,6 +58,7 @@ ___________________________________________________*/
   padding: 50px;
   margin-top: 50px;
 }
+
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
@@ -117,4 +105,34 @@ Colors
 ___________________________________________________*/
 .red {
   color: red;
+}
+
+
+/*___________________________________________________
+Examples
+___________________________________________________*/
+.example {
+  background-color: #000;
+  color: #ffbf00;
+  padding: 5px;
+  box-shadow: 0 0 4px 2px #1f1f1f;
+}
+
+.bg-highlight {
+  border: 1px solid #ffbf00;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/* Highlight the border in column examples more clearly */
+.primary-border-highlight {
+  border: 1px solid red;
+}
+
+.secondary-border-highlight {
+  border: 1px solid blue;
+}
+
+.ex-vertical-row-alignment {
+  height: 80px;
 }
