@@ -7,18 +7,25 @@ body {
 }
 
 h1 {
-  margin-top: 50px;
+  font-size: 3rem;
+  margin-top: 70px;
+  margin-bottom: 10px;
   color: #ffbf00;
 }
 
 h2 {
-  margin-top: 35px;
-  color: #00ff88;
+  margin-top: 30px;
+  color: #eb8c00; /* Dark Gold */
 }
 
 h3 {
   margin-top: 30px;
-  color: #ff5f5f;
+  color: #00ff88; /* GREEN */
+  /* color: #ff5f5f; RED*/
+}
+
+h4 {
+  text-decoration: underline;
 }
 
 /*___________________________________________________
@@ -29,23 +36,13 @@ ___________________________________________________*/
   font-size: 1.2rem;
 }
 
-.command {
-  font-weight: bolder;
-  font-size: 1.1rem;
-}
-
-.img-outline {
-  box-shadow: 0px 0px 15px 0px gray;
-  margin-bottom: 10px;
-}
-
 .bg-shade {
   background-color: #1d1d1d;
   padding: 1.5rem 0;
 }
 
-.bg-black {
-  background-color: #000;
+.margin-top {
+  margin-top: 30px;
 }
 
 .code-css {
@@ -59,6 +56,11 @@ ___________________________________________________*/
   margin-top: 50px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
@@ -66,23 +68,27 @@ ___________________________________________________*/
 .alert-important, .alert-note, .alert-tip, .alert-warning {
 	position: relative;
   padding: 15px;
-  border: 1px solid #DCDCDC;
+  /* border: 1px solid #DCDCDC; */
+  border: 1px solid #ff0000;
   height: auto;
   min-height: 90px;
   display: table;
   margin: 15px 0 15px 0;
-  background-color: #90eeff;
+  /* background-color: #a0e1cd; */
 }
 
+/* vertical divider between icon and text */
 .alert-content {
   margin-left: 80px;
   line-height: 22px;
   font-size: 95%;
   padding-left: 20px;
-  border-left: 1px solid #DCDCDC;
+  /* border-left: 1px solid #DCDCDC; */
+  border-left: 1px solid #ff0000;
   display: table-cell;
   vertical-align: middle;
-  color: #000;
+  /* color: #000; */
+  color: #fff;
 }
 
 .alert-content ul, .alert-content ol {
@@ -119,7 +125,11 @@ ___________________________________________________*/
 }
 
 .ex-highlight {
-  border: 1px solid #ffbf00;
+  border: 2px solid #00ff88;
+  color: #fff;
+  margin-bottom: 40px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px */
 }
 
 .bg-highlight {
@@ -127,12 +137,8 @@ ___________________________________________________*/
 }
 
 /* Highlight the border in column examples more clearly */
-.primary-border-highlight {
+.col-border-highlight {
   border: 1px solid red;
-}
-
-.secondary-border-highlight {
-  border: 1px solid blue;
 }
 
 .ex-vertical-row-alignment {

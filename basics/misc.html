@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>The Bootstrap Grid</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+
+
+          <section class="container">
+              <h1>Media Queries</h1>
+
+              <div class="row">
+                  <div class="col">
+                      <p>Breakpoints are based on a specific screen size. In your custom CSS, you can create media queries on those breakpoints to further customize how the screen looks at different sizes.</p>
+                      <ul>
+                          <li><a href="http://getbootstrap.com/docs/4.1/layout/overview/">Media Queries</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="row bg-shade">
+                  <div class="col-6">
+                      <p>For example, if you just wanted to change the styles on screen larger than 768px.</p>
+                      <p>Larger screens will turn the text red and increase the font size.</p>
+                  </div>
+
+                  <div class="col-6">
+                      <pre class="example"><span class="code-css">.test {
+        font-size:0.8em;
+        color:green;
+      }
+
+      @media (min-width: 768px) {
+        .test {
+          font-size:1.5em;
+          color:red;
+          }
+      }</span>
+
+      &lt;div class="container test"&gt;
+        code...
+      &lt;/div&gt;
+      </pre>
+
+                  </div>
+              </div>
+          </section>
+          <!--Close container-->
+
+          <h2>Flexbox</h2>
+          <div class="row">
+              <div class="col">
+                  <p>Be aware of the limitations and bugs around flexbox, like the inability to use some HTML elements as flex containers.</p>
+                  <ul>
+                      <li><a href="https://github.com/philipwalton/flexbugs">Flexbugs</a></li>
+                      <li><a href="https://github.com/philipwalton/flexbugs#flexbug-9">Limitations</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <h2>Sass mixins</h2>
+          <p>Look this up</p>
+          <p><a href="http://getbootstrap.com/docs/4.1/layout/grid/">grid Sass mixins (towards the bottom)</a></p>
+    </section>
+
+
+
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>
