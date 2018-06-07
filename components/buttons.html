@@ -13,20 +13,356 @@
 </head>
 
 <body>
-  <nav aria-label="breadcrumb">
-      <ol class="breadcrumb breadcrumb-container">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Buttons</li>
-      </ol>
-  </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-container">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+        </ol>
+    </nav>
 
-<a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap Buttons</a>
+    <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap Buttons</a>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Buttons</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                <p>When creating a button, adher to the following:</p>
+                <ul>
+                    <li>Create a tag of &lt;button&gt;</li>
+                    <li>Add a type of 'button'.</li>
+                    <li>Add a class of .btn</li>
+                    <li>Add a specific button class to color the button. For example: ".btn-primary".</li>
+                    <li>To remove the color and online show an outline, add 'outline' to the button class. For example: .btn-outline-primary.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Example</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-primary">Primary</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-primary">Primary</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-secondary">Secondary</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-secondary"&gt;Secondarys&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-secondary">Secondary</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-secondary"&gt;Secondarys&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-success">Success</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-success">Success</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-danger">Danger</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-danger">Danger</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-warning">Warning</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-warning">Warning</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-info">Info</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-info">Info</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-light">Light</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-light">Light</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-light"&gt;Light&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-dark">Dark</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-outline-dark">Dark</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;</pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Links</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>When using button classes on &lt;a&gt; elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button"
+                    to appropriately convey their purpose to assistive technologies such as screen readers</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Example</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a class="btn btn-primary" href="#" role="button">Link</a></th>
+                            <td><pre class="example">&lt;a class="btn btn-primary" href="#" role="button"&gt;Link&lt;/a&gt;</pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Inputs</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>You can also use the .btn class on input elements.</p>
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Example</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input class="btn btn-primary" type="button" value="Input"></th>
+                            <td><pre class="example">&lt;input class="btn btn-primary" type="button" value="Input"&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input class="btn btn-primary" type="reset" value="Reset"></th>
+                            <td><pre class="example">&lt;input class="btn btn-primary" type="reset" value="Reset"&gt;</pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Submit buttons</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Two examples of Submit buttons.</p>
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Example</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><button class="btn btn-primary" type="submit">Button</button></th>
+                            <td><pre class="example">&lt;button class="btn btn-primary" type="submit"&gt;Button&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input class="btn btn-primary" type="submit" value="Submit"></th>
+                            <td><pre class="example">&lt;input class="btn btn-primary" type="submit" value="Submit"&gt;</pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Sizes</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Make a button smaller with the class .btn-sm.</p>
+                <p>Enlarge a button with the class .btn-lg.</p>
+
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Example</th>
+                            <th scope="col">Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-primary btn-sm">Small button</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;</pre></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button type="button" class="btn btn-primary btn-lg">Large button</button></th>
+                            <td><pre class="example">&lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;</pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <section class="container">
 
+        <div class="row bg-shade">
+            <div class="col">
+                <p>You can also make the button span the entire width of the parent by using .btn-block.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Large Block button</button>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Large Block button&lt;/button&gt;</pre>
+            </div>
+        </div>
 
     </section>
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Active and Disabled states</h1>
+                <p>This was skipped:</p>
+                <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Active state</a>
+                <p>Toggle states and Radio and Checkbox buttons was also skipped.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <section class="container">
+
+              <h1>Button Groups</h1>
+            <div class="row bg-shade">
+                <div class="col">
+                    <p>Use the .btn-group class to group several buttons together.</p>
+                    <p>Ensure correct role and provide a label
+                    In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group".</p>
+<p><p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.</p>
+
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col">
+      <div class="btn-group" role="group" aria-label="Basic example">
+<button type="button" class="btn btn-secondary">Left</button>
+<button type="button" class="btn btn-secondary">Middle</button>
+<button type="button" class="btn btn-secondary">Right</button>
+</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <pre class="example">&lt;div <span class="standout">class="btn-group" role="group" aria-label="Basic example"</span>&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+    </div>
+</div>
+
+<div class="red">
+  <p>Continue at <a href="https://getbootstrap.com/docs/4.0/components/button-group/">Button Toolbar</a>.</p>
+</div>
 
 
 

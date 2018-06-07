@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Assistive Technologies</title>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-container">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Assistive Technologies</li>
+        </ol>
+    </nav>
+
+
+
+    <section class="container">
+        <h1>breadcrumbs</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Since breadcrumbs provide a navigation, it’s a good idea to add meaningful labels.</p>
+                <p>For the &lt;nav&gt; tag, add <span class="standout">aria-label="breadcrumb"</span> to describe the type of navigation provided.</p>
+                <p>For the active page, add <span class="standout">aria-current="page"</span> to indicate that it represents the current page.</p>
+                <p>For more information, see the WAI-ARIA Authoring Practices for the breadcrumb pattern.</p>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" target="_blank">Area Practices</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h1>Buttons</h1>
+        <div class="row bg-shade">
+            <div class="col">
+<p>Conveying meaning to assistive technologies
+Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the .sr-only class.</p>
+</div>
+</div>
+</section>
+
+  <section class="container">
+<h1>Button Groups</h1>
+<div class="row bg-shade">
+    <div class="col">
+<p>Ensure correct role and provide a label
+In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group", while toolbars should have a role="toolbar".</p>
+
+<p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>
