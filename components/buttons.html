@@ -20,11 +20,6 @@
         </ol>
     </nav>
 
-    <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap Buttons</a>
-
-
-
-
 
 
     <section class="container">
@@ -297,7 +292,7 @@
                 <p>You can also make the button span the entire width of the parent by using .btn-block.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row ex-btn">
             <div class="col">
                 <button type="button" class="btn btn-primary btn-lg btn-block">Large Block button</button>
             </div>
@@ -326,56 +321,281 @@
 
 
 
-        <section class="container">
+    <section class="container">
 
-              <h1>Button Groups</h1>
-            <div class="row bg-shade">
-                <div class="col">
-                    <p>Use the .btn-group class to group several buttons together.</p>
-                    <p>Ensure correct role and provide a label
-                    In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group".</p>
-<p><p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.</p>
+        <h1>Button Groups</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Use the .btn-group class to group several buttons together.</p>
+                <p>Ensure correct role and provide a label In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group".</p>
+                <p>
+                    <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label,
+                        but alternatives such as aria-labelledby can also be used.</p>
 
 
-</div>
-</div>
+            </div>
+        </div>
 
-<div class="row">
-    <div class="col">
-      <div class="btn-group" role="group" aria-label="Basic example">
-<button type="button" class="btn btn-secondary">Left</button>
-<button type="button" class="btn btn-secondary">Middle</button>
-<button type="button" class="btn btn-secondary">Right</button>
-</div>
-    </div>
-</div>
+        <div class="row">
+            <div class="col ex-btn">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+        </div>
 
-<div class="row">
-    <div class="col">
-        <pre class="example">&lt;div <span class="standout">class="btn-group" role="group" aria-label="Basic example"</span>&gt;
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div <span class="standout">class="btn-group" role="group" aria-label="Basic example"</span>&gt;
   &lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
   &lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
   &lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
 &lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+
+        <h1>Button toolbar</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>You can combine sets of button groups into button toolbars for more complex components.</p>
+                <p>Use utility classes as needed to space out groups and button.</p>
+                <p>Use a class of .btn-toolbar on the container. For assistive technologies, give the container a role of 'toolbar' (role="toolbar"). Also give it a lable such as aria-label="Toolbar with button groups".</p>
+                <p>The group container should have a class of .btn-group. For assistive technologies, give the container a role of 'group' and label of (aria-label="First Group").</p>
+                <p>The individual buttons should have a type of button (type="button") and class of .btn and .btn-type (such as .btn-secondary).</p>
+                <p>To separate the groups, use <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" target="_blank">spacing such as 'margin right' with mr-2</a>.</p>
+                <p>You can also mix button groups and input groups.</p>
+
+            </div>
+        </div>
+
+        <div class="row ex-btn">
+            <div class="col">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">2</button>
+                        <button type="button" class="btn btn-secondary">3</button>
+                        <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary">5</button>
+                        <button type="button" class="btn btn-secondary">6</button>
+                        <button type="button" class="btn btn-secondary">7</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-secondary">8</button>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text" id="btnGroupAddon">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div <span class="standout">class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"</span>&gt;
+  &lt;div <span class="standout">class="btn-group mr-2" role="group" aria-label="First group"</span>&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div <span class="standout">class="btn-group mr-2" role="group" aria-label="Second group"</span>&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;5&lt;/button&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;6&lt;/button&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;7&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div <span class="standout">class="btn-group mr2" role="group" aria-label="Third group"</span>&gt;
+      &lt;button type="button" class="btn btn-secondary"&gt;8&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class="input-group"&gt;
+    &lt;div class="input-group-prepend"&gt;
+      &lt;div class="input-group-text" id="btnGroupAddon"&gt;@&lt;/div&gt;
+    &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Button Group Sizes</h1>
+
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Add a class of .btn-group-sm or .btn-group-lg to the button group container to resize.</p>
+            </div>
+    </section>
+
+    <section class="container">
+
+        <h3>Small button group</h3>
+        <div class="row">
+            <div class="col ex-btn">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div <span class="standout">class="btn-group btn-group-sm"</span> role="group" aria-label="Basic example"&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h3>Large button group</h3>
+        <div class="row">
+            <div class="col ex-btn">
+                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div <span class="standout">class="btn-group btn-group-lg"</span> role="group" aria-label="Basic example"&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Create a Button Dropdown menu by nesting buttons</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>To create a dropdown, place a button group within another button group.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="row ex-btn">
+            <div class="col">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+
+        &lt;div class="btn-group" role="group"&gt;
+            &lt;button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/button&gt;
+            &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop1"&gt;
+                &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Vertical buttons</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Make a set of buttons appear vertically by adding the .btn-group-vertical class.</p>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col ex-btn">
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="red">
-  <p>Continue at <a href="https://getbootstrap.com/docs/4.0/components/button-group/">Button Toolbar</a>.</p>
-</div>
-
-
-
-
-
-
-
-
+    <div class="row">
+        <div class="col">
+            <pre class="example">&lt;div class="btn-group <span class="standout">btn-group-vertical"</span> role="group" aria-label="Basic example"&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
+  &lt;/div&gt;</pre>
+        </div>
+    </div>
+  </section>
 
 
     <script src="../js/jquery.js"></script>
     <!-- bundle.js contains popper, but not jquery -->
-    <script src="../js/bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

@@ -139,6 +139,10 @@ ___________________________________________________*/
   /* padding-bottom: 10px */
 }
 
+.ex-btn {
+  margin: 20px 0;
+}
+
 .bg-highlight {
   color: #fff;
 }
