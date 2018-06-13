@@ -1,6 +1,7 @@
 /*___________________________________________________
 General Styles
 ___________________________________________________*/
+
 body {
   background-color: #000;
   color: #00c5ff;
@@ -15,12 +16,14 @@ h1 {
 
 h2 {
   margin-top: 30px;
-  color: #eb8c00; /* Dark Gold */
+  color: #eb8c00;
+  /* Dark Gold */
 }
 
 h3 {
   margin-top: 30px;
-  color: #00ff88; /* GREEN */
+  color: #00ff88;
+  /* GREEN */
   /* color: #ff5f5f; RED*/
 }
 
@@ -28,9 +31,14 @@ h4 {
   text-decoration: underline;
 }
 
+.card {
+  color: #000;
+}
+
 /*___________________________________________________
 Customizations
 ___________________________________________________*/
+
 .standout {
   font-weight: bolder;
   font-size: 1.2rem;
@@ -62,18 +70,18 @@ ___________________________________________________*/
 
 .breadcrumb-container {
   background-color: #000;
-
 }
 
 .breadcrumb-link {
   color: #ffbf00;
 }
+
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
 
 .alert-important, .alert-note, .alert-tip, .alert-warning {
-	position: relative;
+  position: relative;
   padding: 15px;
   /* border: 1px solid #DCDCDC; */
   border: 1px solid #ff0000;
@@ -85,6 +93,7 @@ ___________________________________________________*/
 }
 
 /* vertical divider between icon and text */
+
 .alert-content {
   margin-left: 80px;
   line-height: 22px;
@@ -116,6 +125,7 @@ ___________________________________________________*/
 /*___________________________________________________
 Colors
 ___________________________________________________*/
+
 .red {
   color: red;
 }
@@ -124,10 +134,10 @@ ___________________________________________________*/
   color: green;
 }
 
-
 /*___________________________________________________
 Examples
 ___________________________________________________*/
+
 .example {
   background-color: #000;
   color: #ffbf00;
@@ -152,6 +162,7 @@ ___________________________________________________*/
 }
 
 /* Highlight the border in column examples more clearly */
+
 .col-border-highlight {
   border: 1px solid red;
 }
