@@ -17,26 +17,408 @@
     <a href="../index.html">Back to homepage</a>
     <div class="container">
 
+
+
+        <section class="container">
+            <h1>Basic Form classes</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>When creating a form, put all code withing a &lt;form&gt; tag.</p>
+                    <p>Inside the that, create a container with a class of .form-group. Put a section of form code within this container, then close it.</p>
+                    <p>Each section of the form will have its own container with the .form-group class.</p>
+                    <p>The .form-group class can be used with any block element like fieldsets and divs. It adds a little spacing to the bottom of the element. It also sets the group to display block. And it's required for proper layout of some elements.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example"><span class="standout">&lt;form&gt;</span>
+  <span class="standout">&lt;div class="form-group"&gt;</span>
+      code ...
+  &lt;/div&gt;
+
+  <span class="standout">&lt;div class="form-group"&gt;</span>
+      code ...
+  &lt;/div&gt;
+
+  &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;</pre>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h1>Form controls</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>The .form-controls class is used to style &lt;input&gt;, &lt;selects&gt;, and &lt;textarea&gt; fields.</p>
+                    <p>File inputs (or upload buttons) instead use .form-control-file.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;form&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleFormControlInput1"&gt;Email input field&lt;/label&gt;
+    &lt;input type="email" <span class="standout">class="form-control"</span> id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;
+    &lt;select <span class="standout">class="form-control"</span> id="exampleFormControlSelect1"&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
+    &lt;textarea <span class="standout">class="form-control"</span> id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;label for="exampleFormControlFile1"&gt;Example file input&lt;/label&gt;
+  &lt;input type="file" <span class="standout">class="form-control-file"</span> id="exampleFormControlFile1"&gt;
+&lt;/div&gt;</pre>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email input field</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+        </section>
+
+
+
+
+
+
+
+        <section class="container">
+            <h1>Form control Sizing</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>You can change the size of the input or select field by using .form-control-lg or .form-control-sm.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;input <span class="standout">class="form-control form-control-lg"</span> type="text" placeholder=".form-control-lg"&gt;
+&lt;input class="form-control" type="text" placeholder="Default input"&gt;
+&lt;input <span class="standout">class="form-control form-control-sm"</span> type="text" placeholder=".form-control-sm"&gt;
+
+&lt;select <span class="standout">class="form-control form-control-lg"</span>&gt;
+  &lt;option&gt;Large select&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="form-control"&gt;
+  &lt;option&gt;Default select&lt;/option&gt;
+&lt;/select&gt;
+&lt;select <span class="standout">class="form-control form-control-sm"</span>&gt;
+  &lt;option&gt;Small select&lt;/option&gt;
+&lt;/select&gt;
+
+</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Input examples</h3>
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            <input class="form-control" type="text" placeholder="Default input">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+        </section>
+
+        <section class="container">
+            <h3>Select examples</h3>
+            <select class="form-control form-control-lg">
+      <option>Large select</option>
+    </select>
+            <select class="form-control">
+      <option>Default select</option>
+    </select>
+            <select class="form-control form-control-sm">
+      <option>Small select</option>
+    </select>
+        </section>
+
+
+
+        <section class="container">
+            <h1>Read only <span class="red">(SKIPPED)</span></h1>
+        </section>
+
+
+
+
+
+
+        <section class="container">
+            <h1>Checkboxes</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Place checkboxes in a container with a class of .form-check.</p>
+                    <p>The checkbox is an &lt;input&gt; element with a class of .form-check-input.</p>
+                    <p>The text next to the checkbox is a label. Create a &lt;lable&gt; container with a class of .form-check-label. Place any text inside this container.</p>
+                    <p>By default, any number of checkboxes that are immediate sibling will be vertically stacked and appropriately spaced with .form-check.</p>
+                    <p>If you want them to display side-by-side, you can use .form-check-inline</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;h3&gt;Example&lt;/h3&gt;
+&lt;div <span class="standout">class="form-check"</span>&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="checkbox"</span> value="" id="defaultCheck1"&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="defaultCheck1"&gt;
+    First checkbox
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div <span class="standout">class="form-check"</span>&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="checkbox"</span> value="" id="defaultCheck1"&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="defaultCheck1"&gt;
+    Second checkbox
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Inline Example&lt;/h3&gt;
+&lt;div <span class="standout">class="form-check-inline"</span>&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="checkbox"</span> value="" id="defaultCheck1"&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="defaultCheck1"&gt;
+    First checkbox
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div <span class="standout">class="form-check-inline"</span>&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="checkbox"</span> value="" id="defaultCheck1"&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="defaultCheck1"&gt;
+    Second checkbox
+  &lt;/label&gt;
+&lt;/div&gt;</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+        First checkbox
+      </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+        Second checkbox
+      </label>
+            </div>
+
+            <h3>Inline Example</h3>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+        First checkbox
+      </label>
+            </div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+        Second checkbox
+      </label>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2>Disabled Checkboxes</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Add 'disabled' attribute to the &lt;input&gt; tag.</p>
+                    <p>This will change the text to a lighter shade and disable the checkbox.</p>
+
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="form-check"&gt;
+  &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" <span class="standout">disabled</span>&gt;
+  &lt;label class="form-check-label" for="defaultCheck2"&gt;
+    Disabled checkbox
+  &lt;/label&gt;
+&lt;/div&gt;</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+        Disabled checkbox
+      </label>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="container">
+            <h1>Radio buttons</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Place raido buttons in a container with a class of .form-check.</p>
+                    <p>The raido button is an &lt;input&gt; element with a class of .form-check-input.</p>
+                    <p>The text next to the raido button is a label. Create a &lt;lable&gt; container with a class of .form-check-label. Place any text inside this container.</p>
+                    <p>By default, any number of raido buttons that are immediate sibling will be vertically stacked and appropriately spaced with .form-check.</p>
+                    <p>If you want them to display side-by-side, you can use .form-check-inline</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;h3&gt;Example&lt;/h3&gt;
+&lt;div <span class="standout">class="form-check"</span>&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="radio"</span> name="exampleRadios" id="exampleRadios1" value="option1" checked&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="exampleRadios1"&gt;
+    Default radio
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="form-check"&gt;
+  &lt;input  <span class="standout">class="form-check-input" type="radio"</span> name="exampleRadios" id="exampleRadios2" value="option2"&gt;
+  &lt;label  <span class="standout">class="form-check-label"</span> for="exampleRadios2"&gt;
+    Second default radio
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Inline Example&lt;/h3&gt;
+  &lt;div  <span class="standout">class="form-check form-check-inline"</span>&gt;
+    &lt;input  <span class="standout">class="form-check-input" type="radio"</span> name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt;
+    &lt;label  <span class="standout">class="form-check-label"</span> for="inlineRadio1"&gt;1&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div  <span class="standout">class="form-check form-check-inline"</span>&gt;
+    &lt;input <span class="standout">class="form-check-input" type="radio"</span> name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt;
+    &lt;label <span class="standout">class="form-check-label"</span> for="inlineRadio2"&gt;2&lt;/label&gt;
+  &lt;/div&gt;</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+
+
+            <h3>Inline Example</h3>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2>Disabled Radio Buttons</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Add 'disabled' attribute to the &lt;input&gt; tag.</p>
+                    <p>This will change the text to a lighter shade and disable the checkbox.</p>
+
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="form-check"&gt;
+  &lt;input class="form-check-input" type="radio" value="" id="defaultRadio1" <span class="standout">disabled</span>&gt;
+  &lt;label class="form-check-label" for="defaultRadio2"&gt;
+  Disabled Radio Button
+  &lt;/label&gt;
+&lt;/div&gt;</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="defaultRadio1"  <span class="standout">disabled</span>>
+                <label class="form-check-label" for="defaultRadio2">
+        Disabled Radio Button
+        </label>
+            </div>
+        </section>
+
+
+
+
+
+<section class="container">
+  <h1>Without Labels</h1>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <h1>Forms</h1>
-        <p>.form-group - It can be used with any block element like fieldsets and divs and adds a bit of spacing to the bottom of the element. It also sets the group to display block. And it's required for proper layout of some elements.</p>
         <p>.form-text - or basic form text elements like paragraphs and text that belongs underneath input fields</p>
-        <p>.form-controls - for basic text input fields, you want to use the form control class. It's meant for inputs, select and text areas.</p>
         <p>.form-control-label - you should use on labels belonging to form controls.</p>
-        <p>form-control-file - optional form control file, specifically for file inputs if you're going to be using those</p>
-
-
-        <h1>Checkboxes and Radio classes</h1>
-        <p>.form-check - The main container for input fields related to checkboxes and radio buttons. It's different than using the regular input field groups because it doesn't go inside the input fields themselves, but instead on a container for these
-            form elements.</p>
-        <p>.form-check-label - is specifically for the labels that belong to these type of fields, </p>
-        <p>.form-check-input - for the checkbox or radio button input field</p>
-        <p>.form-check-inline - Checkboxes and radio buttons display as block elements by default. If you want them to display side-by-side, you can use form-check-inline</p>
-
-
 
         <h1>Size and validation styles</h1>
-        <p>.form-control-sm - a class to make the input field smaller </p>
-        <p>.form-control-lg - to make it bigger</p>
         <p>.form-inline - You also have the ability to make form groups display as an inline element and that would mean that the label and the input field and perhaps any text after that input field will all show up in the same line.</p>
 
         <h3>Colors</h3>
@@ -54,8 +436,6 @@
             <li>form-control--warning</li>
             <li>form-control--danger</li>
         </ul>
-
-
 
         <h1>Multicolumn forms</h1>
         <p>You can use .row and .col normally</p>
