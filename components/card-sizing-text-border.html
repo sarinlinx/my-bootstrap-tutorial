@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Card Sizing and Text alignment</title>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-container">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cards</li>
+        </ol>
+    </nav>
+
+
+
+
+    <section class="container">
+        <h1>Sizing</h1>
+        <div class="row">
+            <div class="col">
+                <p>Cards have no default width, so they'll take up 100% of the container.</p>
+                <p>You can change the size using:</p>
+                <ul>
+                    <li>custom CSS</li>
+                    <li>grid classes</li>
+                    <li>grid Sass mixins</li>
+                    <li>utilities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Using 'Grid Markup'</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Simply place the Card within a column of your specified size. It will take up the full width of that column.</p>
+            </div>
+
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="row"&gt;
+  &lt;div class="col-sm-6"&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+        &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-sm-6"&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+        &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Using 'Utilities'</h2>
+        <div class="row">
+            <div class="col-6">
+                <p><a href="https://getbootstrap.com/docs/4.0/utilities/sizing/">Utilities</a> allow you to customize the size of the card.</p>
+                <p>For example: class="card w-76"</p>
+            </div>
+
+
+            <div class="col-6">
+                <pre class="example"><span class="standout">&lt;div class="card w-75"&gt;</span>
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Button&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<span class="standout">&lt;div class="card w-50"&gt</span>;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Button&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Button</a>
+            </div>
+        </div>
+
+        <div class="card w-50">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Button</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Using Custom CSS</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use custom CSS in your stylesheets or as inline styles to set a width.</p>
+            </div>
+
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card" <span class="standout">style="width: 18rem;"</span>&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+        <h1>Text alignment</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Use <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment">Text alignment classes</a> to change the text alignment.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card <span class="standout">text-center"</span> style="width: 18rem;"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card <span class="standout">text-right"</span> style="width: 18rem;"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card text-right" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Body Border and Text color</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Use <a href="https://getbootstrap.com/docs/4.0/utilities/borders/">Border utilities</a> to change the border of a card.</p>
+                <p>You can put .text-{color} classes on the parent .card or a subset of the card’s content.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card <span class="standout">border-primary</span> mb-3" style="max-width: 18rem;"&gt;
+  &lt;div class="card-header"&gt;Header&lt;/div&gt;
+  &lt;div class="card-body <span class="standout">text-primary</span>"&gt;
+    &lt;h5 class="card-title"&gt;Primary card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card text-right" style="width: 18rem;">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Header and Footer Borders</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Use <a href="https://getbootstrap.com/docs/4.0/utilities/borders/">Border utilities</a> to change the border of a card.</p>
+                <p>You can put .text-{color} classes on the parent .card or a subset of the card’s content.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card border-success mb-3" style="max-width: 18rem;"&gt;
+  &lt;div class="card-header <span class="standout">bg-transparent border-success</span>"&gt;Header&lt;/div&gt;
+  &lt;div class="card-body text-success"&gt;
+    &lt;h5 class="card-title"&gt;Success card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer <span class="standout">bg-transparent border-success</span>"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">Header</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">Footer</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Layout</h1>
+        <div class="row">
+            <div class="col">
+                <p>Bootstrap includes three options for laying out series of cards. For the time being, these layout options are not yet responsive.</p>
+                <ul>
+                    <li>asdf</li>
+                    <li>asdf</li>
+                    <li>asdf</li>
+                </ul>
+            </div>
+    </section>
+
+
+
+    <section class="container">
+        <h2>Groups</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use card groups to render cards as a single, attached element with equal width and height columns. Card groups use display: flex; to achieve their uniform sizing.</p>
+                <p>To achieve this, put all the cards in a container with a class of .card-group.</p>
+                <p>When using card groups with footers, their content will automatically line up.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example"><span class="standout">&lt;div class="card-group"&gt;</span>
+  &lt;div class="card"&gt;
+    &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card"&gt;
+    &lt;img class="card-img-top" src=".." alt="Card image cap"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card"&gt;
+    &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="../img/card-groups.svg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../img/card-groups.svg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../img/card-groups.svg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Decks</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Decks set an equal width and height for cards that aren’t attached to one another.</p>
+                <p>Put all cards in a container with a class of .card-deck.</p>
+                <p>When using card decks with footers, their content will automatically line up.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example"><span class="standout">&lt;div class="card-deck"&gt;</span>
+&lt;div class="card"&gt;
+  &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer"&gt;
+    &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer"&gt;
+    &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer"&gt;
+    &lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="../img/card-decks.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="../img/card-decks.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="../img/card-decks.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Columns - <span class="red">(SKIPPED)</span></h2>
+        <div class="row">
+            <div class="col-6">
+                <p>asdf</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">asdf</pre>
+
+                </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+      asdf
+    </section>
+
+
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

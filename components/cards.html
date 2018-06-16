@@ -24,16 +24,16 @@
 
 
     <section class="container">
-        <h1>Overview</h2>
-  <div class="row">
-    <div class="col-6">
-<p>A card is a flexible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
-  <p>They have no margin by default, so use spacing utilities as needed.</p>
-  <p>Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="https://getbootstrap.com/docs/4.0/components/card/#sizing">sizing options</a>.</p>
-</div>
+        <h1>Overview</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>A card is a flexible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                <p>They have no margin by default, so use spacing utilities as needed.</p>
+                <p>Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="https://getbootstrap.com/docs/4.0/components/card/#sizing">sizing options</a>.</p>
+            </div>
 
-<div class="col-6">
-<pre class="example">&lt;div class="card" style="width: 18rem;"&gt;
+            <div class="col-6">
+                <pre class="example">&lt;div class="card" style="width: 18rem;"&gt;
   &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
     &lt;div class="card-body"&gt;
       &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
@@ -42,31 +42,337 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-</div>
-</div>
+            </div>
+        </div>
+    </section>
 
-
-
-</section>
-
-<section class="container">
-  <h3>Example</h3>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="../img/card-286x180.svg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-</section>
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../img/card-286x180.svg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </section>
 
 
 
 
 
 
+    <section class="container">
+        <h1>The Body section</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>The building block of a card is the .card-body. Use it whenever you need a padded section within a card.</p>
+                <p>Here's an example without the image on top. Just the .card container, with the .card-body inside.</p>
+                <p>When adding text, use .card-text.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+    <span class="standout">&lt;p class="card-text"&gt;</span>This is some text within a card body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">This is some text within a card body.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Adding a Title</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Card titles are used by adding .card-title to a header tag.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+  <span class="standout">&lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;</span>
+    &lt;p class="card-text"&gt;This is some text within a card body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">This is some text within a card body.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+        <h1>Adding a Sub-Title</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Sub-titles are used by adding .card-subtitle to a header tag.</p>
+                <p>If the .card-title and the .card-subtitle items are placed in a .card-body item, the card title and subtitle are aligned nicely.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+  &lt;h5 class="card-title"&gt;Card Sub-Title&lt;/h5&gt;
+  <span class="standout">&lt;h6 class="card-subtitle"&gt;Card Subtitle&lt;/h6&gt;</span>
+    &lt;p class="card-text"&gt;This is some text within a card body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <h6 class="card-subtitle">Card Subtitle</h6>
+                <p class="card-text">This is some text within a card body.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Adding Links</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Links are added and placed next to each other by adding .card-link to an anchor tag.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+    &lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    <span class="standout">&lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+    &lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;</span>
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+        <h1>List groups</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>To create several stacked list items, use the following:</p>
+                <ul>
+                    <li>A list container with a class of .list-group-flush</li>
+                    <li>Each list item should be given the class of .list-group-item</li>
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;ul class="list-group <span class="standout">list-group-flush</span>"&gt;
+    &lt;li <span class="standout">class="list-group-item"</span>&gt;Cras justo odio&lt;/li&gt;
+    &lt;li <span class="standout">class="list-group-item"</span>&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li <span class="standout">class="list-group-item"</span>&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Header</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Add a header using the class .card-header.</p>
+                <p>Card headers can be styled by adding .card-header to header elements.</p>
+                <p>Otherwise, you can just add the class to a div tag.</p>
+                        </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card"&gt;
+  <span class="standout">&lt;h5 class="card-header"&gt;Header here&lt;/h5&gt;</span>
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card">
+          <h5 class="card-header">Header here</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Footer</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Add a footer using the class .card-footer.</p>
+
+                        </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card"&gt;
+  &lt;h5 class="card-header"&gt;Header here&lt;/h5&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  <span class="standout">&lt;div class="card-footer"&gt;footer here&lt;/div&gt;</span>
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card">
+          <h5 class="card-header">Header here</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer">footer here</div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Navigation</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>You can add navigation tabs to a card's header using '<a href="https://getbootstrap.com/docs/4.0/components/navs/">nav compontents</a>'.</p>
+
+                        </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="card text-center"&gt;
+  &lt;div class="card-header"&gt;
+    <span class="standout">&lt;ul class="nav nav-tabs card-header-tabs"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;</span>
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </section>
 
 
 
