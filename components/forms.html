@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-6">
                     <p>When creating a form, put all code withing a &lt;form&gt; tag.</p>
-                    <p>Inside the that, create a container with a class of .form-group. Put a section of form code within this container, then close it.</p>
+                    <p>Inside the that, create a container with a class of .form-group. Put a section of form code within this container, then close it. By default it only applies margin-bottom, but it picks up additional styles in .form-inline as needed. </p>
                     <p>Each section of the form will have its own container with the .form-group class.</p>
                     <p>The .form-group class can be used with any block element like fieldsets and divs. It adds a little spacing to the bottom of the element. It also sets the group to display block. And it's required for proper layout of some elements.</p>
                 </div>
@@ -398,7 +398,480 @@
 
 
 <section class="container">
-  <h1>Without Labels</h1>
+  <h1>Without Labels <span class="red">SKIPPED</span></h1>
+</section>
+
+
+
+<section class="container">
+  <h1>Layout</h1>
+  <div class="row">
+    <div class="col">
+<p>Bootstrap forms will by default stack vertically. Ths is because Bootstrap applies display: block and width: 100% to almost all our form controls</p>
+<p>Additional classes can be used to vary this layout on a per-form basis.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="container">
+  <h1>Grid Layout</h1>
+  <div class="row">
+    <div class="col-6">
+<p>Use a grid layout for form layouts that require multiple columns, varied widths, and additional alignment options.</p>
+
+    </div>
+    <div class="col-6">
+<pre class="example">&lt;form&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+      &lt;input type="text" class="form-control" placeholder="First name"&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;input type="text" class="form-control" placeholder="Last name"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="container">
+  <h3>Example</h3>
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+</section>
+
+
+
+
+
+
+
+<section class="container">
+  <h1>Form row</h1>
+  <div class="row">
+    <div class="col-6">
+<p>You may also swap .row for .form-row, a variation of our standard grid row that overrides the default column gutters for tighter and more compact layouts.</p>
+    </div>
+    <div class="col-6">
+<pre class="example">&lt;form&gt;
+  &lt;div <span class="standout">class="form-row"</span>&gt;
+    &lt;div class="col"&gt;
+      &lt;input type="text" class="form-control" placeholder="First name"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col"&gt;
+      &lt;input type="text" class="form-control" placeholder="Last name"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="container">
+  <h3>Example using .form-row</h3>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name">
+      </div>
+    </div>
+  </form>
+
+<h3>Example using a normal .row</h3>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name">
+      </div>
+    </div>
+  </form>
+</section>
+
+
+
+
+
+
+
+
+<section class="container">
+  <h1>Aligning labels when using columns</h1>
+  <div class="row">
+    <div class="col-6">
+<p>Use the class .col-form-label to your &lt;label&gt; tags so they’re vertically centered with their associated form controls.</p>
+    </div>
+    <div class="col-6">
+<pre class="example">&lt;form&gt;
+&lt;div class="form-group row"&gt;
+  &lt;label for="inputEmail3" class="col-sm-2 <span class="standout">col-form-label"</span>&gt;Email&lt;/label&gt;
+  &lt;div class="col-sm-10"&gt;
+    &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group row"&gt;
+  &lt;label for="inputPassword3" class="col-sm-2 <span class="standout">col-form-label"</span>&gt;Password&lt;/label&gt;
+  &lt;div class="col-sm-10"&gt;
+    &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="container">
+  <h3>Example</h3>
+  <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="container">
+  <h1>Form label sizes</h1>
+  <div class="row">
+
+    <div class="col-6">
+<p>Use .col-form-label-sm or .col-form-label-lg to follow the size of .form-control-lg and .form-control-sm.</p>
+    </div>
+
+    <div class="col-6">
+<pre class="example">&lt;form&gt;
+  &lt;div class="form-group row"&gt;
+    &lt;label for="colFormLabelSm" class="col-sm-2 col-form-label <span class="standout">col-form-label-sm"</span>&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-group row"&gt;
+    &lt;label for="colFormLabel" class="col-sm-2 col-form-label"&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-group row"&gt;
+    &lt;label for="colFormLabelLg" class="col-sm-2 col-form-label <span class="standout">col-form-label-lg"</span>&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="container">
+  <h3>Example</h3>
+  <form>
+  <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+    </div>
+  </div>
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="container">
+  <h1>Auto sizing</h1>
+    <div class="row">
+
+    <div class="col-6">
+      <p>.col-auto causes your columns to only take up as much space as needed. The column sizes itself based on the contents.</p>
+
+    </div>
+
+    <div class="col-6">
+<pre class="example">&lt;form&gt;
+&lt;div class="form-row align-items-center"&gt;
+  &lt;div <span class="standout">class="col-auto"</span>&gt;
+    &lt;label class="sr-only" for="inlineFormInput"&gt;Name&lt;/label&gt;
+    &lt;input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe"&gt;
+  &lt;/div&gt;
+
+  &lt;div <span class="standout">class="col-auto"</span>&gt;
+    &lt;label class="sr-only" for="inlineFormInputGroup"&gt;Username&lt;/label&gt;
+    &lt;div class="input-group mb-2"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;div class="input-group-text"&gt;@&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div <span class="standout">class="col-auto"</span>&gt;
+    &lt;div class="form-check mb-2"&gt;
+      &lt;input class="form-check-input" type="checkbox" id="autoSizingCheck"&gt;
+      &lt;label class="form-check-label" for="autoSizingCheck"&gt;
+        Remember me
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div <span class="standout">class="col-auto"</span>&gt;
+    &lt;button type="submit" class="btn btn-primary mb-2"&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</pre>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h3>Example using col-auto</h3>
+  <form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+    </div>
+
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+  </div>
+</form>
+
+
+
+<h3>Example using regular columns</h3>
+<form>
+  <div class="form-row align-items-center">
+    <div class="col">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+    </div>
+    <div class="col">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+  </div>
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container">
+  <h1>Inline Horizontal Forms</h1>
+    <div class="row">
+
+    <div class="col-6">
+      <p>Form sections stack by default. To position them horizontally, use the .form-inline class for the form container.</p>
+      <p>Form controls within inline forms vary slightly from their default states.</p>
+      <ul>
+        <li>Controls are display: flex, collapsing any HTML white space and allowing you to provide alignment control with spacing and flexbox utilities.</li>
+<li>Controls and input groups receive width: auto to override the Bootstrap default width: 100%.</li>
+<li>Controls only appear inline in viewports that are at least 576px wide to account for narrow viewports on mobile devices.</li>
+</ul>
+<p>You may need to manually address the width and alignment of individual form controls with spacing utilities (as shown below). Lastly, be sure to always include a &lt;label&gt; with each form control, even if you need to hide it from non-screenreader visitors with .sr-only.</p>
+
+    </div>
+
+    <div class="col-6">
+<pre class="example">&lt;form <span class="standout">class="form-inline"</span>&gt;
+  &lt;label class="sr-only" for="inlineFormInputName2"&gt;Name&lt;/label&gt;
+  &lt;input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe"&gt;
+
+  &lt;label class="sr-only" for="inlineFormInputGroupUsername2"&gt;Username&lt;/label&gt;
+  &lt;div class="input-group mb-2 mr-sm-2"&gt;
+    &lt;div class="input-group-prepend"&gt;
+      &lt;div class="input-group-text"&gt;@&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username"&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-check mb-2 mr-sm-2"&gt;
+    &lt;input class="form-check-input" type="checkbox" id="inlineFormCheck"&gt;
+    &lt;label class="form-check-label" for="inlineFormCheck"&gt;
+      Remember me
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;button type="submit" class="btn btn-primary mb-2"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h3>.form-inline class</h3>
+  <form class="form-inline">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">@</div>
+      </div>
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+    </div>
+
+    <div class="form-check mb-2 mr-sm-2">
+      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+      <label class="form-check-label" for="inlineFormCheck">
+        Remember me
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  </form>
+
+
+
+<h3>Regular .form class</h3>
+<form class="form">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+  </div>
+
+  <div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+    <label class="form-check-label" for="inlineFormCheck">
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+</section>
+
+
+
+
+
+<section class="container">
+  <h1>Help Text <span class="red">(SKIPPED)</span></h1>
+</section>
+
+
+<section class="container">
+  <h1>Disabled Forms <span class="red">(SKIPPED)</span></h1>
 </section>
 
 

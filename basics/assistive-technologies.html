@@ -42,33 +42,45 @@
         <h1>Buttons</h1>
         <div class="row bg-shade">
             <div class="col">
-<p>Conveying meaning to assistive technologies
-Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the .sr-only class.</p>
-</div>
-</div>
-</section>
+                <p>Conveying meaning to assistive technologies Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color
+                    is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the .sr-only class.</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="container">
-<h1>Button Groups</h1>
-<div class="row bg-shade">
-    <div class="col">
-<p>Ensure correct role and provide a label
-In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group", while toolbars should have a role="toolbar".</p>
+    <section class="container">
+        <h1>Button Groups</h1>
+        <div class="row bg-shade">
+            <div class="col">
+                <p>Ensure correct role and provide a label In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group",
+                    while toolbars should have a role="toolbar".</p>
 
-<p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.</p>
-</div>
-</div>
-</section>
-
-
-
+                <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label,
+                    but alternatives such as aria-labelledby can also be used.</p>
+            </div>
+        </div>
+    </section>
 
 
 
 
-<script src="../js/jquery.js"></script>
-<!-- bundle.js contains popper, but not jquery -->
-<script src="../js/bootstrap.bundle.js"></script>
+    <section class="container">
+        <h1>Forms</h1>
+        <div class="row bg-shade">
+            <div class="col">
+              <h2>Alternatives to hidden labels</h2>
+<p>Assistive technologies such as screen readers will have trouble with your forms if you don’t include a label for every input. For these inline forms, you can hide the labels using the .sr-only class. There are further alternative methods of providing a label for assistive technologies, such as the aria-label, aria-labelledby or title attribute. If none of these are present, assistive technologies may resort to using the placeholder attribute, if present, but note that use of placeholder as a replacement for other labelling methods is not advised.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
