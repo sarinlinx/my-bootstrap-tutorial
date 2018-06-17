@@ -23,31 +23,217 @@
         <section class="container">
             <h1>Validation</h1>
             <div class="row">
-                <div class="col-6">
-                    <p>Add 'disabled' attribute to the &lt;input&gt; tag.</p>
-                    <p>This will change the text to a lighter shade and disable the checkbox.</p>
-
+                <div class="col">
+                    <p>Validation provides valuable, actionable feedback to your users.</p>
+                    <p>Choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter JavaScript.</p>
+                    <p>It's highly recommended to use custom validation styles as native browser defaults are not announced to screen readers.</p>
+                    <h2>How it works</h2>
+                    <p>HTML form validation is applied via CSS’s two pseudo-classes, :invalid and :valid.</p>
+                    <p>It applies to &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt; elements.</p>
+                    <p>Bootstrap scopes the :invalid and :valid styles to parent .was-validated class, usually applied to the &lt;form&gt;. This way, you may choose when to activate them (typically after form submission is attempted).</p>
+                    <p>As a fallback, .is-invalid and .is-valid classes may be used instead of the pseudo-classes for server side validation. They do not require a .was-validated parent class.</p>
+                    <p>Due to constraints in how CSS works, we cannot (at present) apply styles to a <label> that comes before a form control in the DOM without the help of custom JavaScript.</p>
+  <p>All modern browsers support the <a href="https://www.w3.org/TR/html5/sec-forms.html#the-constraint-validation-api">constraint validation API</a>, a series of JavaScript methods for validating form controls.</p>
+  <p>Feedback messages may utilize the browser defaults (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.</p>
+  <p>You may provide custom validity messages with setCustomValidity in JavaScript.</p>
                 </div>
+              </div>
+            </section>
+
+
+
+            <section class="container">
+                <h1>Browser Defaults</h1>
+                <div class="row">
                 <div class="col-6">
-                    <pre class="example">&lt;div class="form-check"&gt;
-  &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" <span class="standout">disabled</span>&gt;
-  &lt;label class="form-check-label" for="defaultCheck2"&gt;
-    Disabled checkbox
-  &lt;/label&gt;
-&lt;/div&gt;</pre></div>
+<p>These feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+<p>To require a field, just add 'required' to the end of the element.</p>
+            </div>
+
+            <div class="col-6">
+<pre class="example">&lt;form&gt;
+  &lt;div class="form-row"&gt;
+    &lt;div class="col-md-4 mb-3"&gt;
+      &lt;label for="validationDefault01"&gt;First name&lt;/label&gt;
+      &lt;input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" <span class="standout">required</span>&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-4 mb-3"&gt;
+    &lt;label for="validationDefault02"&gt;Last name&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" <span class="standout">required</span>&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;button class="btn btn-primary" type="submit"&gt;Submit form&lt;/button&gt;
+&lt;/form&gt;</pre></div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3><form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="container">
+            <h1>Custom Validation</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Add the 'novalidat attribute to the &lt;form&gt; tag.</p>
+                    <p>This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript.</p>
+                    <p>JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the :invalid and :valid styles applied to your form controls.</p>
+                    <p>In this example, if the field is not entered correctly, the border turns RED.</p>
+                    <p>If it is correct, the border is GREEN.</p>
+                    <p>You can also add informative text for a valid or invalid response. Put the text in a container with a class of .valid-feedback.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;form class="needs-validation" <span class="standout">novalidate</span>&gt;
+  &lt;div class="form-row"&gt;
+      &lt;div class="col-md-4 mb-3"&gt;
+          &lt;label for="validationCustom01"&gt;First name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" <span class="standout">required</span>&gt;
+          &lt;div<span class="standout"> class="valid-feedback"&gt;
+              Looks good!
+          </span>&lt;/div&gt;
+          &lt;div <span class="standout">class="invalid-feedback"&gt;
+            Please input the right stuff</span>
+          &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-md-4 mb-3"&gt;
+          &lt;label for="validationCustom02"&gt;Last name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" <span class="standout">required</span>&gt;
+          &lt;div<span class="standout"> class="valid-feedback"&gt;
+              Looks good!
+        </span>&lt;/div&gt;
+          &lt;div <span class="standout">class="invalid-feedback"&gt;
+            Please input the right stuff
+          </span>&lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+    &lt;button class="btn btn-primary" type="submit"&gt;Submit form&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+&lt;/script&gt;</pre></div>
             </div>
         </section>
 
 
         <section class="container">
             <h3>Example</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                <label class="form-check-label" for="defaultCheck2">
-        Disabled checkbox
-      </label>
-            </div>
+          <form class="needs-validation" novalidate>
+    <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Please input the right stuff
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Please input the right stuff
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
         </section>
+
+
+
+        <section class="container">
+            <h1>Server side - <span class="red">(SKIPPED)</span></h1>
+</section>
+
+<section class="container">
+    <h1>Supported elements -  <span class="red">(SKIPPED)</span></h1>
+</section>
+
+<section class="container">
+    <h1>Tooltips -  <span class="red">(SKIPPED)</span></h1>
+</section>
+
+
+
+<section class="container">
+    <h1>Custom Forms - Continue Here</h1>
+</section>
 
 
 
