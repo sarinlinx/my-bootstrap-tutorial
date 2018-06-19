@@ -18,24 +18,413 @@
 
     <section class="container">
         <h1>Basic Form classes</h1>
-        https://getbootstrap.com/docs/4.0/components/navs/
+        <a href="https://getbootstrap.com/docs/4.0/components/navs/">Navs</a>
+        <p>You can create using an unordered list (more code required), or a div.</p>
+        <p>Both options use the .nav class as the primary formatting class.</p>
+
+        <h2>Unordered list option</h2>
         <div class="row">
             <div class="col-6">
-                <p>asdfsadfsdf</p>
+                <p>Add the .nav class to the unordered list tag.</p>
+                <p>Give each item in the list a class of .nav-item.</p>
+                <p>Give each link a class of .nav-link.</p>
             </div>
+
             <div class="col-6">
-                <pre class="example">asdfasdfsd</pre>
+                <pre class="example">&lt;ul <span class="standout">class="nav"</span>&gt;
+  &lt;li <span class="standout">class="nav-item"</span>&gt;
+    &lt;a <span class="standout">class="nav-link</span> active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li <span class="standout">class="nav-item"</span>&gt;
+    &lt;a <span class="standout">class="nav-link</span>  href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li <span class="standout">class="nav-item"</span>&gt;
+    &lt;a <span class="standout">class="nav-link</span>  href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li <span class="standout">class="nav-item"</span>&gt;
+    &lt;a <span class="standout">class="nav-link</span>  disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
             </div>
         </div>
     </section>
 
+
+    <section class="container">
+        <h3>Example</h3>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="container">
+
+        <h2>container tag option</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Add the .nav class to the div container.</p>
+                <p>Give each link a class of .nav-link.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav <span class="standout">class="nav"</span>&gt;
+  &lt;a <span class="standout">class="nav-link</span> active" href="#"&gt;Active&lt;/a&gt;
+  &lt;a <span class="standout">class="nav-link"</span> href="#"&gt;Link&lt;/a&gt;
+  &lt;a <span class="standout">class="nav-link"</span> href="#"&gt;Link&lt;/a&gt;
+  &lt;a <span class="standout">class="nav-link</span> disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="nav">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+
+        <h2>Aligning horizontally</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>By default, navigation items are left aligned.</p>
+                <p>To center them, use .justify-content-center on the container.</p>
+                <p>To right align, use .justify-content-end.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="nav <span class="standout">justify-content-center"</span>&gt;
+  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+
+        <h2>Aligning vertically</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .flex-column on the container to stack vertically.</p>
+                <p>If you wish to specify the size screen, use a breakpoint. For example: flex-sm-column</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="nav <span class="standout">flex-column</span>"&gt;
+  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+
+        <h2>Adding tabs</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .nav-tabs on the container to add tabs.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="nav <span class="standout">nav-tabs</span>"&gt;
+  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="nav nav-tabs">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="container">
+
+        <h2>Pills</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .nav-pills on the container to add tabs.</p>
+                <p>This adds a button like container around the nav item.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="nav <span class="standout">nav-pills</span>"&gt;
+                  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+                &lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="nav nav-pills">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+    </section>
+
+
+
+
+
+        <section class="container">
+
+            <h1>Fill and Justify content</h1>
+            <h2>Fill</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Use .nav-fill on the container to fill the full width.</p>
+                    <p>Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
+                    <p>For this to work, you must add .nav-item on the links.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;nav class="nav nav-pills <span class="standout">nav-fill</span>"&gt;
+  &lt;a class="<span class="standout">nav-item</span> nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;a class="<span class="standout">nav-item</span> nav-link" href="#"&gt;Lindfdfddfdfdfd dfdd dfd f fd dfdfk zzzzzzzzzzzz s&lt;/a&gt;
+  &lt;a class="<span class="standout">nav-item</span> nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;a class="<span class="standout">nav-item</span> nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+
+            <nav class="nav nav-pills nav-fill">
+  <a class="nav-item nav-link active" href="#">Active</a>
+  <a class="nav-item nav-link" href="#">Lindfdfddfdfdfd dfdd dfd f fd dfdfk zzzzzzzzzzzz s</a>
+  <a class="nav-item nav-link" href="#">Link</a>
+  <a class="nav-item nav-link disabled" href="#">Disabled</a>
+</nav>
+        </section>
+
+        <section class="container">
+
+        <h2>Justify</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>For equal-width elements, use .nav-justified. All horizontal space will be occupied by nav links, but unlike the .nav-fill above, every nav item will be the same width.</p>
+                <p>Use .nav-justified on the container.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="nav nav-pills <span class="standout">nav-justified</span>"&gt;
+        &lt;a class="<span class="standout">nav-item</span> nav-link active" href="#"&gt;Active&lt;/a&gt;
+        &lt;a class="<span class="standout">nav-item</span> nav-link" href="#"&gt;Lindfdfddfdfdfd dfdd dfd f fd dfdfk zzzzzzzzzzzz s&lt;/a&gt;
+        &lt;a class="<span class="standout">nav-item</span> nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;a class="<span class="standout">nav-item</span> nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+        &lt;/nav&gt;</pre>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="container">
+        <h3>Example</h3>
+
+        <nav class="nav nav-pills nav-justified">
+          <a class="nav-item nav-link active" href="#">Active</a>
+          <a class="nav-item nav-link" href="#">Lindfdfddfdfdfd dfdd dfd f fd dfdfk zzzzzzzzzzzz s</a>
+          <a class="nav-item nav-link" href="#">Link</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </nav>
+        </section>
+
+
+
+
+
+
+                <section class="container">
+
+                <h1>Working with flex utilities</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <p><a href="https://getbootstrap.com/docs/4.0/utilities/flex/">Flexbox utilities</a> allow you to create responsive navs.</p>
+                        <p>In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
+                        <p>.flex-column sets the nav to vertical, but .flex-sm-row forces it to be horizontal on a sm or larger layout.</p>
+                    </div>
+
+                    <div class="col-6">
+                        <pre class="example">&lt;nav class="nav nav-pills <span class="standout">flex-column flex-sm-row</span>"&gt;
+ &lt;a class="flex-sm-fill text-sm-center nav-link active" href="#"&gt;Active&lt;/a&gt; &lt;a class="flex-sm-fill text-sm-center nav-link" href="#"&gt;Link&lt;/a&gt; &lt;a class="flex-sm-fill text-sm-center nav-link" href="#"&gt;Link&lt;/a&gt; &lt;a class="flex-sm-fill
+text-sm-center nav-link disabled" href="#"&gt;Disabled&lt;/a&gt; &lt;/nav&gt;
+</pre>
+                    </div>
+                </div>
+                </section>
+
+
+                <section class="container">
+                <h3>Example</h3>
+
+                <nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+    <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+  </nav>
+                </section>
+
+
 <section class="container">
-  <h3>Example</h3>
-
-
+  <h1>accessibility - <span class="red">(SKIPPED)</span></h1>
 </section>
 
 
+<section class="container">
+  <h1>Dropdowns - <span class="red">(SKIPPED)</span></h1>
+</section>
+
+
+<section class="container">
+  <h1>JavaScript behavior - <span class="red">(SKIPPED)</span></h1>
+</section>
+
+<section class="container">
+  <h1>Data attributes - <span class="red">(SKIPPED)</span></h1>
+</section>
+
+<section class="container">
+  <h1>Fade effect - <span class="red">(SKIPPED)</span></h1>
+</section>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2>Using an unordered list</h2>
+    <p>Create a .nav class in the unordered list.</p>
+    <p>For each item in the list add .nav-item. This must be added to the list item.</p>
+    <p>Example:</p>
+    <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
+&lt;ul class="navbar-nav ml-auto"&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="collapse navbar-collapse" id="navigation-bar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#social">CONNECT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">WHY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#customers">CUSTOMERS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">PRICING</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <p>In the link, use .nav-link class.</p>
+
+
+    <h2>div container optionsIf not using an unordered list</h2>
+    <p>Add the .nav class in a &lt;nav&gt; tag.</p>
+    <p>For each item in the list add .nav-item. This must be added to the link.</p>
+    <p>In the link, use .nav-link class.</p>
 
 
 
@@ -46,50 +435,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section class="container">
         <h1>Nav Bars</h1>
-        <p>You can create using an unordered list (more code required), or a div.</p>
 
-        <h2>Using an unordered list</h2>
-        <p>Create a .nav class in the unordered list.</p>
-        <p>For each item in the list add .nav-item. This must be added to the list item.</p>
-        <p>Example:</p>
-        <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
-	&lt;ul class="navbar-nav ml-auto"&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
-		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;</pre>
-        <p>In the link, use .nav-link class.</p>
 
-        <h2>If not using an unordered list</h2>
-        <p>Add the .nav class in a &lt;nav&gt; tag.</p>
-        <p>For each item in the list add .nav-item. This must be added to the link.</p>
-        <p>In the link, use .nav-link class.</p>
+
+
+
+
 
 
         <h2>Nav link options</h2>
@@ -215,11 +570,11 @@
 
 
 
-    </div>
-    <!--Close container-->
-    <script src="../js/jquery.js"></script>
-    <!-- bundle.js contains popper, but not jquery -->
-    <script src="../js/bootstrap.bundle.js"></script>
+        </div>
+        <!--Close container-->
+        <script src="../js/jquery.js"></script>
+        <!-- bundle.js contains popper, but not jquery -->
+        <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
