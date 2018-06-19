@@ -42,6 +42,8 @@
 
 
 
+
+
             <section class="container">
                 <h1>Browser Defaults</h1>
                 <div class="row">
@@ -165,77 +167,201 @@
 
         <section class="container">
             <h3>Example</h3>
-          <form class="needs-validation" novalidate>
-    <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-      <div class="invalid-feedback">
-        Please input the right stuff
-      </div>
-    </div>
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please input the right stuff
+                        </div>
+                    </div>
 
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-      <div class="invalid-feedback">
-        Please input the right stuff
-      </div>
-    </div>
-  </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please input the right stuff
+                        </div>
+                    </div>
+                </div>
 
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
 
-<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
         </section>
 
 
 
         <section class="container">
             <h1>Server side - <span class="red">(SKIPPED)</span></h1>
-</section>
+        </section>
 
-<section class="container">
-    <h1>Supported elements -  <span class="red">(SKIPPED)</span></h1>
-</section>
+        <section class="container">
+            <h1>Supported elements -  <span class="red">(SKIPPED)</span></h1>
+        </section>
 
-<section class="container">
-    <h1>Tooltips -  <span class="red">(SKIPPED)</span></h1>
-</section>
+        <section class="container">
+            <h1>Tooltips -  <span class="red">(SKIPPED)</span></h1>
+        </section>
 
-
-
-<section class="container">
-    <h1>Custom Forms - Continue Here</h1>
-</section>
+        <section class="container">
+            <h1>Custom Forms - Continue Here</h1>
+        </section>
 
 
+
+
+
+
+
+
+
+        <section class="container">
+            <h1>Custom forms</h1>
+            <p>Custom forms allow for more cross-browser consistency. They can be used to replace the browser defaults.</p>
+            <h2>Custom checkboxes</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Instead of wrapping the checkbox in a div container with a class of .form-check, use the classes .custom-control and .custom-checkbox.</p>
+                    <p>.custom-control adds basic formatting.</p>
+                    <p>.custom-checkbox causes the checkbox to have a slightly rounded shape. It also causes a checkmark to display within the box.</p>
+                    <p>The &lt;input&gt; id must match the &lt;label&gt; for= value.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div <span class="standout">class="custom-control custom-checkbox"</span>&gt;
+  &lt;input type="checkbox" class="custom-control-input" <span class="standout">id="customCheck1"</span>&gt;
+  &lt;label class="custom-control-label" <span class="standout">for="customCheck1"</span>&gt;Check this custom checkbox&lt;/label&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example without the .custom-checkbox class</h3>
+            <p>This removes the slightly rounded corners and the checkbox that appears when clicking.</p>
+            <div class="custom-control">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+            </div>
+        </section>
+
+        <h2>checkbox indeterminate pseudo class with javascript - <span class="red">(SKIPPED)</span></h2>
+
+
+
+
+
+
+
+
+
+        <section class="container">
+            <h2>Custom Radios</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Put the radio buttons in a container with a class of .custom-control.</p>
+                    <p>Add to the container a class of .custom-radio.</p>
+                    <p>The .custom-radio class causes the radio button to become a circle and adds the pinpoint icon when you click it.</p>
+                    <p>The &lt;input&gt; id must match the &lt;label&gt; for= value.</p>
+                    <p>If you want the radio buttons horizontal, addd .custom-control-inline to the container.</p>
+
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div <span class="standout">class="custom-control custom-radio"</span>&gt;
+  &lt;input type="radio" <span class="standout">id="customRadio1"</span> name="customRadio" class="custom-control-input"&gt;
+  &lt;label class="custom-control-label" <span class="standout">for="customRadio1"</span>&gt;Toggle this custom radio&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div <span class="standout">class="custom-control custom-radio"</span>&gt;
+  &lt;input type="radio" <span class="standout">id="customRadio2"</span> name="customRadio" class="custom-control-input"&gt;
+  &lt;label class="custom-control-label" <span class="standout">for="customRadio2"</span>&gt;Or toggle this other custom radio&lt;/label&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+            </div>
+
+            <div class="custom-control">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Without the .custom-radio class</label>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example using .form-check instead of .custom-control and .custom-radio in the container</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">Default radio</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios2">Default radio</label>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>disabled <span class="red">(SKIPPED)</span></h2>
+        </section>
+
+        <section class="container">
+            <h2>Select menu <span class="red">(SKIPPED)</span></h2>
+        </section>
+
+
+        <section class="container">
+            <h2>Range <span class="red">(SKIPPED)</span></h2>
+        </section>
+
+        <section class="container">
+            <h2>File browser <span class="red">(SKIPPED)</span></h2>
+        </section>
 
 
 

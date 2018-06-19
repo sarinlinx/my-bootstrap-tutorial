@@ -14,9 +14,58 @@
 
 <body>
     <a href="../index.html">Back to homepage</a>
-    <div class="container">
 
 
+    <section class="container">
+        <h1>Basic Form classes</h1>
+        https://getbootstrap.com/docs/4.0/components/navs/
+        <div class="row">
+            <div class="col-6">
+                <p>asdfsadfsdf</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">asdfasdfsd</pre>
+            </div>
+        </div>
+    </section>
+
+<section class="container">
+  <h3>Example</h3>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="container">
         <h1>Nav Bars</h1>
         <p>You can create using an unordered list (more code required), or a div.</p>
 
@@ -25,16 +74,16 @@
         <p>For each item in the list add .nav-item. This must be added to the list item.</p>
         <p>Example:</p>
         <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
-        			&lt;ul class="navbar-nav ml-auto"&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
-        				&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-        			&lt;/ul&gt;
-        		&lt;/div&gt;</pre>
+	&lt;ul class="navbar-nav ml-auto"&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#social"&gt;CONNECT&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#who"&gt;WHO&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#work"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#why"&gt;WHY&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#customers"&gt;CUSTOMERS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#pricing"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
         <p>In the link, use .nav-link class.</p>
 
         <h2>If not using an unordered list</h2>
@@ -88,57 +137,57 @@
         <p>Disable a link using .disabled</p>
 
 
-<h1>Navbar Brand and Text</h1>
-<p>There are other components you can add to your navigation.</p>
-<p>The .navbar-brand is used for text or logos and will get an enhanced look. usually a link or a headline and it gets a special look in Bootstrap</p>
-<p>Example: This links a logo</p>
-<pre class="example">&lt;a class="navbar-brand" href="#"&gt;&lt;img src="img/logo-small.png" class="img-fluid"&gt;&lt;/a&gt;</pre>
-<p>.navbar-text - separate text added to nav</p>
-<p>Both go inside the .navbar-nav component.</p>
+        <h1>Navbar Brand and Text</h1>
+        <p>There are other components you can add to your navigation.</p>
+        <p>The .navbar-brand is used for text or logos and will get an enhanced look. usually a link or a headline and it gets a special look in Bootstrap</p>
+        <p>Example: This links a logo</p>
+        <pre class="example">&lt;a class="navbar-brand" href="#"&gt;&lt;img src="img/logo-small.png" class="img-fluid"&gt;&lt;/a&gt;</pre>
+        <p>.navbar-text - separate text added to nav</p>
+        <p>Both go inside the .navbar-nav component.</p>
 
-<h1>Nav Dropdown</h1>
-<p>Add a container with a class of .dropdown. this container is used to align the dropdown to the proper item in the navigation.</p>
-<p>.dropdown-toggle is added on the link in order to get a little triangle to indicate that this element has a dropdown in it.</p>
-<h2>Dropdowns are activated in 2 ways</h2>
-<p>Using JavaScript</p>
-<p>Using a data attribute. In Bootsrap this would be data-toggle="dropdown"</p>
+        <h1>Nav Dropdown</h1>
+        <p>Add a container with a class of .dropdown. this container is used to align the dropdown to the proper item in the navigation.</p>
+        <p>.dropdown-toggle is added on the link in order to get a little triangle to indicate that this element has a dropdown in it.</p>
+        <h2>Dropdowns are activated in 2 ways</h2>
+        <p>Using JavaScript</p>
+        <p>Using a data attribute. In Bootsrap this would be data-toggle="dropdown"</p>
 
-<h2>Building the menu</h2>
-<p>.dropdown-menu creates the dropdown. Put this in a different container.</p>
-<p>Each dropdown link gets .dropdown-item class.</p>
-<p>Should also add an id & aria attributes - to make everything work well for accessibility devices.</p>
+        <h2>Building the menu</h2>
+        <p>.dropdown-menu creates the dropdown. Put this in a different container.</p>
+        <p>Each dropdown link gets .dropdown-item class.</p>
+        <p>Should also add an id & aria attributes - to make everything work well for accessibility devices.</p>
 
-<h1>Adding a form element to a nav bar</h1>
-<p>Add a container with a class of .form-inline.</p>
-<p>Then add .form-control classes as needed.</p>
-
-
-<h1>Positioning nav bar elements</h1>
-<p>.fixed-top -  take an element, position it on top of the existing content at the top of the screen, and it'll stick there to the top forever</p>
-<pre class="example">&lt;nav class="navbar navbar-expand-lg fixed-top"&gt;</pre>
-<p>.fixed-bottom - </p>
-<p>.sticky-top - some make some content stick to the top of the screen as we scroll the screen</p>
+        <h1>Adding a form element to a nav bar</h1>
+        <p>Add a container with a class of .form-inline.</p>
+        <p>Then add .form-control classes as needed.</p>
 
 
+        <h1>Positioning nav bar elements</h1>
+        <p>.fixed-top - take an element, position it on top of the existing content at the top of the screen, and it'll stick there to the top forever</p>
+        <pre class="example">&lt;nav class="navbar navbar-expand-lg fixed-top"&gt;</pre>
+        <p>.fixed-bottom - </p>
+        <p>.sticky-top - some make some content stick to the top of the screen as we scroll the screen</p>
 
-<h1>Collapsible content</h1>
-<p>Collapse when width of screen is small.</p>
-<p>.collapse - This div and all its content will be a collapsible element</p>
-<pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;</pre>
-<p>.navbar-collapse</p>
-<p>id</p>
-<p>navbar-toggler - usually with a button</p>
-<p>navbar-toggler-icon</p>
-<p>example</p>
-<pre class="example">&lt;!-- &amp;#9776 is the value for the HTML symbol for a 3 line hamburger icon --&gt;
+
+
+        <h1>Collapsible content</h1>
+        <p>Collapse when width of screen is small.</p>
+        <p>.collapse - This div and all its content will be a collapsible element</p>
+        <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;</pre>
+        <p>.navbar-collapse</p>
+        <p>id</p>
+        <p>navbar-toggler - usually with a button</p>
+        <p>navbar-toggler-icon</p>
+        <p>example</p>
+        <pre class="example">&lt;!-- &amp;#9776 is the value for the HTML symbol for a 3 line hamburger icon --&gt;
 &lt;span class="navbar-toggler-icon"&gt;&#9776;&lt;/span&gt;</pre>
 
 
-<h3>data-target</h3>
-<p>This links the button to your navigation options</p>
+        <h3>data-target</h3>
+        <p>This links the button to your navigation options</p>
 
-<p>Example:</p>
-<pre class="example">&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"&gt;
+        <p>Example:</p>
+        <pre class="example">&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"&gt;
   &lt;span class="navbar-toggler-icon"&gt;&#9776;&lt;/span&gt;
 &lt;/button&gt;
 &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
@@ -157,10 +206,10 @@
 &lt;/div&gt;</pre>
 
 
-<h2>Shift nav menu to right side horizontally</h2>
-<p>Use a class of ml-auto. This means margin-left-automatic. It fills the left margin, which shifts it to the right.</p>
-<p>Example:</p>
-<pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
+        <h2>Shift nav menu to right side horizontally</h2>
+        <p>Use a class of ml-auto. This means margin-left-automatic. It fills the left margin, which shifts it to the right.</p>
+        <p>Example:</p>
+        <pre class="example">&lt;div class="collapse navbar-collapse" id="navigation-bar"&gt;
       &lt;ul class="navbar-nav ml-auto"&gt;</pre>
 
 
