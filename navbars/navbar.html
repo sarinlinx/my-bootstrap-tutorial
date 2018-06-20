@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Nav Bars</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+
+
+
+
+
+    <section class="container">
+        <h1>Navbar</h1>
+        <a href="https://getbootstrap.com/docs/4.0/components/navbar/" target="_blank">Navbar</a>
+        <p>The Navbar is the navigation bar at the top of your page.</p>
+        <p>To create, add a class of .navbar with .navbar-expand-(breakpoint) for responsive collapsing and <a href="https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes">color scheme</a> classes.</p>
+        <p>Navbars and their contents are fluid by default. Use <a href="https://getbootstrap.com/docs/4.0/components/navbar/#containers">optional containers</a> to limit their horizontal width.</p>
+        <p>Use our <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">spacing</a> and <a href="https://getbootstrap.com/docs/4.0/utilities/flex/">flex utility</a> classes for controlling spacing and alignment within navbars.</p>
+        <p>Navbars are hidden by default when printing. Force them to be printed by adding .d-print to the .navbar.</p>
+        <p>Ensure accessibility by using a &lt;nav&gt; element or, if using a more generic element such as a &lt;div&gt;, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</p>
+
+        <h2>UL example</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Add .navbar to the container for general styling.</p>
+                <p>Add .navbar-expand-(breakpoint) so the navbar displays normally on certain devices, but as an icon dropdown on smaller devices.</p>
+                <p>To create the toggle dropdown (hamburger icon), create a &lt;button&gt; with a class of .navbar-toggler. In it, add a span class of .navbar-toggler-icon.</p>
+                <p>Wrap the nav items in a div with a class of .collapse. This causes the items to hide on smaller devices so only the toggler icon shows.</p>
+                <p>Also add .navbar-collapse to the item container for styling.</p>
+                <p>To the unordered list tag, add .navbar-nav for styling. This makes the links horizontal.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav <span class="standout">class="navbar navbar-expand-lg</span> navbar-light bg-light"&gt;
+
+    &lt;!-- Hamburger icon on small devices --&gt;
+    &lt;<span class="standout">button class="navbar-toggler"</span> type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+    &lt;div <span class="standout">class="collapse navbar-collapse"</span> id="navbarSupportedContent"&gt;
+        &lt;ul class="<span class="standout">navbar-nav</span> mr-auto"&gt;
+            &lt;li class="nav-item active"&gt;
+                &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Hamburger icon on small devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="container">
+        <h2>Div example</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Same as above, but using a div tag instead of an unordered list.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav <span class="standout">class="navbar navbar-expand-lg</span> navbar-light bg-light"&gt;
+
+&lt;!-- Hamburger icon on small devices --&gt;
+&lt;<span class="standout">button class="navbar-toggler"</span> type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;div <span class="standout">class="collapse navbar-collapse"</span> id="navbarSupportedContent"&gt;
+    &lt;div <span class="standout">class="navbar-nav"</span>&gt;
+        &lt;a class="nav-item nav-link active" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;a class="nav-item nav-link" href="#"&gt;Features&lt;/a&gt;
+        &lt;a class="nav-item nav-link" href="#"&gt;Pricing&lt;/a&gt;
+        &lt;a class="nav-item nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Hamburger icon on small devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="container">
+        <h1>Brand</h1>
+        <h2>Brand title</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Add .navbar-brand to a link under the opening container tag to an anchor tag. This creates a title.</p>
+                <p>You can add this class to different elements, but adding to an anchor tag is easiest as it doesn't involve more customization.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+  &lt;a <span class="standout">class="navbar-brand"</span> href="#"&gt;Navbar Title&lt;/a&gt;
+
+&lt;!-- Hamburger icon on small devices --&gt;
+&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+    &lt;ul class="navbar-nav mr-auto"&gt;
+        &lt;li class="nav-item active"&gt;
+            &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar Title</a>
+
+            <!-- Hamburger icon on small devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="container">
+        <h2>Brand images</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>To add an image instead, you'll need to use some custom code.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+&lt;a <span class="standout">class="navbar-brand" href="#"&gt;
+  &lt;img src="../img/brand-img.png" width="30" height="30"</span> alt=""&gt;
+&lt;/a&gt;
+
+&lt;!-- Hamburger icon on small devices --&gt;
+&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+&lt;ul class="navbar-nav mr-auto"&gt;
+    &lt;li class="nav-item active"&gt;
+        &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="../img/brand-img.png" width="30" height="30" alt="">
+              Brand icon
+            </a>
+
+            <!-- Hamburger icon on small devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
