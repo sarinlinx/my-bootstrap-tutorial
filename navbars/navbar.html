@@ -273,6 +273,281 @@
         </nav>
     </section>
 
+    <section class="container">
+        <h2>Dropdowns - SKIPPED</h2>
+    </section>
+
+    <section class="container">
+        <h2>Forms - SKIPPED</h2>
+    </section>
+
+    <section class="container">
+        <h2>Text - SKIPPED</h2>
+    </section>
+
+    <section class="container">
+        <h2>Color schemes - SKIPPED</h2>
+    </section>
+
+    <section class="container">
+        <h2>Containers - SKIPPED</h2>
+    </section>
+
+    <section class="container">
+        <h2>Placement - SKIPPED</h2>
+    </section>
+
+
+    <section class="container">
+        <h1>Responsive behavior</h1>
+        <p>Navbars can utilize the following classes to change when their content collapses behind a (hamburger icon) button.</p>
+        <ul>
+            <li>.navbar-toggler</li>
+            <li>.navbar-collapse</li>
+            <li>.navbar-expand{-sm|-md|-lg|-xl}</li>
+        </ul>
+        <p>For navbars that never collapse, add the .navbar-expand class on the navbar.</p>
+        <p>For navbars that always collapse, don’t add any .navbar-expand class.</p>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Toggler</h1>
+        <div class="rows">
+            <div class="col">
+                <p>To create the toggle dropdown (hamburger icon), create a &lt;button&gt; with a class of .navbar-toggler. In it, add a span class of .navbar-toggler-icon.</p>
+                <p>By default, navbar togglers are left-aligned.</p>
+                <p>They are automatically aligned to the far right if they follow a sibling element like a .navbar-brand. Reversing your markup will reverse the placement of the toggler. Below are examples of different toggle styles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Left aligned dropdown</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>This example aligns the dropdown icon to the left.</p>
+                <p>Wrap the nav items in a div with a class of .collapse. This causes the items to hide on smaller devices so only the toggler icon shows.</p>
+                <p>Also add .navbar-collapse to the item container for styling.</p>
+                <p>To the unordered list tag, add .navbar-nav for styling. This makes the links horizontal.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+    &lt;<span class="standout">button class="navbar-toggler"</span> type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"&gt;
+&lt;span class="<span class="standout">navbar-toggler-icon</span>"&gt;&lt;/span&gt;
+&lt;/button&gt;
+    &lt;div class="<span class="standout">collapse navbar-collapse</span>" id="navbarTogglerDemo01"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Hidden brand&lt;/a&gt;
+        &lt;ul class="<span class="standout">navbar-nav</span> mr-auto mt-2 mt-lg-0"&gt;
+            &lt;li class="nav-item active"&gt;
+                &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Right aligned dropdown, brand on left</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Since the button follows an anchor with a classs of .navbar-brand, this dropdown is aligned to the right instead.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+
+  <span class="standout">&lt;a class="navbar-brand"</span> href="#"&gt;Navbar&lt;/a&gt;
+
+  <span class="standout">&lt;button class="navbar-toggler"</span> type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"&gt;
+    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;div class="collapse navbar-collapse" id="navbarTogglerDemo02"&gt;
+    &lt;ul class="navbar-nav mr-auto mt-2 mt-lg-0"&gt;
+      &lt;li class="nav-item active"&gt;
+        &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Left aligned dropdown, brand on right</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>To change the location of the brand and dropdown, just change the position in HTML.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+
+    <span class="standout">&lt;button class="navbar-toggler"</span> type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"&gt;
+    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+    <span class="standout">&lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;</span>
+
+    &lt;div class="collapse navbar-collapse" id="navbarTogglerDemo03"&gt;
+        &lt;ul class="navbar-nav mr-auto mt-2 mt-lg-0"&gt;
+            &lt;li class="nav-item active"&gt;
+                &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h2>Trigger hidden content from the dropdown icon</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>You can make the toggle button trigger hidden content elsewhere on the page.</p>
+                <p>This is done by matching the 'id' on the collapseable content container, and the 'data-target' on the button.</p>
+            </div>
+
+            <div class="col-6">
+<pre class="example">&lt;div class="pos-f-t"&gt;
+
+<span class="standout">&lt;div class="collapse" id="navbarToggleExternalContent"&gt;</span>
+    &lt;div class="bg-dark p-4"&gt;
+      &lt;h4 class="text-white"&gt;Collapsed content&lt;/h4&gt;
+      &lt;span class="text-muted"&gt;Toggleable via the navbar brand.&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+<span class="standout">  &lt;nav class="navbar navbar-dark bg-dark"&gt;
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"</span> aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h3>Example</h3>
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h4 class="text-white">Collapsed content</h4>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+    </section>
+
+
+
 
 
 
