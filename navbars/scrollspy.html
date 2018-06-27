@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Scrollspy</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+
+
+
+
+
+    <section class="container">
+        <h1>Scrollspy</h1>
+        <a href="https://getbootstrap.com/docs/4.0/components/navbar/" target="_blank">Navbar</a>
+        <p>Scrollspy updates your navbar as you scroll down the page.</p>
+
+
+            <h2>UL example</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Create a navbar and assign it a specific id attribute.</p>
+                    <p>Most often you'll be spying on the 'body' element. To make this work you'll need to do the following to this element.</p>
+                    <ul>
+                        <li>In CSS, make the position of the body relative.</li>
+                        <li>To the body tag, add data-spy="scroll".</li>
+                        <li>To the body tag, add data-target="#id-of-navbar".</li>
+                        <li>It also makes sense to add .sticky-top to the navbar.</li>
+
+                    </ul>
+                    <p>As stated above, the element you're spying on is usually the body tag. However, if you want a small navbar to a specific section of the page, just wrap the content of that section in a container.</p>
+                    <p>Give it an id or class to assign it a position of relative. Then add the data-spy and data-target as shown above to the container.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;body <span class="standout">data-spy="scroll" data-target="#navbar-example2"</span>&gt;
+
+  &lt;nav <span class="standout">id="navbar-example2"</span> class="navbar navbar-light bg-light <span class="standout">sticky-top</span>"&gt;
+      &lt;ul class="nav nav-pills"&gt;
+          &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#one"&gt;@one&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#two"&gt;@two&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#three"&gt;@three&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#four"&gt;@four&lt;/a&gt;
+          &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/nav&gt;
+
+&lt;!-- content section --&gt;
+  &lt;h4 id="one"&gt;one&lt;/h4&gt;
+    &lt;p&gt;data here&lt;/p&gt;
+  &lt;h4 id="two"&gt;two&lt;/h4&gt;
+    &lt;p&gt;data here&lt;/p&gt;
+  &lt;h4 id="three"&gt;three&lt;/h4&gt;
+    &lt;p&gt;data here&lt;/p&gt;
+  &lt;h4 id="four"&gt;four&lt;/h4&gt;
+    &lt;p&gt;data here&lt;/p&gt;</pre>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="container" <div class="row">
+        <div class="col">
+            <h3>Example</h3>
+        </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <nav id="navbar-example2" class="navbar navbar-light bg-light sticky-top">
+
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#one">@one</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#two">@two</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#three">@three</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div data-spy="scroll" data-target="#navbar-example2" id="scrollspy1" data-offset="0">
+                    <h4 id="one">one</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                    <h4 id="two">two</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                    <h4 id="three">three</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="container">
+  <h1>Nested navs (SKIPPED)</h1>
+</section>
+
+<section class="container">
+  <h1>List Groups (SKIPPED)</h1>
+</section>
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

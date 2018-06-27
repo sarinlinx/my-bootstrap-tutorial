@@ -14,9 +14,203 @@
 </head>
 
 <body>
-  <a href="../index.html">Back to homepage</a>
+    <a href="../index.html">Back to homepage</a>
     <div class="container">
 
+
+
+
+        <section class="container">
+            <h1>Responsive images</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Make an image response by adding the class .img-fluid.</p>
+                    <p>This automatically applies 'max-width: 100%' and 'height: auto' so it scales with the parent.</p>
+                    <p>When you shrink the viewport, the image shrinks with it.</p>
+                    <p>NOTE: SVG images and IE 10. In Internet Explorer 10, SVG images with .img-fluid are disproportionately sized. To fix this, add width: 100% \9; where necessary. This fix improperly sizes other image formats, so Bootstrap doesn’t apply
+                        it automatically.
+                    </p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;img src=".." class="<span class="standout">img-fluid</span>" alt="Responsive image"&gt;</pre>
+                </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <img src="../img/gallery-examples/woman-leaves.jpg" class="img-fluid" alt="Responsive image">
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h1>Thumbnails</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Add a class of .img-thumbnail to give it a rounded 1px border.</p>
+                    <p>The image is also responsive.</p>
+
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;img src=".." class="<span class="standout">img-thumbnail</span>" alt="Responsive image"&gt;</pre>
+                </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <img src="../img/gallery-examples/woman-leaves.jpg" class="img-thumbnail" alt="Responsive image">
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h1>Aligning images</h1>
+            <p>There are three ways to align images:</p>
+            <ul>
+                <li>Using a helper <a href="http://getbootstrap.com/docs/4.0/utilities/float/">float class</a></li>
+                <li>Using a <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment">text alignment class</a></li>
+                <li>block-level images can use the <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/#horizontal-centering">.mx-auto utility class</a></li>
+            </ul>
+        </section>
+
+
+
+        <section class="container">
+            <h2>Floating images</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Using .float-left or .float-right to float an image.</p>
+                    <p>The image sizes must already be small enough to fit in the section. They will not resize to fit the section automatically.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;img src=".." class="<span class="standout">float-left</span>"&gt;
+&lt;img src=".." class="<span class="standout">float-right</span>"&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <img src="../img/gallery-examples/sm-woman-leaves.jpg" class="float-left" alt="Responsive image">
+                    <img src="../img/gallery-examples/sm-lake.jpg" class="float-right" alt="Responsive image">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2>Using text-alignment</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Put the image in a container with a class of .text-center.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">text-center</span>"&gt;
+  &lt;img src=".."&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/gallery-examples/sm-woman-leaves.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Center block level images</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Add both the class of .mx-auto and .d-block (display-block) to center an image.</p>
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;img src=".." class="<span class="standout">mx-auto d-block</span>"&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <img src="../img/gallery-examples/sm-woman-leaves.jpg" class="mx-auto d-block">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h1>Picture (SKIPPED)</h1>
+        </section>
+
+
+
+
+
+
+
+        <section class="container">
+            <h2>Figures</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Wrap the image in a container with a class of &lt;figure&gt;. Give it a class of .figure to style.</p>
+                    <p>Give the image tag classes of .figure-img to style.</p>
+                    <p>Under the image, add a &lt;figcaption&gt; tag to add a caption to an image. Give it a class of .figure-caption to style.</p>
+                    <p>You can align the text using .text-right on the figcaption tag.</p>
+
+
+                </div>
+
+                <div class="col-6">
+                    <pre class="example">&lt;figure class="<span class="standout">figure</span>"&gt;
+  &lt;img src=".." class="<span class="standout">figure-img</span> img-fluid"&gt;
+  &lt;figcaption class="<span class="standout">figure-caption</span>"&gt;A caption for the above image.&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img src="../img/gallery-examples/woman-leaves.jpg" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <h1>Basic image classes</h1>
         <ul>
             <li><strong>.img-fluid</strong> - This creates responsive images.</li>
@@ -50,11 +244,17 @@
         </ul>
 
 
-    </div>
-    <!--Close container-->
-    <script src="../js/jquery.js"></script>
-    <!-- bundle.js contains popper, but not jquery -->
-    <script src="../js/bootstrap.bundle.js"></script>
+
+
+
+
+
+
+        </div>
+        <!--Close container-->
+        <script src="../js/jquery.js"></script>
+        <!-- bundle.js contains popper, but not jquery -->
+        <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
