@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Display</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+
+
+        <section class="container">
+            <h1>Display</h1>
+            <div class="row">
+                <div class="col">
+                    <p>Change the display property by adding a class of .d-(breakpoint)-(value). Optional values are:</p>
+                    <ul>
+                        <li>none</li>
+                        <li>inline</li>
+                        <li>inline-block</li>
+                        <li>block</li>
+                        <li>table</li>
+                        <li>table-cell</li>
+                        <li>table-row</li>
+                        <li>flex</li>
+                        <li>inline-flex</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h1>display: none</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>The first div will hide on large screens and above, but show on smaller screens.</p>
+                    <p>You can also mix and match so certain content only disappears on certain size screens. For example, .d-none .d-md-block would only show on md screens and above.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">d-lg-none</span> bg-light text-dark"&gt;Hidden content&lt;/div&gt;
+&lt;div class="bg-primary text-white"&gt;Displayed content&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="d-lg-none bg-light text-dark">Hidden content</div>
+            <div class="bg-primary text-white">Displayed content</div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h1>display: inline</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>.d-inline will convert your elment to an inline element (like a span tag). This means it will only expand to the conent inside, not the full width of the container like it normally would.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">d-lg-inline</span> bg-light text-dark"&gt;Inline content on large screens and above&lt;/div&gt;
+&lt;div class="bg-primary text-white"&gt;Normal content&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="d-lg-inline bg-light text-dark">Inline content on large screens and above</div>
+            <div class="bg-primary text-white">Normal content</div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h1>display: block</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>.d-block will convert your inline element (like a span tag) to a block element which spans the full width of the container.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;span class="<span class="standout">d-lg-block</span> bg-light text-dark"&gt;Inline element converted to a block element&lt;/span&gt;
+&lt;span class="bg-primary text-white"&gt;Normal span content&lt;/span&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <span class="d-lg-block bg-light text-dark">Inline element converted to a block element</span>
+            <span class="bg-primary text-white">Normal span content</span>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h1>display: inline-block</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>.d-inline-block does several things:</p>
+                    <p>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. If you've given the element a special size, display:inline will ignore it, but inline-block will keep
+                        the custom size you set.</p>
+                    <p>With display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+                    <p>Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
+                    <p>The following example shows these features in a block of text.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. &lt;span class="<span class="standout">d-lg-inline-block</span> text-dark inline-block-height"&gt;inline-block element with set height&lt;/span&gt; &lt;span class="<span class="standout">d-lg-inline-block</span> text-dark inline-block-height"&gt;inline-block element with set height&lt;/span&gt; gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.&lt;/div&gt;</pre></div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="d-lg-inline-block text-dark inline-block-height">inline-block element with set height</span>                <span class="d-lg-inline-block text-dark inline-block-height">inline-block element with set height</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</div>
+        </section>
+
+        <section class="container">
+            <h1>Display in print (SKIPPED)</h1>
+        </section>
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

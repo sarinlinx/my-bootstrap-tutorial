@@ -9,14 +9,17 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
-  margin-top: 70px;
+  font-size: 4rem;
+  margin-top: 100px;
   margin-bottom: 10px;
-  color: #ffbf00;
+  color: #ffb13f;
+  background-color: #4b4b4b;
+  padding: 10px;
+  text-align: center;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 50px;
   color: #eb8c00;
   /* Dark Gold */
 }
@@ -83,6 +86,7 @@ ___________________________________________________*/
   overflow: scroll;
   position: relative;
 }
+
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
@@ -176,4 +180,17 @@ ___________________________________________________*/
 
 .ex-vertical-row-alignment {
   height: 80px;
+}
+
+.inline-block-height {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+/* Add a height to a section */
+.align-items-height {
+  height: 150px;
 }

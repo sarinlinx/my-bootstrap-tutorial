@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Flex</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+    <div class="container">
+
+
+        <section class="container">
+            <h1>Flex utilties</h1>
+            <div class="row">
+                <div class="col">
+                    <p>Flex utilities allow you to manage the layout, alignment, and sizing of your page elements.</p>
+                    <p>d-flex transforms direct children elements into flex items. You can then modify the containers and items further with flex properties.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h1>Flex containers</h1>
+            <div class="row">
+                <div class="col">
+                    <p>Add a class of .d-flex to a container to make it a flexbox container. This causes child elements to align horizontally.</p>
+                    <p>Add .d-inline-flex to make it an inline flex container.</p>
+                    <p>You can also use breakpoints such as .d-sm-inline-flex.</p>
+
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="container">
+        <h3>d-flex</h3>
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div class="<span class="standout">d-flex</span> p-2 bg-light text-dark"&gt;flexbox container. I take up the full width. My children are side by side.
+  &lt;div class="p-2 bg-info"&gt;I'm a child&lt;/div&gt;
+  &lt;div class="p-2 bg-warning"&gt;So am I&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <div class="d-flex p-2 bg-light text-dark">flexbox container. I take up the full width. My children are side by side.
+            <div class="p-2 bg-info">I'm a child</div>
+            <div class="p-2 bg-warning">So am I</div>
+        </div>
+
+        <br>
+        <h3>d-inline-flex</h3>
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div class="<span class="standout">d-inline-flex</span> p-2 bg-light text-dark"&gt;inline flexbox container. I do not take up the full width. My children are side by side.
+  &lt;div class="p-2 bg-info"&gt;I'm a child&lt;/div&gt;
+  &lt;div class="p-2 bg-warning"&gt;So am I&lt;/div&gt;
+&lt;/div&gt;</pre></div>
+        </div>
+        <div class="d-inline-flex p-2 bg-light text-dark">inline flexbox container. I do not take up the full width. My children are side by side.
+            <div class="p-2 bg-info">I'm a child</div>
+            <div class="p-2 bg-warning">So am I</div>
+        </div>
+
+        <br><br>
+        <h3>Not a flex container</h3>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">&lt;div class="p-2 bg-light text-dark"&gt;NOT a flexbox container. I take up the full width. My children stack.
+  &lt;div class="p-2 bg-info"&gt;I'm a child&lt;/div&gt;
+  &lt;div class="p-2 bg-warning"&gt;So am I&lt;/div&gt;
+&lt;/div&gt;</pre></div>
+        </div>
+        <div class="p-2 bg-light text-dark">NOT a flexbox container. I take up the full width. My children stack.
+            <div class="p-2 bg-info">I'm a child</div>
+            <div class="p-2 bg-warning">So am I</div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Horizontal Direction</h1>
+        <h2>Left to right</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>In the container, add a class of .flex-row to align the items from the left. This is default, so you only need to specify it if you must explicitly set it.</p>
+                <p>You can also use breakpoints. For example: .flex-lg-row.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-row</span> bg-light text-dark mb-3"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-row bg-light text-dark mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+
+        <h2>Right to left</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .flex-row-reverse to align them from the right.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-row-reverse</span> bg-light text-dark mb-3"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-row-reverse bg-light text-dark mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Vertical Direction</h1>
+        <h2>Top to bottom</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>In the container, add a class of .flex-column to set a top down vertical direction.</p>
+                <p>You can also use breakpoints. For example: .flex-lg-column.</p>
+
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-column</span> bg-light text-dark mb-3"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-column bg-light text-dark mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+        </div>
+
+        <h2>Bottom to top</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use .flex-row-reverse to align them from the right.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-column-reverse</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-column-reverse text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Justify content (horizontally)</h1>
+        <p>Use 'justify-content' utilities to change the alignment of flex items.</p>
+        <p>Breakpoints can be used also. For example: .justify-content-md-center.</p>
+    </section>
+
+    <section class="container">
+        <h2>Left to right</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .justify-content-start to align from the left.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex justify-content-start</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex justify-content-start text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Right to left</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .justify-content-end to align from the right.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex justify-content-end</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex justify-content-end text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h2>Center</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .justify-content-center to center center.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex justify-content-center</span> text-dark bg-light"&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex justify-content-center text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h2>Horizontally space to full width</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .justify-content-between to space items so they are pushed to the edge, but after evenly spaced to the full width.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex justify-content-between</span> text-dark bg-light"&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex justify-content-between text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h2>Horizontally space to include space on sides</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>This does the same as .justify-content-between except .justify-content-around adds space to both sides. Everything is evenly aligned horizontally.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex justify-content-around</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex justify-content-around text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Align items (vertically)</h1>
+        <p>Align a block of horizontal items vertically using .align-items-(value).</p>
+
+    </section>
+
+    <section class="container">
+        <h2>Align to top</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-start to align from the top left.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex align-items-start</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex align-items-start text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Align to top and left (column)</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-start to align from the top left.</p>
+                <p>.align-items-start isn't really needed as it's default to align to the left.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-column align-items-start</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-column align-items-start text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <br><br>
+    <section class="container">
+        <h2>Align to bottom</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-end to align from the top bottom.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex align-items-end</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex align-items-end text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h2>Align to right (using flex-column)</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-end to align from the top bottom.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-column align-items-end</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex flex-column align-items-end text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+
+    <br><br>
+    <section class="container">
+        <h2>Align center</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-center to vertically center a block of items.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex align-items-center</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex align-items-center text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+
+
+        <h2>Align center and horizontally</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>On the container, use .align-items-center and flex-column to center a block of items vertically and horizontally.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex flex-column align-items-center</span> text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+        <h3>Example using flex-column</h3>
+
+        <div class="d-flex flex-column align-items-center text-dark bg-light align-items-height">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+    <section class="container">
+        <h2>Align baseline (SKIPPED)</h2>
+    </section>
+
+
+    <section class="container">
+        <h2>Align stretch (SKIPPED)</h2>
+    </section>
+
+    <section class="container">
+        <h2>Align self (SKIPPED)</h2>
+    </section>
+
+
+
+
+
+    <section class="container">
+        <h1>Align Fill</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>Use the .flex-fill class on a series of sibling elements to force them into equal widths while taking up all available horizontal space.</p>
+                <p>You can also use breakpoints: .flex-md-fill.</p>
+                <p>Especially useful for <a href="https://getbootstrap.com/docs/4.1/components/navs/#working-with-flex-utilities">equal-width, or justified, navigation</a>.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="<span class="standout">d-flex align-items-center</span> text-dark bg-light"&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+    &lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex text-dark bg-light">
+            <div class="p-2 flex-fill bd-highlight">Flex item 1</div>
+            <div class="p-2 flex-fill bd-highlight">Flex item 2</div>
+            <div class="p-2 flex-fill bd-highlight">Flex item 3</div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+        <h2>Grow and shrink (SKIPPED)</h2>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Auto margins</h1>
+        <h2>Margin right</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use the margin-right auto to to push items to the right.</p>
+                <p>Add .mr-auto to the item you wish to remain in place. Everything after is pushed to the right.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="d-flex mb-3 text-dark bg-light"&gt;
+  &lt;div class="<span class="standout">mr-auto</span> p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex mb-3 text-dark bg-light">
+            <div class="mr-auto p-2 bd-highlight">Flex item</div>
+            <div class="p-2 bd-highlight">Flex item</div>
+            <div class="p-2 bd-highlight">Flex item</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Margin left</h2>
+        <div class="row">
+            <div class="col-6">
+                <p>Use the margin-left auto to to push items to the left.</p>
+                <p>Add .ml-auto to the item you wish to remain in place. Everything after is pushed to the left.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example">&lt;div class="d-flex mb-3 text-dark bg-light"&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+  &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+  &lt;div class="<span class="standout">ml-auto</span> p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="d-flex mb-3 text-dark bg-light">
+            <div class="p-2 bd-highlight">Flex item</div>
+            <div class="p-2 bd-highlight">Flex item</div>
+            <div class="ml-auto p-2 bd-highlight">Flex item</div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container">
+        <h2>With align-items (SKIPPED)</h2>
+    </section>
+
+    <section class="container">
+        <h2>Wrap (SKIPPED)</h2>
+    </section>
+
+    <section class="container">
+        <h2>Order (SKIPPED)</h2>
+    </section>
+
+    <section class="container">
+        <h2>Align content (SKIPPED)</h2>
+    </section>
+
+
+
+
+
+
+
+    </div>
+    <!--Close container-->
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
