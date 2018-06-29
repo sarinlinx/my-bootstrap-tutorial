@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Helpful Notes</title>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-container">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Notes</li>
+        </ol>
+    </nav>
+
+
+
+
+
+
+    <section class="container">
+        <h1>Filling the homepage</h1>
+        <div class="row">
+            <div class="col">
+                <p>Force the homepage screen to span the full height and width of the device.</p>
+                <p>To do this, add a height of 100% to the body and html elements.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <h2>The HTML</h2>
+            <div class="col">
+                <pre class="example">&lt;!-- Create HEADER section. This is the first large section a visitor sees --&gt;
+  &lt;<span class="standout">section id="header"</span>
+      &lt;!-- Add a Bootstrap container --&gt;
+      &lt;<span class="standout">div class="container"</span>&gt;
+
+          &lt;div class="row"&gt;
+              &lt;div class="col-sm text-center wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"&gt;
+                  &lt;img id="logo" src="img/logo.png" class="img-fluid"&gt;
+                  other content...
+              &lt;/div&gt;
+          &lt;/div&gt;
+
+      &lt;/div&gt;
+&lt;/section&gt;</pre>
+            </div>
+        </div>
+
+  <h2>The CSS</h2>
+        <div class="row">
+
+            <div class="col">
+                <p>Wrap the first section in a container with an id of header</p>
+                <p>In that, create a container with a class of 'container'.</p>
+                <p>In that create a row and col to place the logo and content.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">body, html {
+  /* Fills entire browser when loaded */
+  height: 100%;
+  font-family: 'Alegreya Sans', sans-serif;
+}</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>To the header id, add the following:</p>
+                <ul>
+                  <li>background-size: cover; - This causes the background image to span the full width and height.</li>
+                  <li>height: 100%; - causes background image to span vertically.</p>
+                  <li>display: flex</li>
+                  <li>align-items: center; - center all content in this first section</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <pre class="example">#header {
+  /* background: url(../img/purple-gradient.png) center center no-repeat; */
+  background: url(../img/purple-clouds.jpg) center center no-repeat;
+  /*span the entire container*/
+  background-size: cover;
+  /*force the background image to space the full height*/
+  height: 100%;
+  /* Enable a flex container for this element */
+  display: flex;
+  /* Center this section vertifcally and horizontally */
+  align-items: center;
+}</pre>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
