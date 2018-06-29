@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <a href="../index.html">Back to homepage</a>
-    <div class="container">
+    <a href="../index.html">Back to homepage</a>
+    <section class="container">
 
         <h1>Default Settings</h1>
         <p>font-size of 16px</p>
@@ -41,7 +41,8 @@
         <h1>Native font stacks</h1>
         <p>This means that the default font in Bootstrap is not set to something like Helvetica. But it tries to use whatever the current platform defines as the default sans-serif font. So for example on current Macs, that would be San Francisco. And that's
             going to yield a smaller CSS file. And again it makes things look great on different devices, because those fonts have specifically been designed for the device that they're in.</p>
-
+    </section>
+    <section class="container">
         <h1>Heading</h1>
         <p>h1 Bootstrap heading (2.5rem = 40px)</p>
         <p>h3 Bootstrap heading (1.75rem = 28px)</p>
@@ -49,25 +50,47 @@
         <p>h4 Bootstrap heading (1.5rem = 24px)</p>
         <p>h5 Bootstrap heading (1.25rem = 20px)</p>
         <p>h6 Bootstrap heading (1rem = 16px)</p>
+    </section>
 
+
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col-6">
         <h1>Display Headings</h1>
         <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight)</p>
-        <p>there are four classes to choose from:</p>
+        <p>There are four classes to choose from. Apply these to the header tag.</p>
         <ul>
             <li>.display-1</li>
             <li>.display-2</li>
             <li>.display-3</li>
             <li>.display-4</li>
         </ul>
+      </div>
+      <div class="col-6">
+<pre class="example">&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;
+&lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;
+&lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;
+&lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;</pre>
+      </div>
+    </section>
 
+
+
+
+
+
+
+    <section class="container">
         <h2>Element tags</h2>
         <h3>The <strong>small</strong> element tag</h3>
         <p>The HTML &lt;small&gt; element is used to create a lighter, secondary text in any heading. For example:</p>
         <pre class="example">&lt;h1&gt;h1 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h1&gt;</pre>
+    </section>
 
 
-
-
+    <section class="container">
         <h2>Lists</h2>
         <div class="row bg-shade">
             <div class="col-sm-6">
@@ -98,7 +121,11 @@
             <!--close column-->
         </div>
         <!--close row-->
+    </section>
 
+
+
+    <section class="container">
         <h2>Blockquotes</h2>
         <div class="row bg-shade">
             <div class="col-sm-6">
@@ -129,13 +156,13 @@
 &lt;/blockquote&gt;</pre>
             </div>
         </div>
+    </section>
 
 
 
 
 
-
-
+    <section class="container">
         <div class="row bg-shade">
             <div class="col-sm-6">
                 <p><strong>blockquote-reverse</strong> right-aligns blockquote content.</p>
@@ -148,16 +175,21 @@
         &lt;/blockquote&gt;</pre>
             </div>
         </div>
+    </section>
 
 
-<h1>Font Awesome</h1>
-<p>This site gives you scalable vector icons that can be customized.</p>
-<ul><li><a href="https://fontawesome.com/?from=io">Font Awesome</a></li></ul>
-<p>You must click the 'Download' button on the homepage.</p>
-<p>Extract it and put the folder in the top level of your site.</p>
-<p>In your index.html file, add the fontawesome stylesheet.</p>
-<pre>&lt;link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome.css"/&gt;
+    <section class="container">
 
+        <h1>Font Awesome</h1>
+        <p>This site gives you scalable vector icons that can be customized.</p>
+        <ul>
+            <li><a href="https://fontawesome.com/?from=io">Font Awesome</a></li>
+        </ul>
+        <p>You must click the 'Download' button on the homepage.</p>
+        <p>Extract it and put the folder in the top level of your site.</p>
+        <p>In your index.html file, add the fontawesome stylesheet.</p>
+        <pre>&lt;link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome.css"/&gt;
+</section>
 
 
 

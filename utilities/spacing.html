@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-    <title>Sizing</title>
+    <title>Spacing</title>
 </head>
 
 <body>
@@ -23,20 +23,397 @@
 
         <section class="container">
             <h1>Spacing</h1>
+            <p>Spacing refers to margins and padding.</p>
+            <p>Syntax: (property)-(sides)-(size)</p>
+            <p>For example: mt-2</p>
 
+            <h2>Sides</h2>
+            <p>Sides are any of the following:</p>
+            <ul>
+                <li>t - top</li>
+                <li>b - bottom</li>
+                <li>l - left</li>
+                <li>r -right</li>
+                <li>x - left and right</li>
+                <li>y - top and bottom</li>
+                <li>blank - all sides</li>
+            </ul>
+
+            <h2>Sizes</h2>
+            <p>Sizes are a percentage of the default rem size.</p>
+            <ul>
+                <li>0 - eliminates size</li>
+                <li>1 - .25 (rem)</li>
+                <li>2 - .5 (rem)</li>
+                <li>3 - 1 (rem)</li>
+                <li>4 - 1.5 (rem)</li>
+                <li>5 - 3 (rem)</li>
+                <li>auto - auto (margins only)</li>
+            </ul>
+        </section>
+
+
+        <section class="container">
+            <h1>Sizes</h1>
+        </section>
+
+        <section class="container">
+            <h3>Margin Size Examples</h3>
+            <div class="ml-0 bg-light text-dark">Margin left set to 0.</div>
+            <div class="ml-1 bg-light text-dark">Margin left set to 0.</div>
+            <div class="ml-2 bg-light text-dark">Margin left set to 0.</div>
+            <div class="ml-3 bg-light text-dark">Margin left set to 0.</div>
+            <div class="ml-4 bg-light text-dark">Margin left set to 0.</div>
+            <div class="ml-5 bg-light text-dark">Margin left set to 0.</div>
+        </section>
+
+        <section class="container">
+            <h3>Padding Size Examples</h3>
+            <div class="pl-0 bg-light text-dark">Margin left set to 0.</div>
+            <div class="p-1 bg-light text-dark">Margin left set to 0.</div>
+            <div class="pl-2 bg-light text-dark">Margin left set to 0.</div>
+            <div class="pl-3 bg-light text-dark">Margin left set to 0.</div>
+            <div class="pl-4 bg-light text-dark">Margin left set to 0.</div>
+            <div class="pl-5 bg-light text-dark">Margin left set to 0.</div>
+        </section>
+
+        <section class="container">
+            <h1>Margins</h1>
+            <h2>Margin left</h2>
             <div class="row">
                 <div class="col-6">
-                    <p>lkjlkjlkj).</p>
+                    <p>Margin left.</p>
                 </div>
                 <div class="col-6">
-                    <pre class="example">lkjlkjlj</pre>
+                    <pre class="example">&lt;div class="<span class="standout">ml-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) from the left.&lt;/div&gt;</pre>
                 </div>
             </div>
         </section>
 
         <section class="container">
-            <h3>Example</h3>lkjlkjlk
+            <h3>Example</h3>
+            <div class="ml-5 bg-light text-dark">This margin is set to 5 (3 rems) from the left.</div>
+            <br>
+            <div class="bg-info text-white">This has no margin set.</div>
         </section>
+
+
+
+        <section class="container">
+            <h2>Margin right</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin right.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">mr-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) from the right.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="mr-5 bg-light text-dark">This margin is set to 5 (3 rems) from the right.</div>
+            <br>
+            <div class="bg-info text-white">This has no margin set.</div>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h2>Margin top</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin top.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">mt-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) from the top.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="mt-5 bg-light text-dark">This margin is set to 5 (3 rems) from the top.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no margin set.</div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h2>Margin bottom</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin bottom.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">mb-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) from the bottom.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="mb-5 bg-light text-dark">This margin is set to 5 (3 rems) from the bottom.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no margin set.</div>
+            </div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h2>Margin x</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin x</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">mx-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) on the left and right.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="mx-5 bg-light text-dark">This margin is set to 5 (3 rems) on the left and right.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no margin set.</div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2>Margin y</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin x</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">my-5</span> bg-light text-dark"&gt;This margin is set to 5 (3 rems) from the top and bottom.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="my-5 bg-light text-dark">This margin is set to 5 (3 rems) from the top and bottom.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no margin set.</div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="container">
+            <h2>Margin auto</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin auto</p>
+                    <p>If the content is set to a fixed width and has a display of block, the content is centered horizontally.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">m-auto" style="width: 200px;"</span>&gt;
+  This margin is set to auto so it centers horizontally.
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="m-auto bg-light text-dark" style="width: 200px;">
+                  This margin is set to auto.
+                </div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class=" bg-light text-dark" style="width: 200px;">
+                  This has no margin set.
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="container">
+            <h1>Padding</h1>
+            <h2>Margin left</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Padding left</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">pl-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) from the left.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="pl-5 bg-light text-dark">This padding is set to 5 (3 rems) from the left.</div>
+            <br>
+            <div class="bg-info text-white">This has no padding set.</div>
+        </section>
+
+
+
+        <section class="container">
+            <h2>padding right</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin right.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">pr-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) from the right.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="pr-5 bg-light text-dark">This padding is set to 5 (3 rems) from the right.</div>
+            <br>
+            <div class="bg-info text-white">This has no padding set.</div>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h2>padding top</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin top.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">pt-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) from the top.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="pt-5 bg-light text-dark">This padding is set to 5 (3 rems) from the top.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no padding set.</div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <h2>padding bottom</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin bottom.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">pb-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) from the bottom.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="pb-5 bg-light text-dark">This padding is set to 5 (3 rems) from the bottom.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no padding set.</div>
+            </div>
+        </section>
+
+
+
+
+        <section class="container">
+            <h2>padding x</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin x</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">px-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) on the left and right.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="px-5 bg-light text-dark">This padding is set to 5 (3 rems) on the left and right.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no padding set.</div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <h2>padding y</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>Margin x</p>
+                </div>
+                <div class="col-6">
+                    <pre class="example">&lt;div class="<span class="standout">py-5</span> bg-light text-dark"&gt;This padding is set to 5 (3 rems) from the top and bottom.&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Example</h3>
+            <div class="bg-shade">
+                <div class="py-5 bg-light text-dark">This padding is set to 5 (3 rems) from the top and bottom.</div>
+            </div>
+            <br>
+            <div class="bg-shade">
+                <div class="bg-info text-white">This has no padding set.</div>
+            </div>
+        </section>
+
+
+
+
 
 
 
