@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>carousel</title>
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-container">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">carousel</li>
+        </ol>
+    </nav>
+
+
+
+
+
+
+    <section class="container">
+        <h2>Overview</h2>
+        <div class="row">
+            <div class="col">
+                <p>Carousel's rely on JavaScript. Make sure you've linked the following:</p>
+                <ul>
+                    <li>jQuery</li>
+                    <li>Popper.js</li>
+                    <li>bootstrap.js</li>
+                </ul>
+
+                <p>The bootstrap.bundle.js file already contains popper.js.</p>
+                <p>If you're using image, make sure they are already the same size, otherwise the slider will jump around.</p>
+
+                <h2>Basic layout</h2>
+
+                <div class="row">
+                    <div class="col-6">
+                        <p>Put images in divs.</p>
+                        <p>Give the opening div an id, class of 'carousel', 'slide' and data=ride="carousel".</p>
+                        <p>Give the 2nd div a class of carousel-inner.</p>
+                        <p>Add a class of carousel-item to each img div</p>
+                        <p>Set the first one to be 'active'.</p>
+                        <p>Add classes to images of d-block and img-fluid so they retain their correct size relative to its container.</p>
+                    </div>
+
+                    <div class="col-6">
+                        <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
+&lt;div <span class="standout">id="slider1" class="carousel slide</span> mb-5" <span class="standout">data-ride="carousel"</span>&gt;
+  &lt;div <span class="standout">class="carousel-inner"></span>&gt;
+    &lt;div <span class="standout">class="carousel-item active"</span>&gt;
+      &lt;img <span class="standout">class="d-block img-fluid"</span> src="#" alt="first slide"&gt;
+    &lt;/div&gt;
+    &lt;div <span class="standout">class="carousel-item"</span>&gt;
+      &lt;img  <span class="standout">class="d-block img-fluid"</span> src="#" alt="second slide"&gt;
+    &lt;/div&gt;
+    &lt;div <span class="standout">class="carousel-item"</span>&gt;
+      &lt;img  <span class="standout">class="d-block img-fluid"</span> src="#" alt="third slide"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+                    </div>
+                </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Adding controls</h2>
+
+        <div class="row">
+            <div class="col-6">
+                <p>Create left and right arrow icons using anchor tags.</p>
+                <p>Make sure these are added inside of the main carousel div, but outside the div with a class of 'carousel-inner'.</p>
+                <p>For the left arrow, give it a class of 'carousel-control-prev'.</p>
+                <p>For the right arrow, give it a class of 'carousel-control-next'.</p>
+                <p>Give both the href of the ID of the carousel.</p>
+                <p>Give both a data-slide rule of 'prev' or 'next'.</p>
+                <p>Give each an icon in a span tag with 'carousel-control-prev-icon' or 'carousel-control-next-icon'.
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
+&lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
+  &lt;div class="carousel-inner">&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="first slide"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="second slide"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="third slide"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- control arrows --&gt;
+  &lt;<span class="standout">a class="carousel-control-prev" href="#slider1" data-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"</span>&gt;&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;<span class="standout">a class="carousel-control-next" href="#slider1" data-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"</span>&gt;&lt;/span&gt;
+  &lt;/a&gt;
+
+&lt;/div&gt;
+</span></pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Adding indicators</h2>
+
+        <div class="row">
+            <div class="col-6">
+                <p>Add an ordered list just under the first div tag.</p>
+                <p>Give the first list item a class of active.</li>
+                    <p>Give all inidcators a data-target value of the carousel's ID.</p>
+                    <p>Give each a data-slide-to value to indicate where they should slide.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
+          &lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
+<span class="standout">
+&lt;ol class="carousel-indicators"&gt;
+  &lt;li class="active" data-target="#slider1" data-slide-to="0"&gt;&lt;/li&gt;
+&lt;li data-target="#slider1" data-slide-to="1"&gt;&lt;/li&gt;
+&lt;li data-target="#slider1" data-slide-to="2"&gt;&lt;/li&gt;
+&lt;/ol&gt;</span>
+
+
+  &lt;div class="carousel-inner">&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="first slide"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="second slide"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img class="d-block img-fluid" src="#" alt="third slide"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- control arrows --&gt;
+  &lt;a class="carousel-control-prev" href="#slider1" data-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;a class="carousel-control-next" href="#slider1" data-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+
+&lt;/div&gt;
+</span></pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Adding captions to the images</h2>
+
+        <div class="row">
+            <div class="col-6">
+                <p>Under the image, but within the same block, add another div.</p>
+                <p>Give it a class of carousel-caption.</p>
+                <p>This example also sets the display property so the caption only displays on md size screens or larger.</p>
+                <p>Add your text.</p>
+
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
+&lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
+
+  &lt;ol class="carousel-indicators"&gt;
+  &lt;li class="active" data-target="#slider1" data-slide-to="0"&gt;&lt;/li&gt;
+  &lt;li data-target="#slider1" data-slide-to="1"&gt;&lt;/li&gt;
+  &lt;li data-target="#slider1" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;div class="carousel-inner">&gt;
+
+  &lt;div class="carousel-item active"&gt;
+    &lt;img class="d-block img-fluid" src="#" alt="first slide"&gt;
+    <span class="standout">&lt;!-- Only display on md size screens and above --&gt;
+    &lt;div class="carousel-caption d-none d-md-block"&gt;
+    &lt;h3&gt;Slide One&lt;/h3&gt;
+    &lt;p&gt;Caption text to display over slide&lt;/p&gt;
+    &lt;/div&gt;</span>
+  &lt;/div&gt;
+
+  &lt;div class="carousel-item"&gt;
+    &lt;img class="d-block img-fluid" src="#" alt="second slide"&gt;
+    <span class="standout">&lt;!-- Only display on md size screens and above --&gt;
+    &lt;div class="carousel-caption d-none d-md-block"&gt;
+    &lt;h3&gt;Slide One&lt;/h3&gt;
+    &lt;p&gt;Caption text to display over slide&lt;/p&gt;
+    &lt;/div&gt;</span>
+  &lt;/div&gt;
+
+  &lt;div class="carousel-item"&gt;
+    &lt;img class="d-block img-fluid" src="#" alt="third slide"&gt;
+    <span class="standout">&lt;!-- Only display on md size screens and above --&gt;
+    &lt;div class="carousel-caption d-none d-md-block"&gt;
+    &lt;h3&gt;Slide One&lt;/h3&gt;
+    &lt;p&gt;Caption text to display over slide&lt;/p&gt;
+    &lt;/div&gt;</span>
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- control arrows --&gt;
+&lt;a class="carousel-control-prev" href="#slider1" data-slide="prev"&gt;
+  &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a class="carousel-control-next" href="#slider1" data-slide="next"&gt;
+  &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+</span></pre>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Center image within carousel</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>To center an image within the carousel, add the following CSS.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-css">.carousel img {
+  margin: auto;
+}</pre>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container">
+        <h1>JavaScript</h1>
+        <div class="row">
+            <div class="col-6">
+                <p>This changes how fast the slider moves in milliseconds.</p>
+                <p>Hover stops the slider when you hover your mouse over it.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-js"><span class="code-comment">//retrieve carousel class</span>
+$('.carousel').carousel({
+  <span class="code-comment">//Change slide interval in ms</span>
+  interval: 3000,
+  pause: 'hover'
+})</span></pre>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>

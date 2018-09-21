@@ -9,36 +9,39 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  /* font-size: 4rem; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 10px; */
   color: #ffb13f;
   background-color: #4b4b4b;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
 }
 
 h2 {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   color: #eb8c00;
   /* Dark Gold */
 }
 
 h3 {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   color: #00ff88;
   /* GREEN */
   /* color: #ff5f5f; RED*/
 }
 
 h4 {
-  text-decoration: underline;
+  color: #ff4f4f;
 }
 
 .card {
   color: #000;
 }
 
+.carousel img {
+ margin: auto;
+}
 /*___________________________________________________
 Customizations
 ___________________________________________________*/
@@ -59,6 +62,14 @@ ___________________________________________________*/
 
 .code-css {
   color: yellow;
+}
+
+.code-js {
+  color: #ff2c2c;
+}
+
+.code-comment {
+  color: gray;
 }
 
 .toc {

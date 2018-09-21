@@ -134,11 +134,176 @@
 
 
 
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Smooth scrolling to the section with JS</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p>Create a navbar and assign it a specific id.</p>
+                    <p>Full code can be found here:</p>
+                    <ul>
+                      <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp">Smooth scrolling</a></li></ul>
+                </div>
+
+                <div class="col-6">
+<pre class="example"><span class="code-js"><span class="code-comment">// Add scrollspy to body</span>
+$('body').scrollspy({target: "#navbar-example3", offset: 50});
+
+<span class="code-comment">// Add smooth scrolling on all links inside the navbar</span>
+$("#navbar-example3 a").on('click', function(event) {
+
+  <span class="code-comment">// Make sure this.hash has a value before overriding default behavior</span>
+  if (this.hash !== "") {
+
+    <span class="code-comment">// Prevent default anchor click behavior</span>
+    event.preventDefault();
+
+    <span class="code-comment">// Store hash</span>
+    var hash = this.hash;
+
+    <span class="code-comment">// Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area</span>
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+    <span class="code-comment">// Add hash (#) to URL when done scrolling (default click behavior)</span>
+      window.location.hash = hash;
+    });
+
+  } <span class="code-comment">// End if</span>
+
+});</span></pre>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="container" <div class="row">
+        <div class="col">
+            <h3>Example</h3>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container">
+      <h4>Example of sliding to section</h4>
+        <div class="row">
+            <div class="col">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light sticky-top">
+
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec1">one</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec2">two</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec3">three</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h4 id="sec1">one</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                      blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                    <h4 id="sec2">two</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blblhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb aahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                    <h4 id="sec3">three</h4>
+                    <p>blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albblhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb ablhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                    blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb aha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha
+                        blhab blha blahb alhb albha blhab vvvblha blahb alhb albhaahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab blha blahb alhb albha blhab vvvblha blahb alhb albha blhabblha blahb alhb albha blhabblhablha
+                        blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhabblha blahb alhb albha blhab</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </div>
     <!--Close container-->
     <script src="../js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- bundle.js contains popper, but not jquery -->
     <script src="../js/bootstrap.bundle.js"></script>
+
+
+
+
+    <script>
+    // Add scrollspy to <body>
+    $('body').scrollspy({target: "#navbar-example3", offset: 50});
+
+    // Add smooth scrolling on all links inside the navbar
+    $("#navbar-example3 a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+
+      } // End if
+
+    });
+    </script>
 </body>
 
 </html>
