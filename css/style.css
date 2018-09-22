@@ -205,3 +205,30 @@ ___________________________________________________*/
 .align-items-height {
   height: 150px;
 }
+
+
+#css-code-example-home-section {
+  /* Add image */
+  background: url(../img/carousel-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+
+/* Add dark overlay */
+/* In the home section, target the .dark-overlay class */
+#css-code-example-home-section .css-code-example-dark-overlay {
+  /* Overly starts at top left */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Cover */
+  width: 100%;
+  /* height should be same as parent */
+  min-height: 700px;
+
+  /* Overlay effect */
+  background: rgba(0,0,0,0.7);
+
+  color: #fff;
+}

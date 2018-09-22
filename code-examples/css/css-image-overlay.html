@@ -14,23 +14,23 @@
 <body>
 
     <section class="container">
-        <h3>HTML code</h3>
+        <h1>CSS background overlay with opacity</h1>
         <div class="row">
             <div class="col">
+                <p>This section explains how to add an image to the background of a section.</p>
+                <p>Next, how to use CSS to create a dark opacity over that background image.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>HTML code</h3>
+        <div class="row">
+            <div class="col-6">
                 <p>Put your HTML in a section with an ID.</p>
                 <p>Within that, add a div with a class of overlay.</p>
                 <p>Within that, create your basic Bootstrap sections.</p>
                 <p>But make sure to add a custom class along side of the Bootstrap 'container' class.</p>
-            </div>
-        </div>
-
-
-        <h4>Example</h4>
-        <div class="row">
-            <div class="col-6">
-                <p>Add a section with an ID of .home-section.</p>
-                <p>Add a div with a class of .dark-overlay.</p>
-                <p>Add a container with a custom class of .home-inner.</p>
             </div>
 
             <div class="col-6">
@@ -39,12 +39,88 @@
   <span class="standout">&lt;div class="dark-overlay"&gt;</span>
 
     &lt;!-- Content section --&gt;
-    &lt;div <span class="standout">class="home-inner</span> container"&gt;
+    &lt;div container"&gt;
         &lt;div class="row"&gt;
           &lt;div class="col"&gt;</span></pre></div>
-    </div>
-
+        </div>
     </section>
+
+
+
+    <section class="container">
+        <h3>CSS code</h3>
+        <div class="row">
+            <div class="col-6">
+                <p>Add the background image tot the main section.</p>
+                <p>Make sure it does not repeat and that it covers the entire page.</p>
+                <p>Give it a height. The Opacity will need to match this height.</p>
+                <p>To the .dark-overlay class, position it 'absolute' at the top left.</p>
+                <p>Add a 100% width and height that matches the original image.</p>
+            </div>
+
+            <div class="col-6">
+                <pre class="example"><span class="code-css">#home-section {
+  <span class="code-comment">/* Add image */</span>
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+<span class="code-comment">/* Add dark overlay */
+/* In the home section, target the .dark-overlay class */</span>
+#home-section .dark-overlay {
+  <span class="code-comment">/* Overly starts at top left */</span>
+  position: absolute;
+  top: 0;
+  left: 0;
+  <span class="code-comment">/* Cover */</span>
+  width: 100%;
+  <span class="code-comment">/* height should be same as parent */</span>
+  min-height: 700px;
+
+  <span class="code-comment">/* Overlay effect */</span>
+  background: rgba(0,0,0,0.7);
+}</pre></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h2>Final result</h2>
+        <div class="row">
+            <div class="col">
+                <pre><header id="css-code-example-home-section">
+  <!-- Create class for dark overlay of background image -->
+  <div class="css-code-example-dark-overlay">
+
+    <!-- Content section -->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Text that goes over the background image.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
 
 
     <script src="../../js/jquery.js"></script>
