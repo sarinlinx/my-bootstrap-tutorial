@@ -26,7 +26,8 @@
 
 
     <section class="container">
-        <h2>Overview</h2>
+        <h1>Overview</h1>
+
         <div class="row">
             <div class="col">
                 <p>Carousel's rely on JavaScript. Make sure you've linked the following:</p>
@@ -38,14 +39,21 @@
 
                 <p>The bootstrap.bundle.js file already contains popper.js.</p>
                 <p>If you're using image, make sure they are already the same size, otherwise the slider will jump around.</p>
+                <h1>Adding a carousel with inline images</h1>
+
+
+
+
+
 
                 <h2>Basic layout</h2>
 
                 <div class="row">
                     <div class="col-6">
-                        <p>Put images in divs.</p>
+
                         <p>Give the opening div an id, class of 'carousel', 'slide' and data=ride="carousel".</p>
                         <p>Give the 2nd div a class of carousel-inner.</p>
+                        <p>From here, put each image in their own div.</p>
                         <p>Add a class of carousel-item to each img div</p>
                         <p>Set the first one to be 'active'.</p>
                         <p>Add classes to images of d-block and img-fluid so they retain their correct size relative to its container.</p>
@@ -54,7 +62,7 @@
                     <div class="col-6">
                         <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
 &lt;div <span class="standout">id="slider1" class="carousel slide</span> mb-5" <span class="standout">data-ride="carousel"</span>&gt;
-  &lt;div <span class="standout">class="carousel-inner"></span>&gt;
+  &lt;div <span class="standout">class="carousel-inner"</span>&gt;
     &lt;div <span class="standout">class="carousel-item active"</span>&gt;
       &lt;img <span class="standout">class="d-block img-fluid"</span> src="#" alt="first slide"&gt;
     &lt;/div&gt;
@@ -187,7 +195,6 @@
 
 
 
-
     <section class="container">
         <h2>Adding captions to the images</h2>
 
@@ -256,6 +263,98 @@
     </section>
 
 
+
+
+
+
+
+
+
+
+    <section class="container">
+        <h1>Adding a carousel with background images</h1>
+        <div class="row">
+            <div class="col">
+                <p>This creates an image carousel using CSS background images.</p>
+                <p>In this way, you do not have to add the images to the HTML.</p>
+                <p>Everything is the same as above, except for the .carousel-inner section.</p>
+
+                <h2>Basic layout</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <p>For each image div, create a custom class of .carousel-image-#.</p>
+                        <p>Add a .container within the each image div.</p>
+                    </div>
+
+                    <div class="col-6">
+<pre class="example"><span class="code-html">&lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item <span class="standout">carousel-image-1</span> active"&gt;
+        &lt;div class="<span class="standout">container</span>"&gt;
+            &lt;div class="carousel-caption d-none d-sm-block text-right mb-5"&gt;
+                &lt;h1 class="display-3"&gt;Heading One&lt;/h1&gt;
+                &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetu.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-danger btn-lg"&gt;Sign Up Now&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="carousel-item <span class="standout">carousel-image-2</span>"&gt;
+        &lt;div class="<span class="standout">container</span>"&gt;
+            &lt;div class="carousel-caption d-none d-sm-block mb-5"&gt;
+                &lt;h1 class="display-3"&gt;Heading Two&lt;/h1&gt;
+                &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetur a.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-primary btn-lg"&gt;Learn More&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="carousel-item <span class="standout">carousel-image-3</span>"&gt;
+        &lt;div class="<span class="standout">container</span>"&gt;
+            &lt;div class="carousel-caption d-none d-sm-block text-right mb-5"&gt;
+                &lt;h1 class="display-3"&gt;Heading Three&lt;/h1&gt;
+                &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetur .&lt;/p&gt;
+                &lt;a href="#" class="btn btn-success btn-lg"&gt;Learn More&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+                    </div>
+                </div>
+
+
+
+
+
+                <h2>CSS layout</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Give the items a height so you can see them.</p>
+                        <p>background-size: cover makes the image span the entire width.</p>
+                    </div>
+
+                    <div class="col-6">
+<pre class="example"><span class="code-css">.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/carousel-image1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/carousel-image2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/carousel-image3.jpg');
+  background-size: cover;
+}</pre>
+</div>
+</div>
+
+    </section>
 
 
 

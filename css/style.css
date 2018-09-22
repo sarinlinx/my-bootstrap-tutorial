@@ -232,3 +232,23 @@ ___________________________________________________*/
 
   color: #fff;
 }
+
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/carousel-image1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/carousel-image2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/carousel-image3.jpg');
+  background-size: cover;
+}
