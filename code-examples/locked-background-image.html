@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Locked background image</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to homepage</a>
+
+
+
+    <section class="container">
+    <h1>Locked background image on scroll</h1>
+<div class="row">
+  <div class="col">
+    <p>This effect causese the image to stay in the background while you scroll down the page.</p>
+    <p>NOTE: You cannot use position with this. This is because 'background-attachment' is ALWAYS relative to the viewport, so setting a position: absolute or position: relative will have no affect.</p>
+    <p>Instead, you must use: background-position: center;</p>
+  </diV>
+</div>
+        <h4>Add HTML</h4>
+        <div class="row">
+            <div class="col-6">
+                <p>Add a section with an ID.</p>
+                <p>Inside, add a div with a class of .dark-overlay.</p>
+            </div>
+            <div class="col-6">
+                <pre class="example"><span class="code-html">&lt;section id="home-heading" class="p-5"&gt;
+ &lt;div class="dark-overlay"&gt;
+   &lt;div class="row"&gt;
+     &lt;div class="col"&gt;
+       &lt;div class="container pt-5"&gt;
+         &lt;h1&gt;Are You Ready To Get Started?&lt;/h1&gt;
+         &lt;p class="d-none d-md-block"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque magni sit dolores. Nisi, dolor nam modi perspiciatis
+           consequatur soluta.&lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;</span>
+</div>
+</div>
+
+<h4>Add CSS</h4>
+<div class="row">
+    <div class="col-6">
+        <p>Add a section with an ID.</p>
+        <p>Inside, add a div with a class of .dark-overlay.</p>
+    </div>
+      <div class="col-6">
+        <pre class="example">
+ <span class="code-css">#home-heading {
+ position: relative; <span class="code-comment">//This is needed so the text displays</span>
+ min-height: 200px;
+ background: url('../img/lights.jpg');
+ background-position: center; <span class="code-comment">//this positions the image in the background</span>
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ text-align: center;
+ color: #fff;
+}
+
+.dark-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.7);
+}</span></pre></div>
+        </div>
+    </section>
+
+
+
+    <section id="fixed-image-code-example-home-heading">
+        <div class="fixed-image-code-example-dark-overlay">
+            <h3>Example</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <h2>The page scrolls while the background image stays fixed</h2>
+                        <p class="d-none d-md-block">This example uses a small image, so you can see where it ends when you scroll.</p>
+                        <p>You should only use a very large image so the entire page is covered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <h2>Next section</h2>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                        <p>Next section with lots of stuff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
