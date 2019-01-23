@@ -31,6 +31,8 @@
             <div class="col-6">
                 <p>Add a section with an ID.</p>
                 <p>Inside, add a div with a class of .dark-overlay.</p>
+                <p>NOTE: Depending on your section, you may have to move around the padding value in the HTML. Placing it on the dark overlay section seems to work also.</p>
+                <p>DO NOT add padding in your CSS, otherwise the overlay will be off.</p>
             </div>
             <div class="col-6">
                 <pre class="example"><span class="code-html">&lt;section id="home-heading" class="p-5"&gt;
@@ -58,9 +60,10 @@
       <div class="col-6">
         <pre class="example">
  <span class="code-css">#home-heading {
- position: relative; <span class="code-comment">//This is needed so the text displays</span>
+ position: relative; <span class="code-comment">//This MAY be needed so the text displays</span>
  min-height: 200px;
  background: url('../img/lights.jpg');
+ background-size: cover; <span class="code-comment">//This is needed to stretch the image across the entire screen
  background-position: center; <span class="code-comment">//this positions the image in the background</span>
  background-attachment: fixed;
  background-repeat: no-repeat;

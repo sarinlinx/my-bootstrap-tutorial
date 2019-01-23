@@ -7,41 +7,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
 
     <title>Margin and Padding</title>
 </head>
 
 <body>
     <a href="../index.html">Back to homepage</a>
-    <div class="container">
 
         <h1>Margin/Padding</h1>
-        <p>Syntax - <strong>(property m or p)(side t,r,b,l,x,y)-(breakpoint)-(size 0-5 or auto)</strong>
-            <p>A note on the size property.</p>
-            <ul>
-                <li>1 is .25rem</li>
-                <li>2 is .5rem</li>
-                <li>3 is 1rem</li>
-                <li>4 is 1.5rem</li>
-                <li>5 is 3rem</li>
-            </ul>
 
-<p>Example: Padding Bottom 3</p>
-<pre class="example">&lt;div class="pb-sm-3"</pre>
+        <section class="container">
 
-<p>Example: Margin Left 2</p>
-<pre class="example">&lt;div class="ml-lg-2"</pre>
+            <h2>Bootstrap link</h2>
+            <div class="row">
+                <div class="col">
+                    <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/">Spacing</a>
+                </div>
+            </div>
+        </section>
 
-<p>Example: Margin at top and bottom</p>
-<pre class="example">&lt;div class="mx-xl-2"</pre>
+        <section class="container">
+            <h1>Spacing</h1>
+            <h2>Properties</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Properties are <span class="standout">margin</span> and <span class="standout">padding</span>.</p>
+                </div>
+            </div>
+            <h3>Margin</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">m</span> to denote the margin property.</p>
+                    <p>This sets both the left and right margins.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="mx-auto"</pre>
+                </div>
+            </div>
+
+            <h3>Padding</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">p</span> to denote the padding property.</p>
+                    <p>This sets both the top and bottom padding.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="py-5"</pre>
+                </div>
+            </div>
 
 
 
 
 
-    </div>
+            <h2>Sides</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Side are <span class="standout">top, bottom, left, right, top & bottom, left & right</span>.</p>
+                </div>
+            </div>
+
+            <h3>Top</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">t</span> to denote the top side.</p>
+                    <p>This sets margin top.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="mt-2"</pre>
+                </div>
+            </div>
+
+            <h3>Bottom</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">b</span> to denote the bottom side.</p>
+                    <p>This sets padding bottom.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="pb-2"</pre>
+                </div>
+            </div>
+
+            <h3>Left</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">l</span> to denote the left side.</p>
+                    <p>This sets margin left.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="ml-2"</pre>
+                </div>
+            </div>
+
+            <h3>Right</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">r</span> to denote the right side.</p>
+                    <p>This sets margin right.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="mr-2"</pre>
+                </div>
+            </div>
+
+            <h3>Left & Right</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">x</span> to denote both left & right sides.</p>
+                    <p>This sets margin on both sides.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="mx-2"</pre>
+                </div>
+            </div>
+
+            <h3>Top & Bottom</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use the letter <span class="standout">y</span> to denote both top & bottom sides.</p>
+                    <p>This sets padding on both top and bottom.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="py-2"</pre>
+                </div>
+            </div>
+
+
+
+            <h2>Sizes</h2>
+            <div class="row">
+                <div class="col">
+                    <p>The sizes range from 0 to 5.</p>
+                    <ul>
+                        <li>0 removes the value</li>
+                        <li>1 is .25rem</li>
+                        <li>2 is .5rem</li>
+                        <li>3 is 1rem</li>
+                        <li>4 is 1.5rem</li>
+                        <li>5 is 3rem</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>auto (Horizontal centering)</h3>
+            <div class="row">
+                <div class="col-5">
+                    <p>Use <span class="standout">auto</span> to set equal margin sides.</p>
+                    <p>This sets padding on both top and bottom.</p>
+                </div>
+                <div class="col-7">
+                    <pre class="example">class="mx-auto"</pre>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
     <!--Close container-->
     <script src="../js/jquery.js"></script>
     <!-- bundle.js contains popper, but not jquery -->
