@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../_css/style.css">
+    <title>Locked background image</title>
+
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <a href="../../index.html">Back to homepage</a>
+
+<section class="container">
+  <h1>Header overlay with centered text</h1>
+  <h3>This example takes up the full home screen with an image, overlay, and centered text</h3>
+  <h4>HTML</h4>
+  <div class="row">
+
+        <div class="col-5">
+            <p>Create section with a unique ID and class of 'fullscreen'.</p>
+            <p>Create a div section with a class of 'overlay'.</p>
+            <p>Create a container.</p>
+            <p>Center content as you like. NOTE: The content is vertically aligned in CSS.</p>
+        </div>
+        <div class="col-7">
+<pre class="example">&lt;section id="main-header" class="fullscreen"&gt;
+
+    &lt;div class="overlay"&gt;&lt;/div&gt;
+
+    &lt;div class="container  text-center"&gt;
+        &lt;div class="row d-flex justify-content-center"&gt;
+            &lt;div class="col-10"&gt;
+                &lt;h2 class=" align-center py-5 display-1"&gt;Title&lt;/h2&gt;
+                &lt;p class=" align-center pt-2 display-5"&gt;Sub Text&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+</pre>
+        </div>
+    </div>
+
+
+    <h4>CSS</h4>
+    <div class="row">
+
+          <div class="col-5">
+              <p>asdf</p>
+          </div>
+          <div class="col-7">
+  <pre class="example"><span class="code-css">#main-header {
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("header-bg.jpg");
+}
+
+.fullscreen {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+
+  <span class="code-comment">/* Center vertically */</span>
+  align-items: center;
+  <span class="code-comment">/* -webkit-align-items: center; */</span>
+  min-height: 100vh;
+}
+
+.overlay {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}</span></pre>
+          </div>
+      </div>
+
+</section>
+
+
+
+
+
+<section class="container">
+  <h1>Changing the overlay color</h1>
+
+  <div class="row">
+
+        <div class="col-5">
+            <p>You can use a gradient color for the overlay.</p>
+            <p>Just change the background-color property to 'background: linerar-gradient.</p>
+
+        </div>
+        <div class="col-7">
+<pre class="example"><span class="code-css">background: linear-gradient(to right, #fcffc5 0%, #00c5c7 100%);</span></pre>
+        </div>
+    </div>
+
+
+
+    <script src="../js/jquery.js"></script>
+    <!-- bundle.js contains popper, but not jquery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
