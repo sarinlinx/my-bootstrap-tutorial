@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
     <title>Card Sizing and Text alignment</title>
 </head>
 
@@ -112,7 +112,7 @@
         <div class="row">
             <div class="col-6">
                 <p><a href="https://getbootstrap.com/docs/4.0/utilities/sizing/">Utilities</a> allow you to customize the size of the card.</p>
-                <p>For example: class="card w-76"</p>
+                <p>For example: class="card w-75"</p>
             </div>
 
 
@@ -334,9 +334,9 @@
             <div class="col">
                 <p>Bootstrap includes three options for laying out series of cards. For the time being, these layout options are not yet responsive.</p>
                 <ul>
-                    <li>asdf</li>
-                    <li>asdf</li>
-                    <li>asdf</li>
+                    <li>Groups</li>
+                    <li>Decks</li>
+                    <li>Columns</li>
                 </ul>
             </div>
     </section>
@@ -533,13 +533,78 @@
 
 
     <section class="container">
-        <h2>Columns - <span class="red">(SKIPPED)</span></h2>
+        <h2>Columns</h2>
         <div class="row">
-            <div class="col-6">
-                <p>asdf</p>
+            <div class="col-5">
+                <p>Cards can be organized into <a href="https://masonry.desandro.com/">Masonry-like columns</a> by wrapping them in .card-columns.</p>
+                <p>Cards are built with CSS column properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.</p>
+                <p>NOTE: Heads up! Your mileage with card columns may vary. To prevent cards breaking across columns, we must set them to <span class="red">display: inline-block</span> as column-break-inside: avoid isn’t a bulletproof solution yet. <span class="yellow">Need to find an example of this.</span></p>
             </div>
-            <div class="col-6">
-                <pre class="example">asdf</pre>
+            <div class="col-7">
+<pre class="example">&lt;div <span class="standout">class="card-columns</span>"&gt;
+  &lt;div class="card"&gt;
+    &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title that wraps to a new line&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card p-3"&gt;
+    &lt;blockquote class="blockquote mb-0 card-body"&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+      &lt;footer class="blockquote-footer"&gt;
+        &lt;small class="text-muted"&gt;
+          Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+        &lt;/small&gt;
+      &lt;/footer&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card bg-primary text-white text-center p-3"&gt;
+    &lt;blockquote class="blockquote mb-0"&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.&lt;/p&gt;
+      &lt;footer class="blockquote-footer"&gt;
+        &lt;small&gt;
+          Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+        &lt;/small&gt;
+      &lt;/footer&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+  &lt;div class="card text-center"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="..." alt="Card image"&gt;
+  &lt;/div&gt;
+  &lt;div class="card p-3 text-right"&gt;
+    &lt;blockquote class="blockquote mb-0"&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+      &lt;footer class="blockquote-footer"&gt;
+        &lt;small class="text-muted"&gt;
+          Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+        &lt;/small&gt;
+      &lt;/footer&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+      &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+      &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
 
                 </div>
         </div>
@@ -547,10 +612,96 @@
 
     <section class="container">
         <h3>Example</h3>
-      asdf
+        <div class="card-columns">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title that wraps to a new line</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card p-3">
+      <blockquote class="blockquote mb-0 card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card bg-primary text-white text-center p-3">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+        <footer class="blockquote-footer">
+          <small>
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="..." alt="Card image">
+    </div>
+    <div class="card p-3 text-right">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
     </section>
 
 
+
+
+
+
+
+    <section class="container">
+        <h2>Columns</h2>
+        <div class="row">
+            <div class="col-5">
+                <p>Card columns can also be extended and customized with some additional code. Shown below is an extension of the .card-columns class using the same CSS we use—CSS columns— to generate a set of responsive tiers for changing the number of columns.</p>
+                <p><span class="yellow">Need an example of this</span></p>
+            </div>
+            <div class="col-7">
+  <pre class="example">.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}</pre></div>
+        </div>
+    </section>
 
 
 

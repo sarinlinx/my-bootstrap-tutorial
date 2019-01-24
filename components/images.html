@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
 
     <title>Images</title>
 </head>
@@ -160,8 +160,19 @@
 
         <section class="container">
             <h1>Picture (SKIPPED)</h1>
-        </section>
+            <div class="row">
+                <div class="col-6">
+                    <p>If you are using the &lt;picture&gt; element to specify multiple &lt;source&gt; elements for a specific &lt;img&gt;, make sure to add the .img-* classes to the &lt;img&gt; and not to the &lt;picture&gt; tag.</p>
+                </div>
 
+                <div class="col-6">
+                    <pre class="example">​&lt;picture&gt;
+  &lt;source srcset="..." type="image/svg+xml"&gt;
+  &lt;img src="..." class="img-fluid img-thumbnail" alt="..."&gt;
+&lt;/picture&gt;</pre>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -171,19 +182,25 @@
         <section class="container">
             <h2>Figures</h2>
             <div class="row">
+                <div class="col">
+                    <p>Anytime you need to display a piece of content—like an image with an optional caption, consider using a &lt;figure&gt;.</p>
+                    <p> Images in figures have no explicit size, so be sure to add the .img-fluid class to your &lt;img&gt; to make it responsive.</p>
+                </div>
+            </div>
+
+            <h3>Code example</h3>
+            <div class="row">
                 <div class="col-6">
-                    <p>Wrap the image in a container with a class of &lt;figure&gt;. Give it a class of .figure to style.</p>
-                    <p>Give the image tag classes of .figure-img to style.</p>
+                    <p>Wrap the image in a container with a class of &lt;figure&gt;.</p>
+                    <p>Give the image tag classes of figure-img, img-fluid, and rounded to style.</p>
                     <p>Under the image, add a &lt;figcaption&gt; tag to add a caption to an image. Give it a class of .figure-caption to style.</p>
                     <p>You can align the text using .text-right on the figcaption tag.</p>
-
-
                 </div>
 
                 <div class="col-6">
                     <pre class="example">&lt;figure class="<span class="standout">figure</span>"&gt;
   &lt;img src=".." class="<span class="standout">figure-img</span> img-fluid"&gt;
-  &lt;figcaption class="<span class="standout">figure-caption</span>"&gt;A caption for the above image.&lt;/figcaption&gt;
+  &lt;figcaption class="<span class="standout">figure-caption</span> text-right"&gt;A caption for the above image.&lt;/figcaption&gt;
 &lt;/figure&gt;</pre>
                 </div>
             </div>
@@ -191,7 +208,7 @@
 
 
         <section class="container">
-            <h3>Example</h3>
+            <h4>Example</h4>
             <div class="row">
                 <div class="col">
                     <figure class="figure">
@@ -208,40 +225,28 @@
 
 
 
+        <h1>Rounded</h1>
 
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <h1>Basic image classes</h1>
+        <strong>.rounded</strong> - Adds a rounded edge to an image. You can also specify which side of the image should be rounded.</p>
         <ul>
-            <li><strong>.img-fluid</strong> - This creates responsive images.</li>
-            <li><strong>.rounded</strong> - Adds a rounded edge to an image. You can also specify which side of the image should be rounded.
-                <ul>
-                    <li>.rounded-top</li>
-                    <li>.rounded-right</li>
-                    <li>.rounded-bottom</li>
-                    <li>.rounded-left</li>
-                    <li>.rounded-circle - make an oval shaped image. If the image happens to be square, then it will actually give you a circle</li>
-                    <li>.rounded-rounded-0 - if the image already has some roundness applied to it, you can specify a class of rounded-0 and it's going to take out the roundness of that image if it has round edges</li>
-                </ul>
-            </li>
-            <li><strong>.img-thumbnail</strong> - a slightly rounded image with also a one pixel border around the image with a little bit of space.</li>
+            <li>.rounded-top</li>
+            <li>.rounded-right</li>
+            <li>.rounded-bottom</li>
+            <li>.rounded-left</li>
+            <li>.rounded-circle - make an oval shaped image. If the image happens to be square, then it will actually give you a circle</li>
+            <li>.rounded-rounded-0 - if the image already has some roundness applied to it, you can specify a class of rounded-0 and it's going to take out the roundness of that image if it has round edges</li>
         </ul>
 
+        <h4>rounded-top</h4>
 
-        <h1>Aligning images</h1>
-        <ul>
-            <li><strong>.float-left</strong> or <strong>.float-right</strong> - By default, images are considered to be inline elements, so you can float them.</li>
-            <li><strong>.text-center</strong> - centers the image and text</li>
-            <li><strong>.mx-auto</strong> - if you define that an image needs to be a block element, then you can use the mx-auto class, and it will center the block, which in this case is the images</li>
-        </ul>
+        <div class="row">
+            <div class="col">
+<p>These don't seem to work.</p>
+                <img src="../img/blue-square.svg" class="rounded-top" width="200px;">
+            </div>
+        </div>
+        </section>
 
-
-        <h1>Figures</h1>
-        <ul>
-            <li><strong>.figure</strong> on the &lt;figure&gt; tag</li>
-            <li><strong>.figure-img</strong> on the images</li>
-            <li><strong>.figure-caption</strong> on the text</li>
-        </ul>
 
 
 

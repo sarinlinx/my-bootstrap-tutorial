@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
     <title>Cards</title>
 </head>
 
@@ -69,13 +69,13 @@
             <div class="col-6">
                 <p>The building block of a card is the .card-body. Use it whenever you need a padded section within a card.</p>
                 <p>Here's an example without the image on top. Just the .card container, with the .card-body inside.</p>
-                <p>When adding text, use .card-text.</p>
+                <p>When adding text, use .card-text. This adds CSS to remove margins so teh text fits into the section.</p>
             </div>
 
             <div class="col-6">
                 <pre class="example">&lt;div class="card"&gt;
-  &lt;div class="card-body"&gt;
-    <span class="standout">&lt;p class="card-text"&gt;</span>This is some text within a card body.&lt;/p&gt;
+  &lt;div <span class="standout">class="card-body</span>"&gt;
+    &lt;p <span class="standout">class="card-text"&gt;</span>This is some text within a card body.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
             </div>
@@ -242,19 +242,18 @@
     <section class="container">
         <h1>Header</h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>Add a header using the class .card-header.</p>
                 <p>Card headers can be styled by adding .card-header to header elements.</p>
                 <p>Otherwise, you can just add the class to a div tag.</p>
                         </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example">&lt;div class="card"&gt;
   <span class="standout">&lt;h5 class="card-header"&gt;Header here&lt;/h5&gt;</span>
   &lt;div class="card-body"&gt;
     &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
     &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
-    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
             </div>
@@ -268,7 +267,6 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
     </section>
@@ -280,18 +278,17 @@
     <section class="container">
         <h1>Footer</h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>Add a footer using the class .card-footer.</p>
 
                         </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example">&lt;div class="card"&gt;
   &lt;h5 class="card-header"&gt;Header here&lt;/h5&gt;
   &lt;div class="card-body"&gt;
     &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
     &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
-    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
   &lt;/div&gt;
   <span class="standout">&lt;div class="card-footer"&gt;footer here&lt;/div&gt;</span>
 &lt;/div&gt;</pre>
@@ -306,7 +303,6 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
           <div class="card-footer">footer here</div>
         </div>
@@ -319,13 +315,15 @@
 
     <section class="container">
         <h1>Navigation</h1>
+        <h3>Tabs</h3>
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>You can add navigation tabs to a card's header using '<a href="https://getbootstrap.com/docs/4.0/components/navs/">nav compontents</a>'.</p>
+                <p>Display tabs by using .nav-tabs and .card-header-tabs</p>
 
                         </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example">&lt;div class="card text-center"&gt;
   &lt;div class="card-header"&gt;
     <span class="standout">&lt;ul class="nav nav-tabs card-header-tabs"&gt;
@@ -352,7 +350,9 @@
 
     <section class="container">
         <h3>Example</h3>
+
         <div class="card text-center">
+
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
               <li class="nav-item">
@@ -366,16 +366,83 @@
               </li>
             </ul>
           </div>
+
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
+
     </section>
 
 
 
+
+
+    <section class="container">
+
+        <h3>Buttons</h3>
+        <div class="row">
+            <div class="col-5">
+                <p>To display buttons instead of tabs, use .nav-pills and .card-header-pills</p>
+
+                        </div>
+
+            <div class="col-7">
+<pre class="example">&lt;div class="card text-center"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;ul class="nav <span class="standout">nav-pills card-header-pills</span>"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h3>Example</h3>
+
+
+
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-pills card-header-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
+    </section>
 
     <script src="../js/jquery.js"></script>
     <!-- bundle.js contains popper, but not jquery -->

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
     <title>carousel</title>
 </head>
 
@@ -38,7 +38,9 @@
                 </ul>
 
                 <p>The bootstrap.bundle.js file already contains popper.js.</p>
-                <p>If you're using image, make sure they are already the same size, otherwise the slider will jump around.</p>
+                <h4>Images</h4>
+                <p>If you're using images, make sure they are already the same size, otherwise the slider will jump around.</p>
+
                 <h1>Adding a carousel with inline images</h1>
 
 
@@ -49,7 +51,7 @@
                 <h2>Basic layout</h2>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
 
                         <p>Give the opening div an id, class of 'carousel', 'slide' and data=ride="carousel".</p>
                         <p>Give the 2nd div a class of carousel-inner.</p>
@@ -59,7 +61,7 @@
                         <p>Add classes to images of d-block and img-fluid so they retain their correct size relative to its container.</p>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-7">
                         <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
 &lt;div <span class="standout">id="slider1" class="carousel slide</span> mb-5" <span class="standout">data-ride="carousel"</span>&gt;
   &lt;div <span class="standout">class="carousel-inner"</span>&gt;
@@ -88,7 +90,7 @@
         <h2>Adding controls</h2>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>Create left and right arrow icons using anchor tags.</p>
                 <p>Make sure these are added inside of the main carousel div, but outside the div with a class of 'carousel-inner'.</p>
                 <p>For the left arrow, give it a class of 'carousel-control-prev'.</p>
@@ -98,7 +100,7 @@
                 <p>Give each an icon in a span tag with 'carousel-control-prev-icon' or 'carousel-control-next-icon'.
             </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
 &lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
   &lt;div class="carousel-inner">&gt;
@@ -141,14 +143,14 @@
         <h2>Adding indicators</h2>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>Add an ordered list just under the first div tag.</p>
                 <p>Give the first list item a class of active.</li>
                     <p>Give all inidcators a data-target value of the carousel's ID.</p>
                     <p>Give each a data-slide-to value to indicate where they should slide.</p>
             </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
           &lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
 <span class="standout">
@@ -199,7 +201,7 @@
         <h2>Adding captions to the images</h2>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-5">
                 <p>Under the image, but within the same block, add another div.</p>
                 <p>Give it a class of carousel-caption.</p>
                 <p>This example also sets the display property so the caption only displays on md size screens or larger.</p>
@@ -207,7 +209,7 @@
 
             </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <pre class="example"><span class="code-html">&lt;!-- slider --&gt;
 &lt;div id="slider1" class="carousel slide mb-5" data-ride="carousel"&gt;
 
@@ -281,12 +283,12 @@
 
                 <h2>Basic layout</h2>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                         <p>For each image div, create a custom class of .carousel-image-#.</p>
                         <p>Add a .container within the each image div.</p>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-7">
 <pre class="example"><span class="code-html">&lt;div class="carousel-inner"&gt;
     &lt;div class="carousel-item <span class="standout">carousel-image-1</span> active"&gt;
         &lt;div class="<span class="standout">container</span>"&gt;
@@ -327,13 +329,13 @@
 
                 <h2>CSS layout</h2>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                         <p>Give the items a height so you can see them.</p>
                         <p>background-size: cover makes the image span the entire width.</p>
                         <p>This will stetch the image, so make sure they are all the same size first.</p>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-7">
 <pre class="example"><span class="code-css">.carousel-item {
   height: 450px;
 }

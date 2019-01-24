@@ -88,6 +88,39 @@
 
 
 
+    <section class="container">
+        <h1>Abbreviations</h1>
+        <div class="row">
+            <div class="col-6">
+
+                <p>Show expanded text on hover of abbreviated element.</p>
+                <p>Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
+                <p>Add .initialism to an abbreviation for a slightly smaller font-size.</p>
+
+            </div>
+            <div class="col-6">
+                <pre class="example">&lt;p&gt;&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</pre>
+            </div>
+        </div>
+
+        <h3>Example</h3>
+        <div class="row">
+            <div class="col">
+                <p><abbr title="attribute">attr</abbr></p>
+                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
 
     <section class="container">
         <h1>Element tags</h1>
@@ -107,7 +140,7 @@
                 <p>Notice how the words 'secondary text' are slightly smaller.</p>
             </div>
             <div class="col-6">
-                <pre class="example"><h2>h2 heading <small>secondary text</small></h2></pre></div>
+                <pre class="example"><p>h2 heading <small>secondary text</small></p></pre></div>
         </div>
 
 
@@ -124,12 +157,15 @@
 
         <h4>Example</h4>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <p>Notice the difference in the 2nd paragraph text.</p>
             </div>
-            <div class="col-6">
-                <pre class="example"><p>Normal Paragraph: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a</p>
-<p class="lead">Lead Paragraph: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a</p></pre></div>
+        </div>
+        <div class="row">
+            <div class="col bg-highlight">
+                <p>Normal Paragraph: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a</p>
+                <p class="lead">Lead Paragraph: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a</p>
+            </div>
         </div>
     </section>
 
@@ -137,8 +173,12 @@
 
 
 
+
+
+
     <section class="container">
         <h1>Lists</h1>
+        <h2>list-unstyled</h2>
         <div class="row bg-shade">
             <div class="col-sm-6">
                 <p><strong>list-unstyled</strong> removes bullets and align list elements to left.</p>
@@ -147,11 +187,25 @@
             <div class="col-sm-6">
                 <p>For example:</p>
                 <pre class="example">&lt;ul class="list-unstyled"&gt;
-  &lt;li&gt;content&lt;/li&gt;
+  &lt;li&gt;content1&lt;/li&gt;
+  &lt;li&gt;content2&lt;/li&gt;
+  &lt;li&gt;content3&lt;/li&gt;
 &lt;/ul&gt;</pre>
             </div>
         </div>
 
+
+        <h3>Example</h3>
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled bg-highlight">
+                    <li>content1</li>
+                    <li>content2</li>
+                    <li>content3</li>
+                </ul>
+            </div>
+        </div>
+        <h2>list-inline (horizontal menu)</h2>
         <div class="row bg-shade">
             <div class="col-sm-6">
                 <p><strong>list-inline</strong> on the &lt;ul&gt; puts elements on the same line. You must also put <strong>list-inline-item</strong> on each &lt;li&gt; item.</p>
@@ -168,7 +222,25 @@
             <!--close column-->
         </div>
         <!--close row-->
+
+        <h3>Example</h3>
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline bg-highlight">
+                    <li class="list-inline-item">content</li>
+                    <li class="list-inline-item">content</li>
+                    <li class="list-inline-item">content</li>
+                </ul>
+
+            </div>
+        </div>
     </section>
+
+
+
+
+
+
 
 
 
@@ -189,16 +261,16 @@
 
         <h4>Example</h4>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <p>Notice the difference in the 2nd paragraph text.</p>
             </div>
-            <div class="col-6">
-                <pre class="example"><p>Normal text: Sed venenatis velit gravida egestas laoreet.
-Donec pretium varius purus, at rhoncus lorem tristique a.
-Sed venenatis velit gravida egestas laoreet.</p>
-<blockquote class="blockquote">Blockquote: Sed venenatis velit gravida egestas laoreet.
-Donec pretium varius purus, at rhoncus lorem tristique a.
-Sed venenatis velit gravida egestas laoreet.</blockquote></pre></div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Normal text: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a. Sed venenatis velit gravida egestas laoreet.</p>
+                <blockquote class="blockquote bg-highlight">Blockquote: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a. Sed venenatis velit gravida egestas laoreet.</blockquote>
+            </div>
         </div>
 
 
@@ -216,8 +288,26 @@ Sed venenatis velit gravida egestas laoreet.</blockquote></pre></div>
             </div>
         </div>
 
+        <h4>Example (text-right)</h4>
+        <div class="row">
+            <div class="col">
+                <blockquote class="blockquote text-right bg-highlight">Blockquote: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a. Sed venenatis velit gravida egestas laoreet.</blockquote>
+            </div>
+        </div>
+        <h4>Example (text-left)</h4>
+        <div class="row">
+            <div class="col">
+                <blockquote class="blockquote text-left bg-highlight">Blockquote: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a. Sed venenatis velit gravida egestas laoreet.</blockquote>
+            </div>
+        </div>
 
-<h2>Blockquote footer</h2>
+
+
+
+
+
+
+        <h2>Blockquote footer</h2>
         <div class="row">
             <div class="col-sm-6">
                 <p><strong>blockquote-footer</strong> adds a footer with someone's name to the blockquote.</p>
@@ -241,12 +331,15 @@ Sed venenatis velit gravida egestas laoreet.</blockquote></pre></div>
             <div class="col-6">
                 <p>Adds the name.</p>
             </div>
-            <div class="col-6">
-                <pre class="example"><blockquote class="blockquote">Blockquote: Sed venenatis velit gravida egestas laoreet.
-Donec pretium varius purus, at rhoncus lorem tristique a.
-<div class="blockquote-footer">
-  John
-</div></blockquote></pre></div>
+        </div>
+        <div class="row">
+            <div class="col bg-highlight">
+                <blockquote class="blockquote">Blockquote: Sed venenatis velit gravida egestas laoreet. Donec pretium varius purus, at rhoncus lorem tristique a.
+                    <div class="blockquote-footer">
+                        John
+                    </div>
+                </blockquote>
+            </div>
         </div>
     </section>
 
@@ -255,20 +348,75 @@ Donec pretium varius purus, at rhoncus lorem tristique a.
 
 
     <section class="container">
-      <h2>Blockquote reverse</h2>
+        <h2>Blockquote reverse</h2>
         <div class="row">
             <div class="col-sm-6">
                 <p><strong>blockquote-reverse</strong> right-aligns blockquote content.</p>
             </div>
 
             <div class="col-sm-6">
-                <p>For example:</p>
-              <pre class="example">&lt;blockquote class="blockquote blockquote-reverse"&gt;
+                <pre class="example">&lt;blockquote class="blockquote blockquote-reverse"&gt;
   content
 &lt;/blockquote&gt;</pre>
             </div>
         </div>
+
+        <h4>Example (this doesn't seem to work)</h4>
+
+        <div class="row">
+            <div class="col bg-highlight">
+                <blockquote class="blockquote blockquote-reverse">
+                    content
+                </blockquote>
+            </div>
+        </div>
+
     </section>
+
+
+
+
+
+    <section class="container">
+        <h2>Responsive typography</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Responsive typography refers to scaling text and components by simply adjusting the root element’s font-size within a series of media queries. Bootstrap doesn’t do this for you, but it’s fairly easy to add if you need it.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <pre class="example">html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}</pre>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
+
+
+
 
 
     <section class="container">
